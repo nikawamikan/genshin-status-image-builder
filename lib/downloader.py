@@ -76,3 +76,9 @@ async def images_update(url_and_paths: list[tuple[str, str]]):
         for url, path in _url_and_paths:
             if await image_download_404_exclusion(url, path, exclude_set=exclude.exclude_set):
                 await asyncio.sleep(INTERVAL)
+
+
+async def json_download(url: str):
+    async with aiohttp.ClientSession(raise_for_status=True, headers=HEADERS) as session:
+        async with session.get(url) as response:
+            return await response.json()

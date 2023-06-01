@@ -1,5 +1,6 @@
 import repository.util_data as util_data
 import json
+import service.repo_to_json as git_service
 import asyncio
 from model.enka_model import Enka
 from service.enka_image_downloader import util_image_update
@@ -14,5 +15,7 @@ from service.enka_image_downloader import util_image_update
 
 
 # print(Enka(**data).playerInfo)
+
+asyncio.run(git_service.updates())
 
 asyncio.run(util_image_update())

@@ -1,5 +1,5 @@
 import repository.util_data as util_data
-from lib.image_downloader import images_update
+from lib.downloader import images_update
 from model.util_model import Icon
 
 
