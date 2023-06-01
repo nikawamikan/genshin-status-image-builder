@@ -1,0 +1,1778 @@
+{
+    "UI_RelicIcon_10001_1": {
+        "icon": {
+            "name": "UI_RelicIcon_10001_1.png",
+            "path": "image/artifact/UI_RelicIcon_10001_1.png"
+        },
+        "set_name": "旅人の心",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_10001_2": {
+        "icon": {
+            "name": "UI_RelicIcon_10001_2.png",
+            "path": "image/artifact/UI_RelicIcon_10001_2.png"
+        },
+        "set_name": "旅人の心",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_10001_3": {
+        "icon": {
+            "name": "UI_RelicIcon_10001_3.png",
+            "path": "image/artifact/UI_RelicIcon_10001_3.png"
+        },
+        "set_name": "旅人の心",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_10001_4": {
+        "icon": {
+            "name": "UI_RelicIcon_10001_4.png",
+            "path": "image/artifact/UI_RelicIcon_10001_4.png"
+        },
+        "set_name": "旅人の心",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_10001_5": {
+        "icon": {
+            "name": "UI_RelicIcon_10001_5.png",
+            "path": "image/artifact/UI_RelicIcon_10001_5.png"
+        },
+        "set_name": "旅人の心",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_10002_1": {
+        "icon": {
+            "name": "UI_RelicIcon_10002_1.png",
+            "path": "image/artifact/UI_RelicIcon_10002_1.png"
+        },
+        "set_name": "勇士の心",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_10002_2": {
+        "icon": {
+            "name": "UI_RelicIcon_10002_2.png",
+            "path": "image/artifact/UI_RelicIcon_10002_2.png"
+        },
+        "set_name": "勇士の心",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_10002_3": {
+        "icon": {
+            "name": "UI_RelicIcon_10002_3.png",
+            "path": "image/artifact/UI_RelicIcon_10002_3.png"
+        },
+        "set_name": "勇士の心",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_10002_4": {
+        "icon": {
+            "name": "UI_RelicIcon_10002_4.png",
+            "path": "image/artifact/UI_RelicIcon_10002_4.png"
+        },
+        "set_name": "勇士の心",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_10002_5": {
+        "icon": {
+            "name": "UI_RelicIcon_10002_5.png",
+            "path": "image/artifact/UI_RelicIcon_10002_5.png"
+        },
+        "set_name": "勇士の心",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_10003_1": {
+        "icon": {
+            "name": "UI_RelicIcon_10003_1.png",
+            "path": "image/artifact/UI_RelicIcon_10003_1.png"
+        },
+        "set_name": "守護の心",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_10003_2": {
+        "icon": {
+            "name": "UI_RelicIcon_10003_2.png",
+            "path": "image/artifact/UI_RelicIcon_10003_2.png"
+        },
+        "set_name": "守護の心",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_10003_3": {
+        "icon": {
+            "name": "UI_RelicIcon_10003_3.png",
+            "path": "image/artifact/UI_RelicIcon_10003_3.png"
+        },
+        "set_name": "守護の心",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_10003_4": {
+        "icon": {
+            "name": "UI_RelicIcon_10003_4.png",
+            "path": "image/artifact/UI_RelicIcon_10003_4.png"
+        },
+        "set_name": "守護の心",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_10003_5": {
+        "icon": {
+            "name": "UI_RelicIcon_10003_5.png",
+            "path": "image/artifact/UI_RelicIcon_10003_5.png"
+        },
+        "set_name": "守護の心",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_10004_1": {
+        "icon": {
+            "name": "UI_RelicIcon_10004_1.png",
+            "path": "image/artifact/UI_RelicIcon_10004_1.png"
+        },
+        "set_name": "奇跡",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_10004_2": {
+        "icon": {
+            "name": "UI_RelicIcon_10004_2.png",
+            "path": "image/artifact/UI_RelicIcon_10004_2.png"
+        },
+        "set_name": "奇跡",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_10004_3": {
+        "icon": {
+            "name": "UI_RelicIcon_10004_3.png",
+            "path": "image/artifact/UI_RelicIcon_10004_3.png"
+        },
+        "set_name": "奇跡",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_10004_4": {
+        "icon": {
+            "name": "UI_RelicIcon_10004_4.png",
+            "path": "image/artifact/UI_RelicIcon_10004_4.png"
+        },
+        "set_name": "奇跡",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_10004_5": {
+        "icon": {
+            "name": "UI_RelicIcon_10004_5.png",
+            "path": "image/artifact/UI_RelicIcon_10004_5.png"
+        },
+        "set_name": "奇跡",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_10005_1": {
+        "icon": {
+            "name": "UI_RelicIcon_10005_1.png",
+            "path": "image/artifact/UI_RelicIcon_10005_1.png"
+        },
+        "set_name": "狂戦士",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_10005_2": {
+        "icon": {
+            "name": "UI_RelicIcon_10005_2.png",
+            "path": "image/artifact/UI_RelicIcon_10005_2.png"
+        },
+        "set_name": "狂戦士",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_10005_3": {
+        "icon": {
+            "name": "UI_RelicIcon_10005_3.png",
+            "path": "image/artifact/UI_RelicIcon_10005_3.png"
+        },
+        "set_name": "狂戦士",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_10005_4": {
+        "icon": {
+            "name": "UI_RelicIcon_10005_4.png",
+            "path": "image/artifact/UI_RelicIcon_10005_4.png"
+        },
+        "set_name": "狂戦士",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_10005_5": {
+        "icon": {
+            "name": "UI_RelicIcon_10005_5.png",
+            "path": "image/artifact/UI_RelicIcon_10005_5.png"
+        },
+        "set_name": "狂戦士",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_10006_1": {
+        "icon": {
+            "name": "UI_RelicIcon_10006_1.png",
+            "path": "image/artifact/UI_RelicIcon_10006_1.png"
+        },
+        "set_name": "武人",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_10006_2": {
+        "icon": {
+            "name": "UI_RelicIcon_10006_2.png",
+            "path": "image/artifact/UI_RelicIcon_10006_2.png"
+        },
+        "set_name": "武人",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_10006_3": {
+        "icon": {
+            "name": "UI_RelicIcon_10006_3.png",
+            "path": "image/artifact/UI_RelicIcon_10006_3.png"
+        },
+        "set_name": "武人",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_10006_4": {
+        "icon": {
+            "name": "UI_RelicIcon_10006_4.png",
+            "path": "image/artifact/UI_RelicIcon_10006_4.png"
+        },
+        "set_name": "武人",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_10006_5": {
+        "icon": {
+            "name": "UI_RelicIcon_10006_5.png",
+            "path": "image/artifact/UI_RelicIcon_10006_5.png"
+        },
+        "set_name": "武人",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_10007_1": {
+        "icon": {
+            "name": "UI_RelicIcon_10007_1.png",
+            "path": "image/artifact/UI_RelicIcon_10007_1.png"
+        },
+        "set_name": "教官",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_10007_2": {
+        "icon": {
+            "name": "UI_RelicIcon_10007_2.png",
+            "path": "image/artifact/UI_RelicIcon_10007_2.png"
+        },
+        "set_name": "教官",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_10007_3": {
+        "icon": {
+            "name": "UI_RelicIcon_10007_3.png",
+            "path": "image/artifact/UI_RelicIcon_10007_3.png"
+        },
+        "set_name": "教官",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_10007_4": {
+        "icon": {
+            "name": "UI_RelicIcon_10007_4.png",
+            "path": "image/artifact/UI_RelicIcon_10007_4.png"
+        },
+        "set_name": "教官",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_10007_5": {
+        "icon": {
+            "name": "UI_RelicIcon_10007_5.png",
+            "path": "image/artifact/UI_RelicIcon_10007_5.png"
+        },
+        "set_name": "教官",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_10008_1": {
+        "icon": {
+            "name": "UI_RelicIcon_10008_1.png",
+            "path": "image/artifact/UI_RelicIcon_10008_1.png"
+        },
+        "set_name": "博徒",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_10008_2": {
+        "icon": {
+            "name": "UI_RelicIcon_10008_2.png",
+            "path": "image/artifact/UI_RelicIcon_10008_2.png"
+        },
+        "set_name": "博徒",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_10008_3": {
+        "icon": {
+            "name": "UI_RelicIcon_10008_3.png",
+            "path": "image/artifact/UI_RelicIcon_10008_3.png"
+        },
+        "set_name": "博徒",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_10008_4": {
+        "icon": {
+            "name": "UI_RelicIcon_10008_4.png",
+            "path": "image/artifact/UI_RelicIcon_10008_4.png"
+        },
+        "set_name": "博徒",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_10008_5": {
+        "icon": {
+            "name": "UI_RelicIcon_10008_5.png",
+            "path": "image/artifact/UI_RelicIcon_10008_5.png"
+        },
+        "set_name": "博徒",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_10009_1": {
+        "icon": {
+            "name": "UI_RelicIcon_10009_1.png",
+            "path": "image/artifact/UI_RelicIcon_10009_1.png"
+        },
+        "set_name": "亡命者",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_10009_2": {
+        "icon": {
+            "name": "UI_RelicIcon_10009_2.png",
+            "path": "image/artifact/UI_RelicIcon_10009_2.png"
+        },
+        "set_name": "亡命者",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_10009_3": {
+        "icon": {
+            "name": "UI_RelicIcon_10009_3.png",
+            "path": "image/artifact/UI_RelicIcon_10009_3.png"
+        },
+        "set_name": "亡命者",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_10009_4": {
+        "icon": {
+            "name": "UI_RelicIcon_10009_4.png",
+            "path": "image/artifact/UI_RelicIcon_10009_4.png"
+        },
+        "set_name": "亡命者",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_10009_5": {
+        "icon": {
+            "name": "UI_RelicIcon_10009_5.png",
+            "path": "image/artifact/UI_RelicIcon_10009_5.png"
+        },
+        "set_name": "亡命者",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_10010_1": {
+        "icon": {
+            "name": "UI_RelicIcon_10010_1.png",
+            "path": "image/artifact/UI_RelicIcon_10010_1.png"
+        },
+        "set_name": "冒険者",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_10010_2": {
+        "icon": {
+            "name": "UI_RelicIcon_10010_2.png",
+            "path": "image/artifact/UI_RelicIcon_10010_2.png"
+        },
+        "set_name": "冒険者",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_10010_3": {
+        "icon": {
+            "name": "UI_RelicIcon_10010_3.png",
+            "path": "image/artifact/UI_RelicIcon_10010_3.png"
+        },
+        "set_name": "冒険者",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_10010_4": {
+        "icon": {
+            "name": "UI_RelicIcon_10010_4.png",
+            "path": "image/artifact/UI_RelicIcon_10010_4.png"
+        },
+        "set_name": "冒険者",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_10010_5": {
+        "icon": {
+            "name": "UI_RelicIcon_10010_5.png",
+            "path": "image/artifact/UI_RelicIcon_10010_5.png"
+        },
+        "set_name": "冒険者",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_10011_1": {
+        "icon": {
+            "name": "UI_RelicIcon_10011_1.png",
+            "path": "image/artifact/UI_RelicIcon_10011_1.png"
+        },
+        "set_name": "幸運",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_10011_2": {
+        "icon": {
+            "name": "UI_RelicIcon_10011_2.png",
+            "path": "image/artifact/UI_RelicIcon_10011_2.png"
+        },
+        "set_name": "幸運",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_10011_3": {
+        "icon": {
+            "name": "UI_RelicIcon_10011_3.png",
+            "path": "image/artifact/UI_RelicIcon_10011_3.png"
+        },
+        "set_name": "幸運",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_10011_4": {
+        "icon": {
+            "name": "UI_RelicIcon_10011_4.png",
+            "path": "image/artifact/UI_RelicIcon_10011_4.png"
+        },
+        "set_name": "幸運",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_10011_5": {
+        "icon": {
+            "name": "UI_RelicIcon_10011_5.png",
+            "path": "image/artifact/UI_RelicIcon_10011_5.png"
+        },
+        "set_name": "幸運",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_10012_1": {
+        "icon": {
+            "name": "UI_RelicIcon_10012_1.png",
+            "path": "image/artifact/UI_RelicIcon_10012_1.png"
+        },
+        "set_name": "学者",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_10012_2": {
+        "icon": {
+            "name": "UI_RelicIcon_10012_2.png",
+            "path": "image/artifact/UI_RelicIcon_10012_2.png"
+        },
+        "set_name": "学者",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_10012_3": {
+        "icon": {
+            "name": "UI_RelicIcon_10012_3.png",
+            "path": "image/artifact/UI_RelicIcon_10012_3.png"
+        },
+        "set_name": "学者",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_10012_4": {
+        "icon": {
+            "name": "UI_RelicIcon_10012_4.png",
+            "path": "image/artifact/UI_RelicIcon_10012_4.png"
+        },
+        "set_name": "学者",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_10012_5": {
+        "icon": {
+            "name": "UI_RelicIcon_10012_5.png",
+            "path": "image/artifact/UI_RelicIcon_10012_5.png"
+        },
+        "set_name": "学者",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_10013_1": {
+        "icon": {
+            "name": "UI_RelicIcon_10013_1.png",
+            "path": "image/artifact/UI_RelicIcon_10013_1.png"
+        },
+        "set_name": "医者",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_10013_2": {
+        "icon": {
+            "name": "UI_RelicIcon_10013_2.png",
+            "path": "image/artifact/UI_RelicIcon_10013_2.png"
+        },
+        "set_name": "医者",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_10013_3": {
+        "icon": {
+            "name": "UI_RelicIcon_10013_3.png",
+            "path": "image/artifact/UI_RelicIcon_10013_3.png"
+        },
+        "set_name": "医者",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_10013_4": {
+        "icon": {
+            "name": "UI_RelicIcon_10013_4.png",
+            "path": "image/artifact/UI_RelicIcon_10013_4.png"
+        },
+        "set_name": "医者",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_10013_5": {
+        "icon": {
+            "name": "UI_RelicIcon_10013_5.png",
+            "path": "image/artifact/UI_RelicIcon_10013_5.png"
+        },
+        "set_name": "医者",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_14001_1": {
+        "icon": {
+            "name": "UI_RelicIcon_14001_1.png",
+            "path": "image/artifact/UI_RelicIcon_14001_1.png"
+        },
+        "set_name": "氷風を彷徨う勇士",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_14001_2": {
+        "icon": {
+            "name": "UI_RelicIcon_14001_2.png",
+            "path": "image/artifact/UI_RelicIcon_14001_2.png"
+        },
+        "set_name": "氷風を彷徨う勇士",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_14001_3": {
+        "icon": {
+            "name": "UI_RelicIcon_14001_3.png",
+            "path": "image/artifact/UI_RelicIcon_14001_3.png"
+        },
+        "set_name": "氷風を彷徨う勇士",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_14001_4": {
+        "icon": {
+            "name": "UI_RelicIcon_14001_4.png",
+            "path": "image/artifact/UI_RelicIcon_14001_4.png"
+        },
+        "set_name": "氷風を彷徨う勇士",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_14001_5": {
+        "icon": {
+            "name": "UI_RelicIcon_14001_5.png",
+            "path": "image/artifact/UI_RelicIcon_14001_5.png"
+        },
+        "set_name": "氷風を彷徨う勇士",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_14002_1": {
+        "icon": {
+            "name": "UI_RelicIcon_14002_1.png",
+            "path": "image/artifact/UI_RelicIcon_14002_1.png"
+        },
+        "set_name": "雷を鎮める尊者",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_14002_2": {
+        "icon": {
+            "name": "UI_RelicIcon_14002_2.png",
+            "path": "image/artifact/UI_RelicIcon_14002_2.png"
+        },
+        "set_name": "雷を鎮める尊者",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_14002_3": {
+        "icon": {
+            "name": "UI_RelicIcon_14002_3.png",
+            "path": "image/artifact/UI_RelicIcon_14002_3.png"
+        },
+        "set_name": "雷を鎮める尊者",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_14002_4": {
+        "icon": {
+            "name": "UI_RelicIcon_14002_4.png",
+            "path": "image/artifact/UI_RelicIcon_14002_4.png"
+        },
+        "set_name": "雷を鎮める尊者",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_14002_5": {
+        "icon": {
+            "name": "UI_RelicIcon_14002_5.png",
+            "path": "image/artifact/UI_RelicIcon_14002_5.png"
+        },
+        "set_name": "雷を鎮める尊者",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_14003_1": {
+        "icon": {
+            "name": "UI_RelicIcon_14003_1.png",
+            "path": "image/artifact/UI_RelicIcon_14003_1.png"
+        },
+        "set_name": "烈火を渡る賢者",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_14003_2": {
+        "icon": {
+            "name": "UI_RelicIcon_14003_2.png",
+            "path": "image/artifact/UI_RelicIcon_14003_2.png"
+        },
+        "set_name": "烈火を渡る賢者",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_14003_3": {
+        "icon": {
+            "name": "UI_RelicIcon_14003_3.png",
+            "path": "image/artifact/UI_RelicIcon_14003_3.png"
+        },
+        "set_name": "烈火を渡る賢者",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_14003_4": {
+        "icon": {
+            "name": "UI_RelicIcon_14003_4.png",
+            "path": "image/artifact/UI_RelicIcon_14003_4.png"
+        },
+        "set_name": "烈火を渡る賢者",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_14003_5": {
+        "icon": {
+            "name": "UI_RelicIcon_14003_5.png",
+            "path": "image/artifact/UI_RelicIcon_14003_5.png"
+        },
+        "set_name": "烈火を渡る賢者",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_14004_1": {
+        "icon": {
+            "name": "UI_RelicIcon_14004_1.png",
+            "path": "image/artifact/UI_RelicIcon_14004_1.png"
+        },
+        "set_name": "愛される少女",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_14004_2": {
+        "icon": {
+            "name": "UI_RelicIcon_14004_2.png",
+            "path": "image/artifact/UI_RelicIcon_14004_2.png"
+        },
+        "set_name": "愛される少女",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_14004_3": {
+        "icon": {
+            "name": "UI_RelicIcon_14004_3.png",
+            "path": "image/artifact/UI_RelicIcon_14004_3.png"
+        },
+        "set_name": "愛される少女",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_14004_4": {
+        "icon": {
+            "name": "UI_RelicIcon_14004_4.png",
+            "path": "image/artifact/UI_RelicIcon_14004_4.png"
+        },
+        "set_name": "愛される少女",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_14004_5": {
+        "icon": {
+            "name": "UI_RelicIcon_14004_5.png",
+            "path": "image/artifact/UI_RelicIcon_14004_5.png"
+        },
+        "set_name": "愛される少女",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15001_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15001_1.png",
+            "path": "image/artifact/UI_RelicIcon_15001_1.png"
+        },
+        "set_name": "剣闘士のフィナーレ",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15001_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15001_2.png",
+            "path": "image/artifact/UI_RelicIcon_15001_2.png"
+        },
+        "set_name": "剣闘士のフィナーレ",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15001_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15001_3.png",
+            "path": "image/artifact/UI_RelicIcon_15001_3.png"
+        },
+        "set_name": "剣闘士のフィナーレ",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15001_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15001_4.png",
+            "path": "image/artifact/UI_RelicIcon_15001_4.png"
+        },
+        "set_name": "剣闘士のフィナーレ",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15001_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15001_5.png",
+            "path": "image/artifact/UI_RelicIcon_15001_5.png"
+        },
+        "set_name": "剣闘士のフィナーレ",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15002_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15002_1.png",
+            "path": "image/artifact/UI_RelicIcon_15002_1.png"
+        },
+        "set_name": "翠緑の影",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15002_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15002_2.png",
+            "path": "image/artifact/UI_RelicIcon_15002_2.png"
+        },
+        "set_name": "翠緑の影",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15002_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15002_3.png",
+            "path": "image/artifact/UI_RelicIcon_15002_3.png"
+        },
+        "set_name": "翠緑の影",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15002_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15002_4.png",
+            "path": "image/artifact/UI_RelicIcon_15002_4.png"
+        },
+        "set_name": "翠緑の影",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15002_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15002_5.png",
+            "path": "image/artifact/UI_RelicIcon_15002_5.png"
+        },
+        "set_name": "翠緑の影",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15003_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15003_1.png",
+            "path": "image/artifact/UI_RelicIcon_15003_1.png"
+        },
+        "set_name": "大地を流浪する楽団",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15003_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15003_2.png",
+            "path": "image/artifact/UI_RelicIcon_15003_2.png"
+        },
+        "set_name": "大地を流浪する楽団",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15003_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15003_3.png",
+            "path": "image/artifact/UI_RelicIcon_15003_3.png"
+        },
+        "set_name": "大地を流浪する楽団",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15003_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15003_4.png",
+            "path": "image/artifact/UI_RelicIcon_15003_4.png"
+        },
+        "set_name": "大地を流浪する楽団",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15003_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15003_5.png",
+            "path": "image/artifact/UI_RelicIcon_15003_5.png"
+        },
+        "set_name": "大地を流浪する楽団",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15004_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15004_1.png",
+            "path": "image/artifact/UI_RelicIcon_15004_1.png"
+        },
+        "set_name": "氷の川と雪の砂",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15004_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15004_2.png",
+            "path": "image/artifact/UI_RelicIcon_15004_2.png"
+        },
+        "set_name": "氷の川と雪の砂",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15004_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15004_3.png",
+            "path": "image/artifact/UI_RelicIcon_15004_3.png"
+        },
+        "set_name": "氷の川と雪の砂",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15004_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15004_4.png",
+            "path": "image/artifact/UI_RelicIcon_15004_4.png"
+        },
+        "set_name": "氷の川と雪の砂",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15004_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15004_5.png",
+            "path": "image/artifact/UI_RelicIcon_15004_5.png"
+        },
+        "set_name": "氷の川と雪の砂",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15005_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15005_1.png",
+            "path": "image/artifact/UI_RelicIcon_15005_1.png"
+        },
+        "set_name": "雷のような怒り",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15005_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15005_2.png",
+            "path": "image/artifact/UI_RelicIcon_15005_2.png"
+        },
+        "set_name": "雷のような怒り",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15005_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15005_3.png",
+            "path": "image/artifact/UI_RelicIcon_15005_3.png"
+        },
+        "set_name": "雷のような怒り",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15005_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15005_4.png",
+            "path": "image/artifact/UI_RelicIcon_15005_4.png"
+        },
+        "set_name": "雷のような怒り",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15005_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15005_5.png",
+            "path": "image/artifact/UI_RelicIcon_15005_5.png"
+        },
+        "set_name": "雷のような怒り",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15006_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15006_1.png",
+            "path": "image/artifact/UI_RelicIcon_15006_1.png"
+        },
+        "set_name": "燃え盛る炎の魔女",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15006_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15006_2.png",
+            "path": "image/artifact/UI_RelicIcon_15006_2.png"
+        },
+        "set_name": "燃え盛る炎の魔女",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15006_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15006_3.png",
+            "path": "image/artifact/UI_RelicIcon_15006_3.png"
+        },
+        "set_name": "燃え盛る炎の魔女",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15006_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15006_4.png",
+            "path": "image/artifact/UI_RelicIcon_15006_4.png"
+        },
+        "set_name": "燃え盛る炎の魔女",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15006_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15006_5.png",
+            "path": "image/artifact/UI_RelicIcon_15006_5.png"
+        },
+        "set_name": "燃え盛る炎の魔女",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15007_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15007_1.png",
+            "path": "image/artifact/UI_RelicIcon_15007_1.png"
+        },
+        "set_name": "旧貴族のしつけ",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15007_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15007_2.png",
+            "path": "image/artifact/UI_RelicIcon_15007_2.png"
+        },
+        "set_name": "旧貴族のしつけ",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15007_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15007_3.png",
+            "path": "image/artifact/UI_RelicIcon_15007_3.png"
+        },
+        "set_name": "旧貴族のしつけ",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15007_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15007_4.png",
+            "path": "image/artifact/UI_RelicIcon_15007_4.png"
+        },
+        "set_name": "旧貴族のしつけ",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15007_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15007_5.png",
+            "path": "image/artifact/UI_RelicIcon_15007_5.png"
+        },
+        "set_name": "旧貴族のしつけ",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15008_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15008_1.png",
+            "path": "image/artifact/UI_RelicIcon_15008_1.png"
+        },
+        "set_name": "血染めの騎士道",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15008_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15008_2.png",
+            "path": "image/artifact/UI_RelicIcon_15008_2.png"
+        },
+        "set_name": "血染めの騎士道",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15008_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15008_3.png",
+            "path": "image/artifact/UI_RelicIcon_15008_3.png"
+        },
+        "set_name": "血染めの騎士道",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15008_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15008_4.png",
+            "path": "image/artifact/UI_RelicIcon_15008_4.png"
+        },
+        "set_name": "血染めの騎士道",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15008_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15008_5.png",
+            "path": "image/artifact/UI_RelicIcon_15008_5.png"
+        },
+        "set_name": "血染めの騎士道",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15009_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15009_3.png",
+            "path": "image/artifact/UI_RelicIcon_15009_3.png"
+        },
+        "set_name": null,
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15010_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15010_3.png",
+            "path": "image/artifact/UI_RelicIcon_15010_3.png"
+        },
+        "set_name": null,
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15011_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15011_3.png",
+            "path": "image/artifact/UI_RelicIcon_15011_3.png"
+        },
+        "set_name": null,
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15012_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15012_3.png",
+            "path": "image/artifact/UI_RelicIcon_15012_3.png"
+        },
+        "set_name": null,
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15013_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15013_3.png",
+            "path": "image/artifact/UI_RelicIcon_15013_3.png"
+        },
+        "set_name": null,
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15014_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15014_1.png",
+            "path": "image/artifact/UI_RelicIcon_15014_1.png"
+        },
+        "set_name": "悠久の磐岩",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15014_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15014_2.png",
+            "path": "image/artifact/UI_RelicIcon_15014_2.png"
+        },
+        "set_name": "悠久の磐岩",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15014_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15014_3.png",
+            "path": "image/artifact/UI_RelicIcon_15014_3.png"
+        },
+        "set_name": "悠久の磐岩",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15014_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15014_4.png",
+            "path": "image/artifact/UI_RelicIcon_15014_4.png"
+        },
+        "set_name": "悠久の磐岩",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15014_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15014_5.png",
+            "path": "image/artifact/UI_RelicIcon_15014_5.png"
+        },
+        "set_name": "悠久の磐岩",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15015_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15015_1.png",
+            "path": "image/artifact/UI_RelicIcon_15015_1.png"
+        },
+        "set_name": "逆飛びの流星",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15015_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15015_2.png",
+            "path": "image/artifact/UI_RelicIcon_15015_2.png"
+        },
+        "set_name": "逆飛びの流星",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15015_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15015_3.png",
+            "path": "image/artifact/UI_RelicIcon_15015_3.png"
+        },
+        "set_name": "逆飛びの流星",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15015_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15015_4.png",
+            "path": "image/artifact/UI_RelicIcon_15015_4.png"
+        },
+        "set_name": "逆飛びの流星",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15015_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15015_5.png",
+            "path": "image/artifact/UI_RelicIcon_15015_5.png"
+        },
+        "set_name": "逆飛びの流星",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15016_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15016_1.png",
+            "path": "image/artifact/UI_RelicIcon_15016_1.png"
+        },
+        "set_name": "沈淪の心",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15016_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15016_2.png",
+            "path": "image/artifact/UI_RelicIcon_15016_2.png"
+        },
+        "set_name": "沈淪の心",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15016_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15016_3.png",
+            "path": "image/artifact/UI_RelicIcon_15016_3.png"
+        },
+        "set_name": "沈淪の心",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15016_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15016_4.png",
+            "path": "image/artifact/UI_RelicIcon_15016_4.png"
+        },
+        "set_name": "沈淪の心",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15016_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15016_5.png",
+            "path": "image/artifact/UI_RelicIcon_15016_5.png"
+        },
+        "set_name": "沈淪の心",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15017_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15017_1.png",
+            "path": "image/artifact/UI_RelicIcon_15017_1.png"
+        },
+        "set_name": "千岩牢固",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15017_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15017_2.png",
+            "path": "image/artifact/UI_RelicIcon_15017_2.png"
+        },
+        "set_name": "千岩牢固",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15017_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15017_3.png",
+            "path": "image/artifact/UI_RelicIcon_15017_3.png"
+        },
+        "set_name": "千岩牢固",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15017_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15017_4.png",
+            "path": "image/artifact/UI_RelicIcon_15017_4.png"
+        },
+        "set_name": "千岩牢固",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15017_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15017_5.png",
+            "path": "image/artifact/UI_RelicIcon_15017_5.png"
+        },
+        "set_name": "千岩牢固",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15018_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15018_1.png",
+            "path": "image/artifact/UI_RelicIcon_15018_1.png"
+        },
+        "set_name": "蒼白の炎",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15018_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15018_2.png",
+            "path": "image/artifact/UI_RelicIcon_15018_2.png"
+        },
+        "set_name": "蒼白の炎",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15018_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15018_3.png",
+            "path": "image/artifact/UI_RelicIcon_15018_3.png"
+        },
+        "set_name": "蒼白の炎",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15018_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15018_4.png",
+            "path": "image/artifact/UI_RelicIcon_15018_4.png"
+        },
+        "set_name": "蒼白の炎",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15018_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15018_5.png",
+            "path": "image/artifact/UI_RelicIcon_15018_5.png"
+        },
+        "set_name": "蒼白の炎",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15019_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15019_1.png",
+            "path": "image/artifact/UI_RelicIcon_15019_1.png"
+        },
+        "set_name": "追憶のしめ縄",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15019_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15019_2.png",
+            "path": "image/artifact/UI_RelicIcon_15019_2.png"
+        },
+        "set_name": "追憶のしめ縄",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15019_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15019_3.png",
+            "path": "image/artifact/UI_RelicIcon_15019_3.png"
+        },
+        "set_name": "追憶のしめ縄",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15019_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15019_4.png",
+            "path": "image/artifact/UI_RelicIcon_15019_4.png"
+        },
+        "set_name": "追憶のしめ縄",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15019_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15019_5.png",
+            "path": "image/artifact/UI_RelicIcon_15019_5.png"
+        },
+        "set_name": "追憶のしめ縄",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15020_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15020_1.png",
+            "path": "image/artifact/UI_RelicIcon_15020_1.png"
+        },
+        "set_name": "絶縁の旗印",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15020_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15020_2.png",
+            "path": "image/artifact/UI_RelicIcon_15020_2.png"
+        },
+        "set_name": "絶縁の旗印",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15020_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15020_3.png",
+            "path": "image/artifact/UI_RelicIcon_15020_3.png"
+        },
+        "set_name": "絶縁の旗印",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15020_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15020_4.png",
+            "path": "image/artifact/UI_RelicIcon_15020_4.png"
+        },
+        "set_name": "絶縁の旗印",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15020_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15020_5.png",
+            "path": "image/artifact/UI_RelicIcon_15020_5.png"
+        },
+        "set_name": "絶縁の旗印",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15021_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15021_1.png",
+            "path": "image/artifact/UI_RelicIcon_15021_1.png"
+        },
+        "set_name": "華館夢醒形骸記",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15021_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15021_2.png",
+            "path": "image/artifact/UI_RelicIcon_15021_2.png"
+        },
+        "set_name": "華館夢醒形骸記",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15021_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15021_3.png",
+            "path": "image/artifact/UI_RelicIcon_15021_3.png"
+        },
+        "set_name": "華館夢醒形骸記",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15021_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15021_4.png",
+            "path": "image/artifact/UI_RelicIcon_15021_4.png"
+        },
+        "set_name": "華館夢醒形骸記",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15021_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15021_5.png",
+            "path": "image/artifact/UI_RelicIcon_15021_5.png"
+        },
+        "set_name": "華館夢醒形骸記",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15022_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15022_1.png",
+            "path": "image/artifact/UI_RelicIcon_15022_1.png"
+        },
+        "set_name": "海染硨磲",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15022_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15022_2.png",
+            "path": "image/artifact/UI_RelicIcon_15022_2.png"
+        },
+        "set_name": "海染硨磲",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15022_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15022_3.png",
+            "path": "image/artifact/UI_RelicIcon_15022_3.png"
+        },
+        "set_name": "海染硨磲",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15022_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15022_4.png",
+            "path": "image/artifact/UI_RelicIcon_15022_4.png"
+        },
+        "set_name": "海染硨磲",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15022_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15022_5.png",
+            "path": "image/artifact/UI_RelicIcon_15022_5.png"
+        },
+        "set_name": "海染硨磲",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15023_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15023_1.png",
+            "path": "image/artifact/UI_RelicIcon_15023_1.png"
+        },
+        "set_name": "辰砂往生録",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15023_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15023_2.png",
+            "path": "image/artifact/UI_RelicIcon_15023_2.png"
+        },
+        "set_name": "辰砂往生録",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15023_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15023_3.png",
+            "path": "image/artifact/UI_RelicIcon_15023_3.png"
+        },
+        "set_name": "辰砂往生録",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15023_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15023_4.png",
+            "path": "image/artifact/UI_RelicIcon_15023_4.png"
+        },
+        "set_name": "辰砂往生録",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15023_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15023_5.png",
+            "path": "image/artifact/UI_RelicIcon_15023_5.png"
+        },
+        "set_name": "辰砂往生録",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15024_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15024_1.png",
+            "path": "image/artifact/UI_RelicIcon_15024_1.png"
+        },
+        "set_name": "来歆の余響",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15024_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15024_2.png",
+            "path": "image/artifact/UI_RelicIcon_15024_2.png"
+        },
+        "set_name": "来歆の余響",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15024_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15024_3.png",
+            "path": "image/artifact/UI_RelicIcon_15024_3.png"
+        },
+        "set_name": "来歆の余響",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15024_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15024_4.png",
+            "path": "image/artifact/UI_RelicIcon_15024_4.png"
+        },
+        "set_name": "来歆の余響",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15024_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15024_5.png",
+            "path": "image/artifact/UI_RelicIcon_15024_5.png"
+        },
+        "set_name": "来歆の余響",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15000_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15000_1.png",
+            "path": "image/artifact/UI_RelicIcon_15000_1.png"
+        },
+        "set_name": null,
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15000_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15000_2.png",
+            "path": "image/artifact/UI_RelicIcon_15000_2.png"
+        },
+        "set_name": null,
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15000_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15000_3.png",
+            "path": "image/artifact/UI_RelicIcon_15000_3.png"
+        },
+        "set_name": null,
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15000_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15000_4.png",
+            "path": "image/artifact/UI_RelicIcon_15000_4.png"
+        },
+        "set_name": null,
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15000_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15000_5.png",
+            "path": "image/artifact/UI_RelicIcon_15000_5.png"
+        },
+        "set_name": null,
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15025_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15025_1.png",
+            "path": "image/artifact/UI_RelicIcon_15025_1.png"
+        },
+        "set_name": "深林の記憶",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15025_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15025_2.png",
+            "path": "image/artifact/UI_RelicIcon_15025_2.png"
+        },
+        "set_name": "深林の記憶",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15025_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15025_3.png",
+            "path": "image/artifact/UI_RelicIcon_15025_3.png"
+        },
+        "set_name": "深林の記憶",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15025_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15025_4.png",
+            "path": "image/artifact/UI_RelicIcon_15025_4.png"
+        },
+        "set_name": "深林の記憶",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15025_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15025_5.png",
+            "path": "image/artifact/UI_RelicIcon_15025_5.png"
+        },
+        "set_name": "深林の記憶",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15026_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15026_1.png",
+            "path": "image/artifact/UI_RelicIcon_15026_1.png"
+        },
+        "set_name": "金メッキの夢",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15026_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15026_2.png",
+            "path": "image/artifact/UI_RelicIcon_15026_2.png"
+        },
+        "set_name": "金メッキの夢",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15026_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15026_3.png",
+            "path": "image/artifact/UI_RelicIcon_15026_3.png"
+        },
+        "set_name": "金メッキの夢",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15026_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15026_4.png",
+            "path": "image/artifact/UI_RelicIcon_15026_4.png"
+        },
+        "set_name": "金メッキの夢",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15026_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15026_5.png",
+            "path": "image/artifact/UI_RelicIcon_15026_5.png"
+        },
+        "set_name": "金メッキの夢",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15027_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15027_1.png",
+            "path": "image/artifact/UI_RelicIcon_15027_1.png"
+        },
+        "set_name": "砂上の楼閣の史話",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15027_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15027_2.png",
+            "path": "image/artifact/UI_RelicIcon_15027_2.png"
+        },
+        "set_name": "砂上の楼閣の史話",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15027_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15027_3.png",
+            "path": "image/artifact/UI_RelicIcon_15027_3.png"
+        },
+        "set_name": "砂上の楼閣の史話",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15027_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15027_4.png",
+            "path": "image/artifact/UI_RelicIcon_15027_4.png"
+        },
+        "set_name": "砂上の楼閣の史話",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15027_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15027_5.png",
+            "path": "image/artifact/UI_RelicIcon_15027_5.png"
+        },
+        "set_name": "砂上の楼閣の史話",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15028_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15028_1.png",
+            "path": "image/artifact/UI_RelicIcon_15028_1.png"
+        },
+        "set_name": "楽園の絶花",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15028_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15028_2.png",
+            "path": "image/artifact/UI_RelicIcon_15028_2.png"
+        },
+        "set_name": "楽園の絶花",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15028_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15028_3.png",
+            "path": "image/artifact/UI_RelicIcon_15028_3.png"
+        },
+        "set_name": "楽園の絶花",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15028_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15028_4.png",
+            "path": "image/artifact/UI_RelicIcon_15028_4.png"
+        },
+        "set_name": "楽園の絶花",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15028_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15028_5.png",
+            "path": "image/artifact/UI_RelicIcon_15028_5.png"
+        },
+        "set_name": "楽園の絶花",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15029_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15029_1.png",
+            "path": "image/artifact/UI_RelicIcon_15029_1.png"
+        },
+        "set_name": "水仙の夢",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15029_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15029_2.png",
+            "path": "image/artifact/UI_RelicIcon_15029_2.png"
+        },
+        "set_name": "水仙の夢",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15029_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15029_3.png",
+            "path": "image/artifact/UI_RelicIcon_15029_3.png"
+        },
+        "set_name": "水仙の夢",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15029_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15029_4.png",
+            "path": "image/artifact/UI_RelicIcon_15029_4.png"
+        },
+        "set_name": "水仙の夢",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15029_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15029_5.png",
+            "path": "image/artifact/UI_RelicIcon_15029_5.png"
+        },
+        "set_name": "水仙の夢",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15030_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15030_1.png",
+            "path": "image/artifact/UI_RelicIcon_15030_1.png"
+        },
+        "set_name": "花海甘露の光",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15030_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15030_2.png",
+            "path": "image/artifact/UI_RelicIcon_15030_2.png"
+        },
+        "set_name": "花海甘露の光",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15030_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15030_3.png",
+            "path": "image/artifact/UI_RelicIcon_15030_3.png"
+        },
+        "set_name": "花海甘露の光",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15030_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15030_4.png",
+            "path": "image/artifact/UI_RelicIcon_15030_4.png"
+        },
+        "set_name": "花海甘露の光",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15030_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15030_5.png",
+            "path": "image/artifact/UI_RelicIcon_15030_5.png"
+        },
+        "set_name": "花海甘露の光",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_10000_2": {
+        "icon": {
+            "name": "UI_RelicIcon_10000_2.png",
+            "path": "image/artifact/UI_RelicIcon_10000_2.png"
+        },
+        "set_name": null,
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_10000_4": {
+        "icon": {
+            "name": "UI_RelicIcon_10000_4.png",
+            "path": "image/artifact/UI_RelicIcon_10000_4.png"
+        },
+        "set_name": null,
+        "equip_type": "EQUIP_BRACER"
+    }
+}
