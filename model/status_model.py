@@ -2,14 +2,7 @@ import re
 from pydantic import BaseModel
 from decimal import Decimal
 import lib.score_calc as score_calc
-
-PERCENT_PATTERN = re.compile(r"%|会心|チャ|元素ダメ")
-
-
-def get_suffix(name: str):
-    if PERCENT_PATTERN.search(name):
-        return "%"
-    return ""
+from repository.util_data import STATUS_NAMEHASH_DICT, CHARACTER_DATA_DICT
 
 
 def get_status_base(value: Decimal, suffix: str):
@@ -30,76 +23,79 @@ class ArtifactStatus(BaseModel):
     name: str
     suffix: str
 
+    def get_name(self):
+        return STATUS_NAMEHASH_DICT[self.name]
+
     def get_status(self):
         return get_status_base(self.value, self.suffix)
 
-    def get_score(self, build_type: str):
-        return score_calc.calc(self.name, self.value, build_type)
+    def get_score(self, calc: score_calc.ScoreCalc):
+        return calc.calc(self.name, self.value)
 
 
 class Artifact(BaseModel):
-    icon: str
+    icon_name: str
     main_name: str
-    main_value: str
+    main_value: Decimal
     suffix: str
     level: int
     status: list[ArtifactStatus]
-    artifact_set_name: str
     star: int
-    score: Decimal = 0.0
+    score: Decimal = Decimal(0.0)
+
+    def get_main_name(self):
+        return STATUS_NAMEHASH_DICT[self.main_name]
 
     def get_status(self):
         return get_status_base(self.main_value, self.suffix)
 
-    def set_calc_score(self, build_type: str):
+    def set_calc_score(self, calc: score_calc.ScoreCalc):
         """スコアを計算し、scoreにsetします
 
         Args:
             build_type (str): ビルドのタイプ
         """
-        self.score = sum([status.get_score(build_type)
+        self.score = sum([status.get_score(calc)
                          for status in self.status])
 
 
 class Weapon(BaseModel):
-    name: str
     icon_name: str
     main_name: str
-    main_value: str
-    sub_name: str
-    sub_value: str
-    icon: str
+    main_value: Decimal
+    sub_name: str = None
+    sub_value: Decimal = None
     level: int
     rank: int
 
+    def get_main_name(self):
+        return STATUS_NAMEHASH_DICT[self.main_name]
+
+    def get_sub_name(self):
+        return STATUS_NAMEHASH_DICT[self.sub_name]
+
 
 class Skill(BaseModel):
-    name: str
-    icon: str
     level: int
     add_level: int
 
 
 class Character(BaseModel):
     id: str
-    name: str
-    english_name: str
-    image: str
-    element: str
     star: int
-    constellations: str
-    level: str
+    constellations: int
+    level: int
     love: int
-    base_hp: str
-    added_hp: str
-    base_attack: str
-    added_attack: str
-    base_defense: str
-    added_defense: str
-    critical_rate: str
-    critical_damage: str
-    charge_efficiency: str
-    elemental_mastery: str
+    base_hp: int
+    added_hp: int
+    base_attack: int
+    added_attack: int
+    base_defense: int
+    added_defense: int
+    critical_rate: Decimal
+    critical_damage: Decimal
+    charge_efficiency: Decimal
+    elemental_mastery: int
     elemental_name: str = None
     elemental_value: str = None
     skills: list[Skill]
@@ -107,17 +103,26 @@ class Character(BaseModel):
     weapon: Weapon
     uid: int
     create_date: str
+    costume: str = "defalut"
     build_type: str = None
 
-    def get_dir(self):
-        if self.english_name == "Player":
-            return f"{self.english_name}/{self.element}"
-        return self.english_name
+    def get_name(self):
+        return CHARACTER_DATA_DICT[self.id].name
+
+    def get_gacha_icon_path(self):
+        return CHARACTER_DATA_DICT[self.id].costumes[self.costume].gacha_icon
+
+    def get_side_icon_path(self):
+        return CHARACTER_DATA_DICT[self.id].costumes[self.costume].side_icon
+
+    def get_avatar_icon_path(self):
+        return CHARACTER_DATA_DICT[self.id].costumes[self.costume].avatar_icon
 
     def set_build_type(self, build_type: str):
-        self.build_type = build_type.replace(" ver2", "")
+        self.build_type = build_type
+        calc = score_calc.ScoreCalc(build_type)
         for artifact in self.artifacts.values():
-            artifact.calc_score(build_type)
+            artifact.set_calc_score(calc)
 
 
 class UserData(BaseModel):

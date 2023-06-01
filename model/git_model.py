@@ -26,7 +26,6 @@ class CostumeModel(BaseModel):
 
 class CharacterConfigModel(BaseModel):
     Element: str = None
-    Consts: list[str] = None
     SkillOrder: list[str] = None
     Skills: dict[str, str] = None
     ProudMap: dict[str, str] = None
@@ -34,4 +33,4 @@ class CharacterConfigModel(BaseModel):
     QualityType: str = None
     SideIconName: str = None
     Consts: list[str] = []
-    Costumes: dict[int, CostumeModel] = {}
+    Costumes: dict[str, CostumeModel] = {}

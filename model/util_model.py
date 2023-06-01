@@ -41,7 +41,4 @@ class JpCharacterModel(BaseModel):
     english_name: str
     proud_map: dict[str, str]
     quality: int
-    avatar_icon: Icon
-    side_icon: Icon
-    gacha_icon: Icon
-    costumes: dict[int, Costume]
+    costumes: dict[str, Costume]
