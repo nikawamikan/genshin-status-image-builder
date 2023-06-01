@@ -1,112 +1,14 @@
-from github import Github, Repository
-import aiohttp
-import json
-import datetime
 from model.git_model import ArtifactModel, ArtifactSetNameModel,  WeaponModel, CharacterConfigModel
 from model.util_model import Artifact, Weapon, NameCard, Costume, Skill, Icon,  JpCharacterModel
-from lib.model_converter import conversion_dict_to_model, conversion_list_to_model
-from lib.httpheader import HEADERS
 from lib.async_json import save_json
+import repository.git_repository as git_repo
 import os
 
-INTERVAL = 10
-GITHUB = Github(os.getenv("GIT_TOKEN"))
-GENSHIN_DATA_REPO_NAME = "Sycamore0/GenshinData"
-ENKA_DATA_REPO_NAME = "EnkaNetwork/API-docs"
 NAME_SUBSTR = len("UI_AvatarIcon_Side_")
 
 
 async def save_json_file(file_name: str, obj: dict):
     await save_json(f"data/{file_name}", obj)
-
-
-async def git_json_download(url: str) -> dict:
-    """githubからソースをjson形式で取得します
-
-    Args:
-        url (str): githubのdownload_url
-
-    Returns:
-        dict: jsonをdict形式に変換したデータ
-    """
-    async with aiohttp.ClientSession(raise_for_status=True, headers=HEADERS) as session:
-        async with session.get(url) as response:
-            result = json.loads(await response.text())
-    return result
-
-
-def get_repo(repo_name: str) -> Repository.Repository:
-    """リポジトリを取得します
-
-    Args:
-        repo_name (str): リポジトリ名
-
-    Returns:
-        Repository: リポジトリ
-    """
-    return GITHUB.get_repo(repo_name)
-
-
-def get_repo_dict(*repo_names: str) -> dict[str, Repository.Repository]:
-    """リポジトリをDict形式で返却します
-
-    Args:
-        repo_names (*str): 可変長でリポジトリ名
-
-    Returns:
-        dict[str, Repository]: リポジトリ名に紐付けられたリポジトリ
-    """
-    return {
-        repo_name: get_repo(repo_name) for repo_name in repo_names
-    }
-
-
-def last_push_date_checker(
-    criteria_date: datetime.datetime,
-    updated_date: datetime.datetime
-) -> bool:
-    """日付から更新が必要かチェックします
-
-    Args:
-        criteria_date (datetime.datetime): 基準日
-        updated_date (datetime.datetime): 更新日
-
-    Returns:
-        bool: 更新の必要性
-    """
-    return criteria_date < updated_date
-
-
-def load_last_push_dates() -> dict[str, datetime.datetime]:
-    """基準となる日付をロードします。
-
-    Returns:
-        dict[str, datetime.datetime]: リポジトリ名に紐付けられた更新日
-    """
-    with open("lastpushdate.json", "r") as f:
-        d: dict[str, str] = json.loads(f.read())
-    return {k: datetime.datetime.fromisoformat(v) for k, v in d.items()}
-
-
-def last_push_date_checker_iter(
-    keys: list[str],
-    criteria_dates: list[datetime.datetime],
-    updated_dates: list[datetime.datetime]
-) -> dict[str, bool]:
-    """それぞれの更新日をチェックし更新の必要性があるかをdictで返却します。
-
-    Args:
-        keys (list[str]): リポジトリ名
-        criteria_dates (list[datetime.datetime]): 基準日
-        updated_dates (list[datetime.datetime]): 更新日
-
-    Returns:
-        dict[str, bool]: リポジトリ名に紐付けられた更新の必要性
-    """
-    return {
-        key: last_push_date_checker(criteria_date, updated_date)
-        for key, criteria_date, updated_date in zip(keys, criteria_dates, updated_dates)
-    }
 
 
 def weapon_dict_builder(
@@ -282,86 +184,17 @@ async def updates():
     """gihhubよりAPIに必要なデータの構築を行い保存する処理を行います。
     """
 
-    # 前回の更新日時を読み込み
-    criteria_date_dict = load_last_push_dates()
-
-    # リポジトリをdictとしてインスタンス化
-    repos = get_repo_dict(
-        GENSHIN_DATA_REPO_NAME,
-        ENKA_DATA_REPO_NAME
-    )
-
-    # リポジトリの更新日時取得
-    repo_push_dates = {key: repo.pushed_at for key, repo in repos.items()}
-
-    # 更新が必要かの情報を取得
-    update_necessity_dict = last_push_date_checker_iter(
-        repo_push_dates.keys(),
-        [
-            criteria_date_dict[key] for key in repo_push_dates.keys()
-        ],
-        repo_push_dates.values()
-    )
-
-    # どちらも更新がない場合は処理を終了させる
-    if True not in tuple(update_necessity_dict.values()):
+    # 更新の必要性を確認します
+    if not git_repo.confirmation_update_necessity():
         print("no update")
         return
 
-    # 聖遺物の情報の取得
-    artifact_models = conversion_list_to_model(
-        await git_json_download(
-            repos[GENSHIN_DATA_REPO_NAME].get_contents(
-                "ExcelBinOutput/ReliquaryExcelConfigData.json"
-            ).download_url
-        ),
-        ArtifactModel
-    )
-
-    # 聖遺物のセット名が紐付けられたデータの取得
-    artifact_set_name_models = conversion_list_to_model(
-        await git_json_download(
-            repos[GENSHIN_DATA_REPO_NAME].get_contents(
-                "ExcelBinOutput/EquipAffixExcelConfigData.json"
-            ).download_url
-        ),
-        ArtifactSetNameModel
-    )
-
-    # 武器の情報の取得
-    weapon_models = conversion_list_to_model(
-        await git_json_download(
-            repos[GENSHIN_DATA_REPO_NAME].get_contents(
-                "ExcelBinOutput/WeaponExcelConfigData.json"
-            ).download_url
-        ),
-        WeaponModel
-    )
-
-    # 名称の一覧を取得
-    names = await git_json_download(
-        repos[ENKA_DATA_REPO_NAME].get_contents("store/loc.json").download_url
-    )
-
-    # 名札の情報を取得
-    namecards = {
-        k: v["icon"]
-        for k, v in (await git_json_download(
-            repos[ENKA_DATA_REPO_NAME].get_contents(
-                "store/namecards.json"
-            ).download_url
-        )).items()
-    }
-
-    # キャラクター情報の取得
-    characters = conversion_dict_to_model(
-        await git_json_download(
-            repos[ENKA_DATA_REPO_NAME].get_contents(
-                "store/characters.json"
-            ).download_url
-        ),
-        CharacterConfigModel
-    )
+    artifact_models = await git_repo.get_artifact_dict()
+    artifact_set_name_models = await git_repo.get_artifact_set_name_dict()
+    weapon_models = await git_repo.get_weapon_dict()
+    names = await git_repo.get_name_dict()
+    characters = await git_repo.get_character_dict()
+    namecards = await git_repo.get_namecard_dict()
 
     # 聖遺物情報を扱いやすい形に変換
     artifact_dict = artifact_dict_builder(
@@ -390,3 +223,5 @@ async def updates():
     await save_json_file("namecards.json", {k: v.dict() for k, v in namecard_dict.items()})
     await save_json_file("names.json", names["ja"])
     await save_json_file("characters.json", {k: v.dict() for k, v in character_dict.items()})
+
+    git_repo.save_last_push_dates()

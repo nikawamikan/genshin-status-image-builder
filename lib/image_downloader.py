@@ -6,7 +6,7 @@ from aiohttp import client_exceptions
 from lib.httpheader import HEADERS
 import os
 
-INTERVAL = 30
+INTERVAL = 10
 
 
 class ExcludeFiles:
@@ -16,7 +16,7 @@ class ExcludeFiles:
         try:
             with open(self.file_name, "r") as f:
                 data = json.loads(f.read())
-                for v in data["exclude_list"]:
+                for v in data:
                     exclude_set.add(v)
         except:
             pass
@@ -28,7 +28,7 @@ class ExcludeFiles:
     def __exit__(self, exc_type, exc_value, traceback):
         with open(self.file_name, "w") as f:
             f.write(json.dumps(
-                {"exclude_list": list(self.exclude_set)},
+                list(self.exclude_set),
                 ensure_ascii=False,
             ))
 
@@ -66,7 +66,6 @@ def filter_exists_files(url_and_paths: list[tuple[str, str]]) -> list[tuple[str,
 def mkdirs(paths: list[str]):
     dirs = set(["/".join(v.split("/")[:-1]) for v in paths])
     for v in dirs:
-        print(v)
         os.makedirs(v, exist_ok=True)
 
 
