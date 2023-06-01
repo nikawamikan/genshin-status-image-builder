@@ -124,6 +124,36 @@ def get_jp_character_models(
         gacha_icon = f"UI_Gacha_AvatarImg_{name}.png"
         chara_icon_path = f"{base_path}avatar/"
         chara_icon_path_default = f"{chara_icon_path}default/"
+        costume = {
+            k: Costume(
+                avatar_icon=Icon(
+                    name=f'{v.icon}.png',
+                    path=f'{chara_icon_path}{k}/{v.icon}.png'
+                ),
+                side_icon=Icon(
+                    name=f'{v.sideIconName}.png',
+                    path=f'{chara_icon_path}{k}/{v.sideIconName}.png'
+                ),
+                gacha_icon=Icon(
+                    name=f'{v.art}.png',
+                    path=f'{chara_icon_path}{k}/{v.art}.png'
+                ),
+            ) for k, v in v.Costumes.items()
+        }
+        costume["default"] = Costume(
+            avatar_icon=Icon(
+                name=avatar_icon,
+                path=f"{chara_icon_path_default}{avatar_icon}"
+            ),
+            side_icon=Icon(
+                name=f"{v.SideIconName}.png",
+                path=f"{chara_icon_path_default}{v.SideIconName}.png"
+            ),
+            gacha_icon=Icon(
+                name=gacha_icon,
+                path=f"{chara_icon_path_default}{gacha_icon}"
+            )
+        )
         data = JpCharacterModel(
             element=v.Element,
             consts=[
@@ -147,34 +177,7 @@ def get_jp_character_models(
             english_name=name,
             proud_map=v.ProudMap,
             quality=5 if v.QualityType == "QUALITY_ORANGE" else 4,
-            avatar_icon=Icon(
-                name=avatar_icon,
-                path=f"{chara_icon_path_default}{avatar_icon}"
-            ),
-            side_icon=Icon(
-                name=f"{v.SideIconName}.png",
-                path=f"{chara_icon_path_default}{v.SideIconName}.png"
-            ),
-            gacha_icon=Icon(
-                name=gacha_icon,
-                path=f"{chara_icon_path_default}{gacha_icon}"
-            ),
-            costumes={
-                k2: Costume(
-                    avatar_icon=Icon(
-                        name=f'{v2.icon}.png',
-                        path=f'{chara_icon_path}{k2}/{v2.icon}.png'
-                    ),
-                    side_icon=Icon(
-                        name=f'{v2.sideIconName}.png',
-                        path=f'{chara_icon_path}{k2}/{v2.sideIconName}.png'
-                    ),
-                    gacha_icon=Icon(
-                        name=f'{v2.art}.png',
-                        path=f'{chara_icon_path}{k2}/{v2.art}.png'
-                    ),
-                ) for k2, v2 in v.Costumes.items()
-            },
+            costumes=costume,
         )
         result[k] = data
     return result

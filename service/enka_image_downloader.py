@@ -21,16 +21,14 @@ async def util_image_update():
     characters = await util_data.get_character_model_dict()
     charcter_urlpaths = []
     for character in characters.values():
-        charcter_urlpaths.append(get_url_and_path(character.avatar_icon))
-        charcter_urlpaths.append(get_url_and_path(character.side_icon))
-        charcter_urlpaths.append(get_url_and_path(character.gacha_icon))
         for costume in character.costumes.values():
             charcter_urlpaths.append(get_url_and_path(costume.avatar_icon))
             charcter_urlpaths.append(get_url_and_path(costume.side_icon))
             charcter_urlpaths.append(get_url_and_path(costume.gacha_icon))
         for skill in character.skills:
             charcter_urlpaths.append(get_url_and_path(skill.icon))
-
+        for const in character.consts:
+            charcter_urlpaths.append(get_url_and_path(const))
     url_and_paths = get_url_and_paths(weapons) + get_url_and_paths(
         artifacts) + get_url_and_paths(namecades) + charcter_urlpaths
 
