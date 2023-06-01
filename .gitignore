@@ -2,3 +2,5 @@ image/*
 !image/assets
 *.pyc
 *.env
+sample
+test.py
