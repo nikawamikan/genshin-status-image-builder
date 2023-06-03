@@ -4,7 +4,7 @@
             "name": "UI_EquipIcon_Sword_Blunt.png",
             "path": "image/weapon/UI_EquipIcon_Sword_Blunt.png"
         },
-        "name": "虚構"
+        "name": "無鋒の剣"
     },
     "UI_EquipIcon_Sword_Silver": {
         "icon": {
@@ -174,20 +174,6 @@
         },
         "name": "サイフォスの月明かり"
     },
-    "UI_EquipIcon_Sword_YoutouEnchanted": {
-        "icon": {
-            "name": "UI_EquipIcon_Sword_YoutouEnchanted.png",
-            "path": "image/weapon/UI_EquipIcon_Sword_YoutouEnchanted.png"
-        },
-        "name": "「一心伝」名刀"
-    },
-    "UI_EquipIcon_Sword_YoutouShattered": {
-        "icon": {
-            "name": "UI_EquipIcon_Sword_YoutouShattered.png",
-            "path": "image/weapon/UI_EquipIcon_Sword_YoutouShattered.png"
-        },
-        "name": "「一心伝」名刀"
-    },
     "UI_EquipIcon_Sword_Kasabouzu": {
         "icon": {
             "name": "UI_EquipIcon_Sword_Kasabouzu.png",
@@ -263,7 +249,7 @@
             "name": "UI_EquipIcon_Claymore_Aniki.png",
             "path": "image/weapon/UI_EquipIcon_Claymore_Aniki.png"
         },
-        "name": "異史"
+        "name": "訓練用大剣"
     },
     "UI_EquipIcon_Claymore_Oyaji": {
         "icon": {
@@ -480,7 +466,7 @@
             "name": "UI_EquipIcon_Pole_Gewalt.png",
             "path": "image/weapon/UI_EquipIcon_Pole_Gewalt.png"
         },
-        "name": "レジサイド"
+        "name": "新米の長槍"
     },
     "UI_EquipIcon_Pole_Rod": {
         "icon": {
@@ -669,7 +655,7 @@
             "name": "UI_EquipIcon_Catalyst_Apprentice.png",
             "path": "image/weapon/UI_EquipIcon_Catalyst_Apprentice.png"
         },
-        "name": "散逸した叙事詩"
+        "name": "生徒ノート"
     },
     "UI_EquipIcon_Catalyst_Pocket": {
         "icon": {
@@ -893,7 +879,7 @@
             "name": "UI_EquipIcon_Bow_Hunters.png",
             "path": "image/weapon/UI_EquipIcon_Bow_Hunters.png"
         },
-        "name": "壊れた鏡"
+        "name": "狩猟弓"
     },
     "UI_EquipIcon_Bow_Old": {
         "icon": {

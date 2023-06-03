@@ -5,6 +5,7 @@ class WeaponModel(BaseModel):
     id: int
     icon: str
     nameTextMapHash: str
+    storyId: int = None
 
 
 class ArtifactSetNameModel(BaseModel):
