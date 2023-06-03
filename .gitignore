@@ -4,3 +4,4 @@ image/*
 *.env
 sample
 test.py
+font
