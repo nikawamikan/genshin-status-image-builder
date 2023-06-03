@@ -29,6 +29,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/Ayaka/skill/Skill_A_01.png"
@@ -37,6 +38,7 @@
                 "proud_id": "231"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Ayaka_01.png",
                     "path": "image/character/Ayaka/skill/Skill_S_Ayaka_01.png"
@@ -45,6 +47,7 @@
                 "proud_id": "232"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Ayaka.png",
                     "path": "image/character/Ayaka/skill/Skill_E_Ayaka.png"
@@ -74,6 +77,11 @@
                 "gacha_icon": {
                     "name": "UI_Costume_AyakaCostumeFruhling.png",
                     "path": "image/character/Ayaka/avatar/200201/UI_Costume_AyakaCostumeFruhling.png"
+                },
+                "position": {
+                    "x": -265,
+                    "y": 8,
+                    "scale": 95
                 }
             },
             "default": {
@@ -88,6 +96,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Ayaka.png",
                     "path": "image/character/Ayaka/avatar/default/UI_Gacha_AvatarImg_Ayaka.png"
+                },
+                "position": {
+                    "x": -227,
+                    "y": -2,
+                    "scale": 71
                 }
             }
         }
@@ -122,6 +135,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/Qin/skill/Skill_A_01.png"
@@ -130,6 +144,7 @@
                 "proud_id": "331"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Qin_02.png",
                     "path": "image/character/Qin/skill/Skill_S_Qin_02.png"
@@ -138,6 +153,7 @@
                 "proud_id": "332"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Qin_01.png",
                     "path": "image/character/Qin/skill/Skill_E_Qin_01.png"
@@ -167,6 +183,11 @@
                 "gacha_icon": {
                     "name": "UI_Costume_QinCostumeSea.png",
                     "path": "image/character/Qin/avatar/200301/UI_Costume_QinCostumeSea.png"
+                },
+                "position": {
+                    "x": -236,
+                    "y": 53,
+                    "scale": 105
                 }
             },
             "200302": {
@@ -181,6 +202,11 @@
                 "gacha_icon": {
                     "name": "UI_Costume_QinCostumeWic.png",
                     "path": "image/character/Qin/avatar/200302/UI_Costume_QinCostumeWic.png"
+                },
+                "position": {
+                    "x": -241,
+                    "y": 38,
+                    "scale": 85
                 }
             },
             "default": {
@@ -195,6 +221,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Qin.png",
                     "path": "image/character/Qin/avatar/default/UI_Gacha_AvatarImg_Qin.png"
+                },
+                "position": {
+                    "x": -241,
+                    "y": 38,
+                    "scale": 85
                 }
             }
         }
@@ -229,6 +260,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/PlayerBoy/skill/Skill_A_01.png"
@@ -237,6 +269,7 @@
                 "proud_id": "730"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_PlayerWind_01.png",
                     "path": "image/character/PlayerBoy/skill/Skill_S_PlayerWind_01.png"
@@ -245,6 +278,7 @@
                 "proud_id": "732"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_PlayerWind_01.png",
                     "path": "image/character/PlayerBoy/skill/Skill_E_PlayerWind_01.png"
@@ -274,6 +308,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_PlayerBoy.png",
                     "path": "image/character/PlayerBoy/avatar/default/UI_Gacha_AvatarImg_PlayerBoy.png"
+                },
+                "position": {
+                    "x": -210,
+                    "y": 32,
+                    "scale": 95
                 }
             }
         }
@@ -308,6 +347,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_Catalyst_MD.png",
                     "path": "image/character/Lisa/skill/Skill_A_Catalyst_MD.png"
@@ -316,6 +356,7 @@
                 "proud_id": "431"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Lisa_01.png",
                     "path": "image/character/Lisa/skill/Skill_S_Lisa_01.png"
@@ -324,6 +365,7 @@
                 "proud_id": "432"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Lisa_01.png",
                     "path": "image/character/Lisa/skill/Skill_E_Lisa_01.png"
@@ -353,6 +395,11 @@
                 "gacha_icon": {
                     "name": "UI_Costume_LisaCostumeStudentin.png",
                     "path": "image/character/Lisa/avatar/200601/UI_Costume_LisaCostumeStudentin.png"
+                },
+                "position": {
+                    "x": -266,
+                    "y": 45,
+                    "scale": 133
                 }
             },
             "default": {
@@ -367,6 +414,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Lisa.png",
                     "path": "image/character/Lisa/avatar/default/UI_Gacha_AvatarImg_Lisa.png"
+                },
+                "position": {
+                    "x": -251,
+                    "y": 55,
+                    "scale": 101
                 }
             }
         }
@@ -401,6 +453,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/PlayerGirl/skill/Skill_A_01.png"
@@ -409,6 +462,7 @@
                 "proud_id": "731"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_PlayerWind_01.png",
                     "path": "image/character/PlayerGirl/skill/Skill_S_PlayerWind_01.png"
@@ -417,6 +471,7 @@
                 "proud_id": "732"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_PlayerWind_01.png",
                     "path": "image/character/PlayerGirl/skill/Skill_E_PlayerWind_01.png"
@@ -446,6 +501,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_PlayerGirl.png",
                     "path": "image/character/PlayerGirl/avatar/default/UI_Gacha_AvatarImg_PlayerGirl.png"
+                },
+                "position": {
+                    "x": -210,
+                    "y": 32,
+                    "scale": 95
                 }
             }
         }
@@ -480,6 +540,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_Catalyst_MD.png",
                     "path": "image/character/Barbara/skill/Skill_A_Catalyst_MD.png"
@@ -488,6 +549,7 @@
                 "proud_id": "1431"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Barbara_01.png",
                     "path": "image/character/Barbara/skill/Skill_S_Barbara_01.png"
@@ -496,6 +558,7 @@
                 "proud_id": "1432"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Barbara_01.png",
                     "path": "image/character/Barbara/skill/Skill_E_Barbara_01.png"
@@ -525,6 +588,11 @@
                 "gacha_icon": {
                     "name": "UI_Costume_BarbaraCostumeSummertime.png",
                     "path": "image/character/Barbara/avatar/201401/UI_Costume_BarbaraCostumeSummertime.png"
+                },
+                "position": {
+                    "x": -239,
+                    "y": 5,
+                    "scale": 106
                 }
             },
             "default": {
@@ -539,6 +607,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Barbara.png",
                     "path": "image/character/Barbara/avatar/default/UI_Gacha_AvatarImg_Barbara.png"
+                },
+                "position": {
+                    "x": -239,
+                    "y": -8,
+                    "scale": 90
                 }
             }
         }
@@ -573,6 +646,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/Kaeya/skill/Skill_A_01.png"
@@ -581,6 +655,7 @@
                 "proud_id": "1531"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Kaeya_01.png",
                     "path": "image/character/Kaeya/skill/Skill_S_Kaeya_01.png"
@@ -589,6 +664,7 @@
                 "proud_id": "1532"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Kaeya_01.png",
                     "path": "image/character/Kaeya/skill/Skill_E_Kaeya_01.png"
@@ -618,6 +694,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Kaeya.png",
                     "path": "image/character/Kaeya/avatar/default/UI_Gacha_AvatarImg_Kaeya.png"
+                },
+                "position": {
+                    "x": -212,
+                    "y": 71,
+                    "scale": 99
                 }
             }
         }
@@ -652,6 +733,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_04.png",
                     "path": "image/character/Diluc/skill/Skill_A_04.png"
@@ -660,6 +742,7 @@
                 "proud_id": "1631"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Diluc_01_01.png",
                     "path": "image/character/Diluc/skill/Skill_S_Diluc_01_01.png"
@@ -668,6 +751,7 @@
                 "proud_id": "1632"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Diluc_01.png",
                     "path": "image/character/Diluc/skill/Skill_E_Diluc_01.png"
@@ -697,6 +781,11 @@
                 "gacha_icon": {
                     "name": "UI_Costume_DilucCostumeFlamme.png",
                     "path": "image/character/Diluc/avatar/201601/UI_Costume_DilucCostumeFlamme.png"
+                },
+                "position": {
+                    "x": -232,
+                    "y": 79,
+                    "scale": 106
                 }
             },
             "default": {
@@ -711,6 +800,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Diluc.png",
                     "path": "image/character/Diluc/avatar/default/UI_Gacha_AvatarImg_Diluc.png"
+                },
+                "position": {
+                    "x": -174,
+                    "y": 23,
+                    "scale": 83
                 }
             }
         }
@@ -745,6 +839,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_04.png",
                     "path": "image/character/Razor/skill/Skill_A_04.png"
@@ -753,6 +848,7 @@
                 "proud_id": "2031"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Razor_01.png",
                     "path": "image/character/Razor/skill/Skill_S_Razor_01.png"
@@ -761,6 +857,7 @@
                 "proud_id": "2032"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Razor_01.png",
                     "path": "image/character/Razor/skill/Skill_E_Razor_01.png"
@@ -790,6 +887,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Razor.png",
                     "path": "image/character/Razor/avatar/default/UI_Gacha_AvatarImg_Razor.png"
+                },
+                "position": {
+                    "x": -231,
+                    "y": 97,
+                    "scale": 95
                 }
             }
         }
@@ -824,6 +926,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_02.png",
                     "path": "image/character/Ambor/skill/Skill_A_02.png"
@@ -832,6 +935,7 @@
                 "proud_id": "2131"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Ambor_01.png",
                     "path": "image/character/Ambor/skill/Skill_S_Ambor_01.png"
@@ -840,6 +944,7 @@
                 "proud_id": "2132"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Ambor.png",
                     "path": "image/character/Ambor/skill/Skill_E_Ambor.png"
@@ -869,6 +974,11 @@
                 "gacha_icon": {
                     "name": "UI_Costume_AmborCostumeWic.png",
                     "path": "image/character/Ambor/avatar/202101/UI_Costume_AmborCostumeWic.png"
+                },
+                "position": {
+                    "x": -237,
+                    "y": -2,
+                    "scale": 92
                 }
             },
             "default": {
@@ -883,6 +993,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Ambor.png",
                     "path": "image/character/Ambor/avatar/default/UI_Gacha_AvatarImg_Ambor.png"
+                },
+                "position": {
+                    "x": -237,
+                    "y": -2,
+                    "scale": 92
                 }
             }
         }
@@ -917,6 +1032,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_02.png",
                     "path": "image/character/Venti/skill/Skill_A_02.png"
@@ -925,6 +1041,7 @@
                 "proud_id": "2231"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Venti_01.png",
                     "path": "image/character/Venti/skill/Skill_S_Venti_01.png"
@@ -933,6 +1050,7 @@
                 "proud_id": "2232"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Venti_01.png",
                     "path": "image/character/Venti/skill/Skill_E_Venti_01.png"
@@ -962,6 +1080,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Venti.png",
                     "path": "image/character/Venti/avatar/default/UI_Gacha_AvatarImg_Venti.png"
+                },
+                "position": {
+                    "x": -202,
+                    "y": 71,
+                    "scale": 91
                 }
             }
         }
@@ -996,6 +1119,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_03.png",
                     "path": "image/character/Xiangling/skill/Skill_A_03.png"
@@ -1004,6 +1128,7 @@
                 "proud_id": "2331"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Xiangling_01.png",
                     "path": "image/character/Xiangling/skill/Skill_S_Xiangling_01.png"
@@ -1012,6 +1137,7 @@
                 "proud_id": "2332"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Xiangling_01.png",
                     "path": "image/character/Xiangling/skill/Skill_E_Xiangling_01.png"
@@ -1041,6 +1167,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Xiangling.png",
                     "path": "image/character/Xiangling/avatar/default/UI_Gacha_AvatarImg_Xiangling.png"
+                },
+                "position": {
+                    "x": -261,
+                    "y": 4,
+                    "scale": 99
                 }
             }
         }
@@ -1075,6 +1206,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_04.png",
                     "path": "image/character/Beidou/skill/Skill_A_04.png"
@@ -1083,6 +1215,7 @@
                 "proud_id": "2431"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Beidou_01.png",
                     "path": "image/character/Beidou/skill/Skill_S_Beidou_01.png"
@@ -1091,6 +1224,7 @@
                 "proud_id": "2432"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Beidou_01.png",
                     "path": "image/character/Beidou/skill/Skill_E_Beidou_01.png"
@@ -1120,6 +1254,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Beidou.png",
                     "path": "image/character/Beidou/avatar/default/UI_Gacha_AvatarImg_Beidou.png"
+                },
+                "position": {
+                    "x": -239,
+                    "y": 12,
+                    "scale": 83
                 }
             }
         }
@@ -1154,6 +1293,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/Xingqiu/skill/Skill_A_01.png"
@@ -1162,6 +1302,7 @@
                 "proud_id": "2531"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Xingqiu_01.png",
                     "path": "image/character/Xingqiu/skill/Skill_S_Xingqiu_01.png"
@@ -1170,6 +1311,7 @@
                 "proud_id": "2532"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Xingqiu_01.png",
                     "path": "image/character/Xingqiu/skill/Skill_E_Xingqiu_01.png"
@@ -1199,6 +1341,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Xingqiu.png",
                     "path": "image/character/Xingqiu/avatar/default/UI_Gacha_AvatarImg_Xingqiu.png"
+                },
+                "position": {
+                    "x": -210,
+                    "y": 26,
+                    "scale": 99
                 }
             }
         }
@@ -1233,6 +1380,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_03.png",
                     "path": "image/character/Xiao/skill/Skill_A_03.png"
@@ -1241,6 +1389,7 @@
                 "proud_id": "2631"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Xiao_01.png",
                     "path": "image/character/Xiao/skill/Skill_S_Xiao_01.png"
@@ -1249,6 +1398,7 @@
                 "proud_id": "2632"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Xiao_01.png",
                     "path": "image/character/Xiao/skill/Skill_E_Xiao_01.png"
@@ -1278,6 +1428,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Xiao.png",
                     "path": "image/character/Xiao/avatar/default/UI_Gacha_AvatarImg_Xiao.png"
+                },
+                "position": {
+                    "x": -221,
+                    "y": -61,
+                    "scale": 99
                 }
             }
         }
@@ -1312,6 +1467,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_Catalyst_MD.png",
                     "path": "image/character/Ningguang/skill/Skill_A_Catalyst_MD.png"
@@ -1320,6 +1476,7 @@
                 "proud_id": "2731"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Ningguang_01.png",
                     "path": "image/character/Ningguang/skill/Skill_S_Ningguang_01.png"
@@ -1328,6 +1485,7 @@
                 "proud_id": "2732"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Ningguang_01.png",
                     "path": "image/character/Ningguang/skill/Skill_E_Ningguang_01.png"
@@ -1357,6 +1515,11 @@
                 "gacha_icon": {
                     "name": "UI_Costume_NingguangCostumeFloral.png",
                     "path": "image/character/Ningguang/avatar/202701/UI_Costume_NingguangCostumeFloral.png"
+                },
+                "position": {
+                    "x": -240,
+                    "y": 76,
+                    "scale": 113
                 }
             },
             "default": {
@@ -1371,6 +1534,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Ningguang.png",
                     "path": "image/character/Ningguang/avatar/default/UI_Gacha_AvatarImg_Ningguang.png"
+                },
+                "position": {
+                    "x": -192,
+                    "y": 28,
+                    "scale": 98
                 }
             }
         }
@@ -1405,6 +1573,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_Catalyst_MD.png",
                     "path": "image/character/Klee/skill/Skill_A_Catalyst_MD.png"
@@ -1413,6 +1582,7 @@
                 "proud_id": "2931"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Klee_01.png",
                     "path": "image/character/Klee/skill/Skill_S_Klee_01.png"
@@ -1421,6 +1591,7 @@
                 "proud_id": "2932"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Klee_01.png",
                     "path": "image/character/Klee/skill/Skill_E_Klee_01.png"
@@ -1450,6 +1621,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Klee.png",
                     "path": "image/character/Klee/avatar/default/UI_Gacha_AvatarImg_Klee.png"
+                },
+                "position": {
+                    "x": -200,
+                    "y": 3,
+                    "scale": 101
                 }
             }
         }
@@ -1484,6 +1660,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_03.png",
                     "path": "image/character/Zhongli/skill/Skill_A_03.png"
@@ -1492,6 +1669,7 @@
                 "proud_id": "3031"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Zhongli_01.png",
                     "path": "image/character/Zhongli/skill/Skill_S_Zhongli_01.png"
@@ -1500,6 +1678,7 @@
                 "proud_id": "3032"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Zhongli_01.png",
                     "path": "image/character/Zhongli/skill/Skill_E_Zhongli_01.png"
@@ -1529,6 +1708,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Zhongli.png",
                     "path": "image/character/Zhongli/avatar/default/UI_Gacha_AvatarImg_Zhongli.png"
+                },
+                "position": {
+                    "x": -196,
+                    "y": 119,
+                    "scale": 120
                 }
             }
         }
@@ -1563,6 +1747,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_02.png",
                     "path": "image/character/Fischl/skill/Skill_A_02.png"
@@ -1571,6 +1756,7 @@
                 "proud_id": "3131"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Fischl_01.png",
                     "path": "image/character/Fischl/skill/Skill_S_Fischl_01.png"
@@ -1579,6 +1765,7 @@
                 "proud_id": "3132"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Fischl_01.png",
                     "path": "image/character/Fischl/skill/Skill_E_Fischl_01.png"
@@ -1608,6 +1795,11 @@
                 "gacha_icon": {
                     "name": "UI_Costume_FischlCostumeHighness.png",
                     "path": "image/character/Fischl/avatar/203101/UI_Costume_FischlCostumeHighness.png"
+                },
+                "position": {
+                    "x": -212,
+                    "y": 75,
+                    "scale": 106
                 }
             },
             "default": {
@@ -1622,6 +1814,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Fischl.png",
                     "path": "image/character/Fischl/avatar/default/UI_Gacha_AvatarImg_Fischl.png"
+                },
+                "position": {
+                    "x": -191,
+                    "y": 92,
+                    "scale": 103
                 }
             }
         }
@@ -1656,6 +1853,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/Bennett/skill/Skill_A_01.png"
@@ -1664,6 +1862,7 @@
                 "proud_id": "3231"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Bennett_01.png",
                     "path": "image/character/Bennett/skill/Skill_S_Bennett_01.png"
@@ -1672,6 +1871,7 @@
                 "proud_id": "3232"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Bennett_01.png",
                     "path": "image/character/Bennett/skill/Skill_E_Bennett_01.png"
@@ -1701,6 +1901,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Bennett.png",
                     "path": "image/character/Bennett/avatar/default/UI_Gacha_AvatarImg_Bennett.png"
+                },
+                "position": {
+                    "x": -190,
+                    "y": 14,
+                    "scale": 83
                 }
             }
         }
@@ -1735,6 +1940,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_02.png",
                     "path": "image/character/Tartaglia/skill/Skill_A_02.png"
@@ -1743,6 +1949,7 @@
                 "proud_id": "3331"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Tartaglia_01.png",
                     "path": "image/character/Tartaglia/skill/Skill_S_Tartaglia_01.png"
@@ -1751,6 +1958,7 @@
                 "proud_id": "3332"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Tartaglia_01.png",
                     "path": "image/character/Tartaglia/skill/Skill_E_Tartaglia_01.png"
@@ -1780,6 +1988,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Tartaglia.png",
                     "path": "image/character/Tartaglia/avatar/default/UI_Gacha_AvatarImg_Tartaglia.png"
+                },
+                "position": {
+                    "x": -219,
+                    "y": 6,
+                    "scale": 91
                 }
             }
         }
@@ -1814,6 +2027,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_04.png",
                     "path": "image/character/Noel/skill/Skill_A_04.png"
@@ -1822,6 +2036,7 @@
                 "proud_id": "3431"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Noel_01.png",
                     "path": "image/character/Noel/skill/Skill_S_Noel_01.png"
@@ -1830,6 +2045,7 @@
                 "proud_id": "3432"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Noel_01.png",
                     "path": "image/character/Noel/skill/Skill_E_Noel_01.png"
@@ -1859,6 +2075,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Noel.png",
                     "path": "image/character/Noel/avatar/default/UI_Gacha_AvatarImg_Noel.png"
+                },
+                "position": {
+                    "x": -189,
+                    "y": 7,
+                    "scale": 98
                 }
             }
         }
@@ -1893,6 +2114,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/Qiqi/skill/Skill_A_01.png"
@@ -1901,6 +2123,7 @@
                 "proud_id": "3531"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Qiqi_01.png",
                     "path": "image/character/Qiqi/skill/Skill_S_Qiqi_01.png"
@@ -1909,6 +2132,7 @@
                 "proud_id": "3532"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Qiqi_01.png",
                     "path": "image/character/Qiqi/skill/Skill_E_Qiqi_01.png"
@@ -1938,6 +2162,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Qiqi.png",
                     "path": "image/character/Qiqi/avatar/default/UI_Gacha_AvatarImg_Qiqi.png"
+                },
+                "position": {
+                    "x": -245,
+                    "y": 1,
+                    "scale": 85
                 }
             }
         }
@@ -1972,6 +2201,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_04.png",
                     "path": "image/character/Chongyun/skill/Skill_A_04.png"
@@ -1980,6 +2210,7 @@
                 "proud_id": "3631"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Chongyun_01.png",
                     "path": "image/character/Chongyun/skill/Skill_S_Chongyun_01.png"
@@ -1988,6 +2219,7 @@
                 "proud_id": "3632"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Chongyun_01.png",
                     "path": "image/character/Chongyun/skill/Skill_E_Chongyun_01.png"
@@ -2017,6 +2249,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Chongyun.png",
                     "path": "image/character/Chongyun/avatar/default/UI_Gacha_AvatarImg_Chongyun.png"
+                },
+                "position": {
+                    "x": -238,
+                    "y": 11,
+                    "scale": 90
                 }
             }
         }
@@ -2051,6 +2288,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_02.png",
                     "path": "image/character/Ganyu/skill/Skill_A_02.png"
@@ -2059,6 +2297,7 @@
                 "proud_id": "3731"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Ganyu_01.png",
                     "path": "image/character/Ganyu/skill/Skill_S_Ganyu_01.png"
@@ -2067,6 +2306,7 @@
                 "proud_id": "3732"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Ganyu_01.png",
                     "path": "image/character/Ganyu/skill/Skill_E_Ganyu_01.png"
@@ -2096,6 +2336,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Ganyu.png",
                     "path": "image/character/Ganyu/avatar/default/UI_Gacha_AvatarImg_Ganyu.png"
+                },
+                "position": {
+                    "x": -212,
+                    "y": 36,
+                    "scale": 103
                 }
             }
         }
@@ -2130,6 +2375,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/Albedo/skill/Skill_A_01.png"
@@ -2138,6 +2384,7 @@
                 "proud_id": "3831"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Albedo_01.png",
                     "path": "image/character/Albedo/skill/Skill_S_Albedo_01.png"
@@ -2146,6 +2393,7 @@
                 "proud_id": "3832"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Albedo_01.png",
                     "path": "image/character/Albedo/skill/Skill_E_Albedo_01.png"
@@ -2175,6 +2423,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Albedo.png",
                     "path": "image/character/Albedo/avatar/default/UI_Gacha_AvatarImg_Albedo.png"
+                },
+                "position": {
+                    "x": -257,
+                    "y": 26,
+                    "scale": 75
                 }
             }
         }
@@ -2209,6 +2462,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_02.png",
                     "path": "image/character/Diona/skill/Skill_A_02.png"
@@ -2217,6 +2471,7 @@
                 "proud_id": "3931"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Diona_01.png",
                     "path": "image/character/Diona/skill/Skill_S_Diona_01.png"
@@ -2225,6 +2480,7 @@
                 "proud_id": "3932"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Diona_01.png",
                     "path": "image/character/Diona/skill/Skill_E_Diona_01.png"
@@ -2254,6 +2510,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Diona.png",
                     "path": "image/character/Diona/avatar/default/UI_Gacha_AvatarImg_Diona.png"
+                },
+                "position": {
+                    "x": -204,
+                    "y": 6,
+                    "scale": 110
                 }
             }
         }
@@ -2288,6 +2549,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_Catalyst_MD.png",
                     "path": "image/character/Mona/skill/Skill_A_Catalyst_MD.png"
@@ -2296,6 +2558,7 @@
                 "proud_id": "4131"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Mona_01.png",
                     "path": "image/character/Mona/skill/Skill_S_Mona_01.png"
@@ -2304,6 +2567,7 @@
                 "proud_id": "4132"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Mona_01.png",
                     "path": "image/character/Mona/skill/Skill_E_Mona_01.png"
@@ -2333,6 +2597,11 @@
                 "gacha_icon": {
                     "name": "UI_Costume_MonaCostumeWic.png",
                     "path": "image/character/Mona/avatar/204101/UI_Costume_MonaCostumeWic.png"
+                },
+                "position": {
+                    "x": -233,
+                    "y": 59,
+                    "scale": 92
                 }
             },
             "default": {
@@ -2347,6 +2616,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Mona.png",
                     "path": "image/character/Mona/avatar/default/UI_Gacha_AvatarImg_Mona.png"
+                },
+                "position": {
+                    "x": -233,
+                    "y": 59,
+                    "scale": 92
                 }
             }
         }
@@ -2381,6 +2655,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/Keqing/skill/Skill_A_01.png"
@@ -2389,6 +2664,7 @@
                 "proud_id": "4231"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Keqing_01.png",
                     "path": "image/character/Keqing/skill/Skill_S_Keqing_01.png"
@@ -2397,6 +2673,7 @@
                 "proud_id": "4232"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Keqing_01.png",
                     "path": "image/character/Keqing/skill/Skill_E_Keqing_01.png"
@@ -2426,6 +2703,11 @@
                 "gacha_icon": {
                     "name": "UI_Costume_KeqingCostumeFeather.png",
                     "path": "image/character/Keqing/avatar/204201/UI_Costume_KeqingCostumeFeather.png"
+                },
+                "position": {
+                    "x": -257,
+                    "y": 71,
+                    "scale": 122
                 }
             },
             "default": {
@@ -2440,6 +2722,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Keqing.png",
                     "path": "image/character/Keqing/avatar/default/UI_Gacha_AvatarImg_Keqing.png"
+                },
+                "position": {
+                    "x": -185,
+                    "y": -6,
+                    "scale": 88
                 }
             }
         }
@@ -2474,6 +2761,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_Catalyst_MD.png",
                     "path": "image/character/Sucrose/skill/Skill_A_Catalyst_MD.png"
@@ -2482,6 +2770,7 @@
                 "proud_id": "4331"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Sucrose_01.png",
                     "path": "image/character/Sucrose/skill/Skill_S_Sucrose_01.png"
@@ -2490,6 +2779,7 @@
                 "proud_id": "4332"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Sucrose_01.png",
                     "path": "image/character/Sucrose/skill/Skill_E_Sucrose_01.png"
@@ -2519,6 +2809,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Sucrose.png",
                     "path": "image/character/Sucrose/avatar/default/UI_Gacha_AvatarImg_Sucrose.png"
+                },
+                "position": {
+                    "x": -176,
+                    "y": 42,
+                    "scale": 99
                 }
             }
         }
@@ -2553,6 +2848,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_04.png",
                     "path": "image/character/Xinyan/skill/Skill_A_04.png"
@@ -2561,6 +2857,7 @@
                 "proud_id": "4431"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Xinyan_01.png",
                     "path": "image/character/Xinyan/skill/Skill_S_Xinyan_01.png"
@@ -2569,6 +2866,7 @@
                 "proud_id": "4432"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Xinyan_01.png",
                     "path": "image/character/Xinyan/skill/Skill_E_Xinyan_01.png"
@@ -2598,6 +2896,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Xinyan.png",
                     "path": "image/character/Xinyan/avatar/default/UI_Gacha_AvatarImg_Xinyan.png"
+                },
+                "position": {
+                    "x": -207,
+                    "y": 27,
+                    "scale": 92
                 }
             }
         }
@@ -2632,6 +2935,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_03.png",
                     "path": "image/character/Rosaria/skill/Skill_A_03.png"
@@ -2640,6 +2944,7 @@
                 "proud_id": "4531"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Rosaria_01.png",
                     "path": "image/character/Rosaria/skill/Skill_S_Rosaria_01.png"
@@ -2648,6 +2953,7 @@
                 "proud_id": "4532"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Rosaria_01.png",
                     "path": "image/character/Rosaria/skill/Skill_E_Rosaria_01.png"
@@ -2677,6 +2983,11 @@
                 "gacha_icon": {
                     "name": "UI_Costume_RosariaCostumeWic.png",
                     "path": "image/character/Rosaria/avatar/204501/UI_Costume_RosariaCostumeWic.png"
+                },
+                "position": {
+                    "x": -248,
+                    "y": 50,
+                    "scale": 95
                 }
             },
             "default": {
@@ -2691,6 +3002,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Rosaria.png",
                     "path": "image/character/Rosaria/avatar/default/UI_Gacha_AvatarImg_Rosaria.png"
+                },
+                "position": {
+                    "x": -248,
+                    "y": 50,
+                    "scale": 95
                 }
             }
         }
@@ -2725,6 +3041,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_03.png",
                     "path": "image/character/Hutao/skill/Skill_A_03.png"
@@ -2733,6 +3050,7 @@
                 "proud_id": "4631"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Hutao_01.png",
                     "path": "image/character/Hutao/skill/Skill_S_Hutao_01.png"
@@ -2741,6 +3059,7 @@
                 "proud_id": "4632"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Hutao_01.png",
                     "path": "image/character/Hutao/skill/Skill_E_Hutao_01.png"
@@ -2770,6 +3089,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Hutao.png",
                     "path": "image/character/Hutao/avatar/default/UI_Gacha_AvatarImg_Hutao.png"
+                },
+                "position": {
+                    "x": -242,
+                    "y": 29,
+                    "scale": 93
                 }
             }
         }
@@ -2804,6 +3128,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/Kazuha/skill/Skill_A_01.png"
@@ -2812,6 +3137,7 @@
                 "proud_id": "4731"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Kazuha_01.png",
                     "path": "image/character/Kazuha/skill/Skill_S_Kazuha_01.png"
@@ -2820,6 +3146,7 @@
                 "proud_id": "4732"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Kazuha_01.png",
                     "path": "image/character/Kazuha/skill/Skill_E_Kazuha_01.png"
@@ -2849,6 +3176,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Kazuha.png",
                     "path": "image/character/Kazuha/avatar/default/UI_Gacha_AvatarImg_Kazuha.png"
+                },
+                "position": {
+                    "x": -199,
+                    "y": 18,
+                    "scale": 88
                 }
             }
         }
@@ -2883,6 +3215,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_Catalyst_MD.png",
                     "path": "image/character/Feiyan/skill/Skill_A_Catalyst_MD.png"
@@ -2891,6 +3224,7 @@
                 "proud_id": "4831"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Feiyan_01.png",
                     "path": "image/character/Feiyan/skill/Skill_S_Feiyan_01.png"
@@ -2899,6 +3233,7 @@
                 "proud_id": "4832"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Feiyan_01.png",
                     "path": "image/character/Feiyan/skill/Skill_E_Feiyan_01.png"
@@ -2928,6 +3263,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Feiyan.png",
                     "path": "image/character/Feiyan/avatar/default/UI_Gacha_AvatarImg_Feiyan.png"
+                },
+                "position": {
+                    "x": -203,
+                    "y": 35,
+                    "scale": 103
                 }
             }
         }
@@ -2962,6 +3302,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_02.png",
                     "path": "image/character/Yoimiya/skill/Skill_A_02.png"
@@ -2970,6 +3311,7 @@
                 "proud_id": "4931"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Yoimiya_01.png",
                     "path": "image/character/Yoimiya/skill/Skill_S_Yoimiya_01.png"
@@ -2978,6 +3320,7 @@
                 "proud_id": "4932"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Yoimiya_01.png",
                     "path": "image/character/Yoimiya/skill/Skill_E_Yoimiya_01.png"
@@ -3007,6 +3350,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Yoimiya.png",
                     "path": "image/character/Yoimiya/avatar/default/UI_Gacha_AvatarImg_Yoimiya.png"
+                },
+                "position": {
+                    "x": -198,
+                    "y": 69,
+                    "scale": 109
                 }
             }
         }
@@ -3041,6 +3389,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_03.png",
                     "path": "image/character/Tohma/skill/Skill_A_03.png"
@@ -3049,6 +3398,7 @@
                 "proud_id": "5031"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Tohma_01.png",
                     "path": "image/character/Tohma/skill/Skill_S_Tohma_01.png"
@@ -3057,6 +3407,7 @@
                 "proud_id": "5032"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Tohma_01.png",
                     "path": "image/character/Tohma/skill/Skill_E_Tohma_01.png"
@@ -3086,6 +3437,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Tohma.png",
                     "path": "image/character/Tohma/avatar/default/UI_Gacha_AvatarImg_Tohma.png"
+                },
+                "position": {
+                    "x": -214,
+                    "y": 31,
+                    "scale": 91
                 }
             }
         }
@@ -3120,6 +3476,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_04.png",
                     "path": "image/character/Eula/skill/Skill_A_04.png"
@@ -3128,6 +3485,7 @@
                 "proud_id": "5131"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Eula_01.png",
                     "path": "image/character/Eula/skill/Skill_S_Eula_01.png"
@@ -3136,6 +3494,7 @@
                 "proud_id": "5132"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Eula_01.png",
                     "path": "image/character/Eula/skill/Skill_E_Eula_01.png"
@@ -3165,6 +3524,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Eula.png",
                     "path": "image/character/Eula/avatar/default/UI_Gacha_AvatarImg_Eula.png"
+                },
+                "position": {
+                    "x": -229,
+                    "y": 123,
+                    "scale": 103
                 }
             }
         }
@@ -3199,6 +3563,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_03.png",
                     "path": "image/character/Shougun/skill/Skill_A_03.png"
@@ -3207,6 +3572,7 @@
                 "proud_id": "5231"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Shougun_01.png",
                     "path": "image/character/Shougun/skill/Skill_S_Shougun_01.png"
@@ -3215,6 +3581,7 @@
                 "proud_id": "5232"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Shougun_01.png",
                     "path": "image/character/Shougun/skill/Skill_E_Shougun_01.png"
@@ -3244,6 +3611,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Shougun.png",
                     "path": "image/character/Shougun/avatar/default/UI_Gacha_AvatarImg_Shougun.png"
+                },
+                "position": {
+                    "x": -178,
+                    "y": 59,
+                    "scale": 99
                 }
             }
         }
@@ -3278,6 +3650,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_04.png",
                     "path": "image/character/Sayu/skill/Skill_A_04.png"
@@ -3286,6 +3659,7 @@
                 "proud_id": "5331"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Sayu_01.png",
                     "path": "image/character/Sayu/skill/Skill_S_Sayu_01.png"
@@ -3294,6 +3668,7 @@
                 "proud_id": "5332"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Sayu_01.png",
                     "path": "image/character/Sayu/skill/Skill_E_Sayu_01.png"
@@ -3323,6 +3698,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Sayu.png",
                     "path": "image/character/Sayu/avatar/default/UI_Gacha_AvatarImg_Sayu.png"
+                },
+                "position": {
+                    "x": -239,
+                    "y": 37,
+                    "scale": 99
                 }
             }
         }
@@ -3357,6 +3737,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_Catalyst_MD.png",
                     "path": "image/character/Kokomi/skill/Skill_A_Catalyst_MD.png"
@@ -3365,6 +3746,7 @@
                 "proud_id": "5431"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Kokomi_01.png",
                     "path": "image/character/Kokomi/skill/Skill_S_Kokomi_01.png"
@@ -3373,6 +3755,7 @@
                 "proud_id": "5432"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Kokomi_01.png",
                     "path": "image/character/Kokomi/skill/Skill_E_Kokomi_01.png"
@@ -3402,6 +3785,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Kokomi.png",
                     "path": "image/character/Kokomi/avatar/default/UI_Gacha_AvatarImg_Kokomi.png"
+                },
+                "position": {
+                    "x": -200,
+                    "y": 10,
+                    "scale": 101
                 }
             }
         }
@@ -3436,6 +3824,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_02.png",
                     "path": "image/character/Gorou/skill/Skill_A_02.png"
@@ -3444,6 +3833,7 @@
                 "proud_id": "5531"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Gorou_01.png",
                     "path": "image/character/Gorou/skill/Skill_S_Gorou_01.png"
@@ -3452,6 +3842,7 @@
                 "proud_id": "5532"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Gorou_01.png",
                     "path": "image/character/Gorou/skill/Skill_E_Gorou_01.png"
@@ -3481,6 +3872,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Gorou.png",
                     "path": "image/character/Gorou/avatar/default/UI_Gacha_AvatarImg_Gorou.png"
+                },
+                "position": {
+                    "x": -200,
+                    "y": 45,
+                    "scale": 103
                 }
             }
         }
@@ -3515,6 +3911,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_02.png",
                     "path": "image/character/Sara/skill/Skill_A_02.png"
@@ -3523,6 +3920,7 @@
                 "proud_id": "5631"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Sara_01.png",
                     "path": "image/character/Sara/skill/Skill_S_Sara_01.png"
@@ -3531,6 +3929,7 @@
                 "proud_id": "5632"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Sara_01.png",
                     "path": "image/character/Sara/skill/Skill_E_Sara_01.png"
@@ -3560,6 +3959,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Sara.png",
                     "path": "image/character/Sara/avatar/default/UI_Gacha_AvatarImg_Sara.png"
+                },
+                "position": {
+                    "x": -218,
+                    "y": 71,
+                    "scale": 95
                 }
             }
         }
@@ -3594,6 +3998,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_04.png",
                     "path": "image/character/Itto/skill/Skill_A_04.png"
@@ -3602,6 +4007,7 @@
                 "proud_id": "5731"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Itto_01.png",
                     "path": "image/character/Itto/skill/Skill_S_Itto_01.png"
@@ -3610,6 +4016,7 @@
                 "proud_id": "5732"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Itto_01.png",
                     "path": "image/character/Itto/skill/Skill_E_Itto_01.png"
@@ -3639,6 +4046,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Itto.png",
                     "path": "image/character/Itto/avatar/default/UI_Gacha_AvatarImg_Itto.png"
+                },
+                "position": {
+                    "x": -261,
+                    "y": 57,
+                    "scale": 99
                 }
             }
         }
@@ -3673,6 +4085,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_Catalyst_MD.png",
                     "path": "image/character/Yae/skill/Skill_A_Catalyst_MD.png"
@@ -3681,6 +4094,7 @@
                 "proud_id": "5831"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Yae_01.png",
                     "path": "image/character/Yae/skill/Skill_S_Yae_01.png"
@@ -3689,6 +4103,7 @@
                 "proud_id": "5832"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Yae_01.png",
                     "path": "image/character/Yae/skill/Skill_E_Yae_01.png"
@@ -3718,6 +4133,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Yae.png",
                     "path": "image/character/Yae/avatar/default/UI_Gacha_AvatarImg_Yae.png"
+                },
+                "position": {
+                    "x": -133,
+                    "y": 39,
+                    "scale": 101
                 }
             }
         }
@@ -3752,6 +4172,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_Catalyst_MD.png",
                     "path": "image/character/Heizo/skill/Skill_A_Catalyst_MD.png"
@@ -3760,6 +4181,7 @@
                 "proud_id": "5931"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Heizo_01.png",
                     "path": "image/character/Heizo/skill/Skill_S_Heizo_01.png"
@@ -3768,6 +4190,7 @@
                 "proud_id": "5932"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Heizo_01.png",
                     "path": "image/character/Heizo/skill/Skill_E_Heizo_01.png"
@@ -3797,6 +4220,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Heizo.png",
                     "path": "image/character/Heizo/avatar/default/UI_Gacha_AvatarImg_Heizo.png"
+                },
+                "position": {
+                    "x": -228,
+                    "y": 66,
+                    "scale": 103
                 }
             }
         }
@@ -3831,6 +4259,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_02.png",
                     "path": "image/character/Yelan/skill/Skill_A_02.png"
@@ -3839,6 +4268,7 @@
                 "proud_id": "6031"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Yelan_01.png",
                     "path": "image/character/Yelan/skill/Skill_S_Yelan_01.png"
@@ -3847,6 +4277,7 @@
                 "proud_id": "6032"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Yelan_01.png",
                     "path": "image/character/Yelan/skill/Skill_E_Yelan_01.png"
@@ -3876,6 +4307,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Yelan.png",
                     "path": "image/character/Yelan/avatar/default/UI_Gacha_AvatarImg_Yelan.png"
+                },
+                "position": {
+                    "x": -208,
+                    "y": 91,
+                    "scale": 121
                 }
             }
         }
@@ -3910,6 +4346,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/Momoka/skill/Skill_A_01.png"
@@ -3918,6 +4355,7 @@
                 "proud_id": "6131"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Momoka_01.png",
                     "path": "image/character/Momoka/skill/Skill_S_Momoka_01.png"
@@ -3926,6 +4364,7 @@
                 "proud_id": "6132"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Momoka_01.png",
                     "path": "image/character/Momoka/skill/Skill_E_Momoka_01.png"
@@ -3955,6 +4394,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Momoka.png",
                     "path": "image/character/Momoka/avatar/default/UI_Gacha_AvatarImg_Momoka.png"
+                },
+                "position": {
+                    "x": -306,
+                    "y": 12,
+                    "scale": 95
                 }
             }
         }
@@ -3989,6 +4433,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_02.png",
                     "path": "image/character/Aloy/skill/Skill_A_02.png"
@@ -3997,6 +4442,7 @@
                 "proud_id": "6231"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Aloy_01.png",
                     "path": "image/character/Aloy/skill/Skill_S_Aloy_01.png"
@@ -4005,6 +4451,7 @@
                 "proud_id": "6232"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Aloy_01.png",
                     "path": "image/character/Aloy/skill/Skill_E_Aloy_01.png"
@@ -4034,6 +4481,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Aloy.png",
                     "path": "image/character/Aloy/avatar/default/UI_Gacha_AvatarImg_Aloy.png"
+                },
+                "position": {
+                    "x": -237,
+                    "y": -14,
+                    "scale": 84
                 }
             }
         }
@@ -4068,6 +4520,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_03.png",
                     "path": "image/character/Shenhe/skill/Skill_A_03.png"
@@ -4076,6 +4529,7 @@
                 "proud_id": "6331"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Shenhe_01.png",
                     "path": "image/character/Shenhe/skill/Skill_S_Shenhe_01.png"
@@ -4084,6 +4538,7 @@
                 "proud_id": "6332"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Shenhe_01.png",
                     "path": "image/character/Shenhe/skill/Skill_E_Shenhe_01.png"
@@ -4113,6 +4568,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Shenhe.png",
                     "path": "image/character/Shenhe/avatar/default/UI_Gacha_AvatarImg_Shenhe.png"
+                },
+                "position": {
+                    "x": -200,
+                    "y": 79,
+                    "scale": 99
                 }
             }
         }
@@ -4147,6 +4607,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_03.png",
                     "path": "image/character/Yunjin/skill/Skill_A_03.png"
@@ -4155,6 +4616,7 @@
                 "proud_id": "6431"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Yunjin_01.png",
                     "path": "image/character/Yunjin/skill/Skill_S_Yunjin_01.png"
@@ -4163,6 +4625,7 @@
                 "proud_id": "6432"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Yunjin_01.png",
                     "path": "image/character/Yunjin/skill/Skill_E_Yunjin_01.png"
@@ -4192,6 +4655,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Yunjin.png",
                     "path": "image/character/Yunjin/avatar/default/UI_Gacha_AvatarImg_Yunjin.png"
+                },
+                "position": {
+                    "x": -210,
+                    "y": 94,
+                    "scale": 120
                 }
             }
         }
@@ -4226,6 +4694,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/Shinobu/skill/Skill_A_01.png"
@@ -4234,6 +4703,7 @@
                 "proud_id": "6531"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Shinobu_01.png",
                     "path": "image/character/Shinobu/skill/Skill_S_Shinobu_01.png"
@@ -4242,6 +4712,7 @@
                 "proud_id": "6532"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Shinobu_01.png",
                     "path": "image/character/Shinobu/skill/Skill_E_Shinobu_01.png"
@@ -4271,6 +4742,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Shinobu.png",
                     "path": "image/character/Shinobu/avatar/default/UI_Gacha_AvatarImg_Shinobu.png"
+                },
+                "position": {
+                    "x": -230,
+                    "y": 42,
+                    "scale": 99
                 }
             }
         }
@@ -4305,6 +4781,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/Ayato/skill/Skill_A_01.png"
@@ -4313,6 +4790,7 @@
                 "proud_id": "6631"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Ayato_01.png",
                     "path": "image/character/Ayato/skill/Skill_S_Ayato_01.png"
@@ -4321,6 +4799,7 @@
                 "proud_id": "6632"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Ayato_01.png",
                     "path": "image/character/Ayato/skill/Skill_E_Ayato_01.png"
@@ -4350,6 +4829,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Ayato.png",
                     "path": "image/character/Ayato/avatar/default/UI_Gacha_AvatarImg_Ayato.png"
+                },
+                "position": {
+                    "x": -220,
+                    "y": 10,
+                    "scale": 82
                 }
             }
         }
@@ -4384,6 +4868,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_02.png",
                     "path": "image/character/Collei/skill/Skill_A_02.png"
@@ -4392,6 +4877,7 @@
                 "proud_id": "6731"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Collei_01.png",
                     "path": "image/character/Collei/skill/Skill_S_Collei_01.png"
@@ -4400,6 +4886,7 @@
                 "proud_id": "6732"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Collei_01.png",
                     "path": "image/character/Collei/skill/Skill_E_Collei_01.png"
@@ -4429,6 +4916,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Collei.png",
                     "path": "image/character/Collei/avatar/default/UI_Gacha_AvatarImg_Collei.png"
+                },
+                "position": {
+                    "x": -237,
+                    "y": 46,
+                    "scale": 90
                 }
             }
         }
@@ -4463,6 +4955,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_04.png",
                     "path": "image/character/Dori/skill/Skill_A_04.png"
@@ -4471,6 +4964,7 @@
                 "proud_id": "6831"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Dori_01.png",
                     "path": "image/character/Dori/skill/Skill_S_Dori_01.png"
@@ -4479,6 +4973,7 @@
                 "proud_id": "6832"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Dori_01.png",
                     "path": "image/character/Dori/skill/Skill_E_Dori_01.png"
@@ -4508,6 +5003,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Dori.png",
                     "path": "image/character/Dori/avatar/default/UI_Gacha_AvatarImg_Dori.png"
+                },
+                "position": {
+                    "x": -176,
+                    "y": 5,
+                    "scale": 105
                 }
             }
         }
@@ -4542,6 +5042,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_02.png",
                     "path": "image/character/Tighnari/skill/Skill_A_02.png"
@@ -4550,6 +5051,7 @@
                 "proud_id": "6931"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Tighnari_01.png",
                     "path": "image/character/Tighnari/skill/Skill_S_Tighnari_01.png"
@@ -4558,6 +5060,7 @@
                 "proud_id": "6932"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Tighnari_01.png",
                     "path": "image/character/Tighnari/skill/Skill_E_Tighnari_01.png"
@@ -4587,6 +5090,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Tighnari.png",
                     "path": "image/character/Tighnari/avatar/default/UI_Gacha_AvatarImg_Tighnari.png"
+                },
+                "position": {
+                    "x": -231,
+                    "y": 13,
+                    "scale": 91
                 }
             }
         }
@@ -4621,6 +5129,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/Nilou/skill/Skill_A_01.png"
@@ -4629,6 +5138,7 @@
                 "proud_id": "7031"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Nilou_01.png",
                     "path": "image/character/Nilou/skill/Skill_S_Nilou_01.png"
@@ -4637,6 +5147,7 @@
                 "proud_id": "7032"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Nilou_01.png",
                     "path": "image/character/Nilou/skill/Skill_E_Nilou_01.png"
@@ -4666,6 +5177,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Nilou.png",
                     "path": "image/character/Nilou/avatar/default/UI_Gacha_AvatarImg_Nilou.png"
+                },
+                "position": {
+                    "x": -217,
+                    "y": 51,
+                    "scale": 98
                 }
             }
         }
@@ -4700,6 +5216,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_03.png",
                     "path": "image/character/Cyno/skill/Skill_A_03.png"
@@ -4708,6 +5225,7 @@
                 "proud_id": "7131"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Cyno_01.png",
                     "path": "image/character/Cyno/skill/Skill_S_Cyno_01.png"
@@ -4716,6 +5234,7 @@
                 "proud_id": "7132"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Cyno_01.png",
                     "path": "image/character/Cyno/skill/Skill_E_Cyno_01.png"
@@ -4745,6 +5264,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Cyno.png",
                     "path": "image/character/Cyno/avatar/default/UI_Gacha_AvatarImg_Cyno.png"
+                },
+                "position": {
+                    "x": -227,
+                    "y": 28,
+                    "scale": 100
                 }
             }
         }
@@ -4779,6 +5303,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_03.png",
                     "path": "image/character/Candace/skill/Skill_A_03.png"
@@ -4787,6 +5312,7 @@
                 "proud_id": "7231"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Candace_01.png",
                     "path": "image/character/Candace/skill/Skill_S_Candace_01.png"
@@ -4795,6 +5321,7 @@
                 "proud_id": "7232"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Candace_01.png",
                     "path": "image/character/Candace/skill/Skill_E_Candace_01.png"
@@ -4824,6 +5351,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Candace.png",
                     "path": "image/character/Candace/avatar/default/UI_Gacha_AvatarImg_Candace.png"
+                },
+                "position": {
+                    "x": -255,
+                    "y": 30,
+                    "scale": 90
                 }
             }
         }
@@ -4858,6 +5390,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_Catalyst_MD.png",
                     "path": "image/character/Nahida/skill/Skill_A_Catalyst_MD.png"
@@ -4866,6 +5399,7 @@
                 "proud_id": "7331"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Nahida_01.png",
                     "path": "image/character/Nahida/skill/Skill_S_Nahida_01.png"
@@ -4874,6 +5408,7 @@
                 "proud_id": "7332"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Nahida_01.png",
                     "path": "image/character/Nahida/skill/Skill_E_Nahida_01.png"
@@ -4903,6 +5438,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Nahida.png",
                     "path": "image/character/Nahida/avatar/default/UI_Gacha_AvatarImg_Nahida.png"
+                },
+                "position": {
+                    "x": -234,
+                    "y": -34,
+                    "scale": 98
                 }
             }
         }
@@ -4937,6 +5477,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/Layla/skill/Skill_A_01.png"
@@ -4945,6 +5486,7 @@
                 "proud_id": "7431"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Layla_01.png",
                     "path": "image/character/Layla/skill/Skill_S_Layla_01.png"
@@ -4953,6 +5495,7 @@
                 "proud_id": "7432"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Layla_01.png",
                     "path": "image/character/Layla/skill/Skill_E_Layla_01.png"
@@ -4982,6 +5525,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Layla.png",
                     "path": "image/character/Layla/avatar/default/UI_Gacha_AvatarImg_Layla.png"
+                },
+                "position": {
+                    "x": -200,
+                    "y": 3,
+                    "scale": 101
                 }
             }
         }
@@ -5016,6 +5564,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_Catalyst_MD.png",
                     "path": "image/character/Wanderer/skill/Skill_A_Catalyst_MD.png"
@@ -5024,6 +5573,7 @@
                 "proud_id": "7531"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Wanderer_01.png",
                     "path": "image/character/Wanderer/skill/Skill_S_Wanderer_01.png"
@@ -5032,6 +5582,7 @@
                 "proud_id": "7532"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Wanderer_01.png",
                     "path": "image/character/Wanderer/skill/Skill_E_Wanderer_01.png"
@@ -5061,6 +5612,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Wanderer.png",
                     "path": "image/character/Wanderer/avatar/default/UI_Gacha_AvatarImg_Wanderer.png"
+                },
+                "position": {
+                    "x": -202,
+                    "y": 10,
+                    "scale": 99
                 }
             }
         }
@@ -5095,6 +5651,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_02.png",
                     "path": "image/character/Faruzan/skill/Skill_A_02.png"
@@ -5103,6 +5660,7 @@
                 "proud_id": "7631"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Faruzan_01.png",
                     "path": "image/character/Faruzan/skill/Skill_S_Faruzan_01.png"
@@ -5111,6 +5669,7 @@
                 "proud_id": "7632"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Faruzan_01.png",
                     "path": "image/character/Faruzan/skill/Skill_E_Faruzan_01.png"
@@ -5140,6 +5699,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Faruzan.png",
                     "path": "image/character/Faruzan/avatar/default/UI_Gacha_AvatarImg_Faruzan.png"
+                },
+                "position": {
+                    "x": -242,
+                    "y": 58,
+                    "scale": 103
                 }
             }
         }
@@ -5174,6 +5738,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_03.png",
                     "path": "image/character/Yaoyao/skill/Skill_A_03.png"
@@ -5182,6 +5747,7 @@
                 "proud_id": "7731"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Yaoyao_01.png",
                     "path": "image/character/Yaoyao/skill/Skill_S_Yaoyao_01.png"
@@ -5190,6 +5756,7 @@
                 "proud_id": "7732"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Yaoyao_01.png",
                     "path": "image/character/Yaoyao/skill/Skill_E_Yaoyao_01.png"
@@ -5219,6 +5786,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Yaoyao.png",
                     "path": "image/character/Yaoyao/avatar/default/UI_Gacha_AvatarImg_Yaoyao.png"
+                },
+                "position": {
+                    "x": -214,
+                    "y": 7,
+                    "scale": 121
                 }
             }
         }
@@ -5253,6 +5825,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/Alhatham/skill/Skill_A_01.png"
@@ -5261,6 +5834,7 @@
                 "proud_id": "7831"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Alhatham_01.png",
                     "path": "image/character/Alhatham/skill/Skill_S_Alhatham_01.png"
@@ -5269,6 +5843,7 @@
                 "proud_id": "7832"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Alhatham_01.png",
                     "path": "image/character/Alhatham/skill/Skill_E_Alhatham_01.png"
@@ -5298,6 +5873,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Alhatham.png",
                     "path": "image/character/Alhatham/avatar/default/UI_Gacha_AvatarImg_Alhatham.png"
+                },
+                "position": {
+                    "x": -257,
+                    "y": -22,
+                    "scale": 75
                 }
             }
         }
@@ -5332,6 +5912,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_04.png",
                     "path": "image/character/Dehya/skill/Skill_A_04.png"
@@ -5340,6 +5921,7 @@
                 "proud_id": "7931"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Dehya_01.png",
                     "path": "image/character/Dehya/skill/Skill_S_Dehya_01.png"
@@ -5348,6 +5930,7 @@
                 "proud_id": "7932"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Dehya_01.png",
                     "path": "image/character/Dehya/skill/Skill_E_Dehya_01.png"
@@ -5377,6 +5960,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Dehya.png",
                     "path": "image/character/Dehya/avatar/default/UI_Gacha_AvatarImg_Dehya.png"
+                },
+                "position": {
+                    "x": -209,
+                    "y": -10,
+                    "scale": 83
                 }
             }
         }
@@ -5411,6 +5999,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_03.png",
                     "path": "image/character/Mika/skill/Skill_A_03.png"
@@ -5419,6 +6008,7 @@
                 "proud_id": "8031"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Mika_01.png",
                     "path": "image/character/Mika/skill/Skill_S_Mika_01.png"
@@ -5427,6 +6017,7 @@
                 "proud_id": "8032"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Mika_01.png",
                     "path": "image/character/Mika/skill/Skill_E_Mika_01.png"
@@ -5456,6 +6047,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Mika.png",
                     "path": "image/character/Mika/avatar/default/UI_Gacha_AvatarImg_Mika.png"
+                },
+                "position": {
+                    "x": -267,
+                    "y": 71,
+                    "scale": 101
                 }
             }
         }
@@ -5490,6 +6086,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_04.png",
                     "path": "image/character/Kaveh/skill/Skill_A_04.png"
@@ -5498,6 +6095,7 @@
                 "proud_id": "8131"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Kaveh_01.png",
                     "path": "image/character/Kaveh/skill/Skill_S_Kaveh_01.png"
@@ -5506,6 +6104,7 @@
                 "proud_id": "8132"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Kaveh_01.png",
                     "path": "image/character/Kaveh/skill/Skill_E_Kaveh_01.png"
@@ -5535,6 +6134,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Kaveh.png",
                     "path": "image/character/Kaveh/avatar/default/UI_Gacha_AvatarImg_Kaveh.png"
+                },
+                "position": {
+                    "x": -175,
+                    "y": 22,
+                    "scale": 96
                 }
             }
         }
@@ -5569,6 +6173,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_Catalyst_MD.png",
                     "path": "image/character/Baizhuer/skill/Skill_A_Catalyst_MD.png"
@@ -5577,6 +6182,7 @@
                 "proud_id": "8231"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_Baizhuer_01.png",
                     "path": "image/character/Baizhuer/skill/Skill_S_Baizhuer_01.png"
@@ -5585,6 +6191,7 @@
                 "proud_id": "8232"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_Baizhuer_01.png",
                     "path": "image/character/Baizhuer/skill/Skill_E_Baizhuer_01.png"
@@ -5614,6 +6221,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_Baizhuer.png",
                     "path": "image/character/Baizhuer/avatar/default/UI_Gacha_AvatarImg_Baizhuer.png"
+                },
+                "position": {
+                    "x": -262,
+                    "y": 8,
+                    "scale": 81
                 }
             }
         }
@@ -5648,6 +6260,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/PlayerBoy/skill/Skill_A_01.png"
@@ -5656,6 +6269,7 @@
                 "proud_id": "731"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "None.png",
                     "path": "image/character/PlayerBoy/skill/None.png"
@@ -5664,6 +6278,7 @@
                 "proud_id": "732"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "None.png",
                     "path": "image/character/PlayerBoy/skill/None.png"
@@ -5693,6 +6308,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_PlayerBoy.png",
                     "path": "image/character/PlayerBoy/avatar/default/UI_Gacha_AvatarImg_PlayerBoy.png"
+                },
+                "position": {
+                    "x": -210,
+                    "y": 32,
+                    "scale": 95
                 }
             }
         }
@@ -5727,6 +6347,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/PlayerBoy/skill/Skill_A_01.png"
@@ -5735,6 +6356,7 @@
                 "proud_id": "730"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_PlayerWind_01.png",
                     "path": "image/character/PlayerBoy/skill/Skill_S_PlayerWind_01.png"
@@ -5743,6 +6365,7 @@
                 "proud_id": "732"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_PlayerWind_01.png",
                     "path": "image/character/PlayerBoy/skill/Skill_E_PlayerWind_01.png"
@@ -5772,6 +6395,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_PlayerBoy.png",
                     "path": "image/character/PlayerBoy/avatar/default/UI_Gacha_AvatarImg_PlayerBoy.png"
+                },
+                "position": {
+                    "x": -210,
+                    "y": 32,
+                    "scale": 95
                 }
             }
         }
@@ -5806,6 +6434,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/PlayerBoy/skill/Skill_A_01.png"
@@ -5814,6 +6443,7 @@
                 "proud_id": "730"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_PlayerRock_01.png",
                     "path": "image/character/PlayerBoy/skill/Skill_S_PlayerRock_01.png"
@@ -5822,6 +6452,7 @@
                 "proud_id": "932"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_PlayerRock_01.png",
                     "path": "image/character/PlayerBoy/skill/Skill_E_PlayerRock_01.png"
@@ -5851,6 +6482,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_PlayerBoy.png",
                     "path": "image/character/PlayerBoy/avatar/default/UI_Gacha_AvatarImg_PlayerBoy.png"
+                },
+                "position": {
+                    "x": -210,
+                    "y": 32,
+                    "scale": 95
                 }
             }
         }
@@ -5885,6 +6521,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/PlayerBoy/skill/Skill_A_01.png"
@@ -5893,6 +6530,7 @@
                 "proud_id": "1030"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_PlayerElectric_01.png",
                     "path": "image/character/PlayerBoy/skill/Skill_S_PlayerElectric_01.png"
@@ -5901,6 +6539,7 @@
                 "proud_id": "1032"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_PlayerElectric_01.png",
                     "path": "image/character/PlayerBoy/skill/Skill_E_PlayerElectric_01.png"
@@ -5930,6 +6569,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_PlayerBoy.png",
                     "path": "image/character/PlayerBoy/avatar/default/UI_Gacha_AvatarImg_PlayerBoy.png"
+                },
+                "position": {
+                    "x": -210,
+                    "y": 32,
+                    "scale": 95
                 }
             }
         }
@@ -5964,6 +6608,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/PlayerBoy/skill/Skill_A_01.png"
@@ -5972,6 +6617,7 @@
                 "proud_id": "1130"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_E_PlayerGrass_01.png",
                     "path": "image/character/PlayerBoy/skill/Skill_E_PlayerGrass_01.png"
@@ -5980,6 +6626,7 @@
                 "proud_id": "1132"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_S_PlayerGrass_01.png",
                     "path": "image/character/PlayerBoy/skill/Skill_S_PlayerGrass_01.png"
@@ -6009,6 +6656,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_PlayerBoy.png",
                     "path": "image/character/PlayerBoy/avatar/default/UI_Gacha_AvatarImg_PlayerBoy.png"
+                },
+                "position": {
+                    "x": -210,
+                    "y": 32,
+                    "scale": 95
                 }
             }
         }
@@ -6043,6 +6695,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/PlayerGirl/skill/Skill_A_01.png"
@@ -6051,6 +6704,7 @@
                 "proud_id": "731"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "None.png",
                     "path": "image/character/PlayerGirl/skill/None.png"
@@ -6059,6 +6713,7 @@
                 "proud_id": "732"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "None.png",
                     "path": "image/character/PlayerGirl/skill/None.png"
@@ -6088,6 +6743,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_PlayerGirl.png",
                     "path": "image/character/PlayerGirl/avatar/default/UI_Gacha_AvatarImg_PlayerGirl.png"
+                },
+                "position": {
+                    "x": -210,
+                    "y": 32,
+                    "scale": 95
                 }
             }
         }
@@ -6122,6 +6782,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/PlayerGirl/skill/Skill_A_01.png"
@@ -6130,6 +6791,7 @@
                 "proud_id": "731"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_PlayerWind_01.png",
                     "path": "image/character/PlayerGirl/skill/Skill_S_PlayerWind_01.png"
@@ -6138,6 +6800,7 @@
                 "proud_id": "732"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_PlayerWind_01.png",
                     "path": "image/character/PlayerGirl/skill/Skill_E_PlayerWind_01.png"
@@ -6167,6 +6830,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_PlayerGirl.png",
                     "path": "image/character/PlayerGirl/avatar/default/UI_Gacha_AvatarImg_PlayerGirl.png"
+                },
+                "position": {
+                    "x": -210,
+                    "y": 32,
+                    "scale": 95
                 }
             }
         }
@@ -6201,6 +6869,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/PlayerGirl/skill/Skill_A_01.png"
@@ -6209,6 +6878,7 @@
                 "proud_id": "731"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_PlayerRock_01.png",
                     "path": "image/character/PlayerGirl/skill/Skill_S_PlayerRock_01.png"
@@ -6217,6 +6887,7 @@
                 "proud_id": "932"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_PlayerRock_01.png",
                     "path": "image/character/PlayerGirl/skill/Skill_E_PlayerRock_01.png"
@@ -6246,6 +6917,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_PlayerGirl.png",
                     "path": "image/character/PlayerGirl/avatar/default/UI_Gacha_AvatarImg_PlayerGirl.png"
+                },
+                "position": {
+                    "x": -210,
+                    "y": 32,
+                    "scale": 95
                 }
             }
         }
@@ -6280,6 +6956,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/PlayerGirl/skill/Skill_A_01.png"
@@ -6288,6 +6965,7 @@
                 "proud_id": "1031"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_S_PlayerElectric_01.png",
                     "path": "image/character/PlayerGirl/skill/Skill_S_PlayerElectric_01.png"
@@ -6296,6 +6974,7 @@
                 "proud_id": "1032"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_E_PlayerElectric_01.png",
                     "path": "image/character/PlayerGirl/skill/Skill_E_PlayerElectric_01.png"
@@ -6325,6 +7004,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_PlayerGirl.png",
                     "path": "image/character/PlayerGirl/avatar/default/UI_Gacha_AvatarImg_PlayerGirl.png"
+                },
+                "position": {
+                    "x": -210,
+                    "y": 32,
+                    "scale": 95
                 }
             }
         }
@@ -6359,6 +7043,7 @@
         ],
         "skills": [
             {
+                "name": "通常攻撃",
                 "icon": {
                     "name": "Skill_A_01.png",
                     "path": "image/character/PlayerGirl/skill/Skill_A_01.png"
@@ -6367,6 +7052,7 @@
                 "proud_id": "1131"
             },
             {
+                "name": "元素スキル",
                 "icon": {
                     "name": "Skill_E_PlayerGrass_01.png",
                     "path": "image/character/PlayerGirl/skill/Skill_E_PlayerGrass_01.png"
@@ -6375,6 +7061,7 @@
                 "proud_id": "1132"
             },
             {
+                "name": "元素爆発",
                 "icon": {
                     "name": "Skill_S_PlayerGrass_01.png",
                     "path": "image/character/PlayerGirl/skill/Skill_S_PlayerGrass_01.png"
@@ -6404,6 +7091,11 @@
                 "gacha_icon": {
                     "name": "UI_Gacha_AvatarImg_PlayerGirl.png",
                     "path": "image/character/PlayerGirl/avatar/default/UI_Gacha_AvatarImg_PlayerGirl.png"
+                },
+                "position": {
+                    "x": -210,
+                    "y": 32,
+                    "scale": 95
                 }
             }
         }

@@ -1,8 +1,22 @@
-import re
 from pydantic import BaseModel
 from decimal import Decimal
 import lib.score_calc as score_calc
-from repository.util_data import STATUS_NAMEHASH_DICT, CHARACTER_DATA_DICT
+import model.util_model as util_model
+from repository.util_data import \
+    CHARACTER_DATA_DICT, WEAPON_DATA_DICT, ARTIFACT_DATA_DICT, STATUS_NAMEHASH_DICT
+from lib.score_calc import BUILD_NAMES
+
+
+ELEMENTAL_NAME_DICT = {
+    "Physics": "物理ダメージ",
+    "Fire": "炎元素ダメージ",
+    "Electric": "雷元素ダメージ",
+    "Water": "水元素ダメージ",
+    "Grass": "草元素ダメージ",
+    "Wind": "風元素ダメージ",
+    "Rock": "岩元素ダメージ",
+    "Ice": "氷元素ダメージ",
+}
 
 
 def get_status_base(value: Decimal, suffix: str):
@@ -23,10 +37,12 @@ class ArtifactStatus(BaseModel):
     name: str
     suffix: str
 
-    def get_name(self):
+    @property
+    def jp_name(self):
         return STATUS_NAMEHASH_DICT[self.name]
 
-    def get_status(self):
+    @property
+    def value_str(self):
         return get_status_base(self.value, self.suffix)
 
     def get_score(self, calc: score_calc.ScoreCalc):
@@ -42,11 +58,17 @@ class Artifact(BaseModel):
     status: list[ArtifactStatus]
     star: int
     score: Decimal = Decimal(0.0)
+    util: util_model.Artifact = None
 
-    def get_main_name(self):
+    def set_util(self):
+        self.util = ARTIFACT_DATA_DICT[self.icon_name]
+
+    @property
+    def main_jp_name(self):
         return STATUS_NAMEHASH_DICT[self.main_name]
 
-    def get_status(self):
+    @property
+    def main_value_str(self):
         return get_status_base(self.main_value, self.suffix)
 
     def set_calc_score(self, calc: score_calc.ScoreCalc):
@@ -67,17 +89,27 @@ class Weapon(BaseModel):
     sub_value: Decimal = None
     level: int
     rank: int
+    util: util_model.Weapon = None
 
-    def get_main_name(self):
+    @property
+    def main_jp_name(self):
         return STATUS_NAMEHASH_DICT[self.main_name]
 
-    def get_sub_name(self):
+    @property
+    def sub_jp_name(self):
         return STATUS_NAMEHASH_DICT[self.sub_name]
+
+    def set_util(self):
+        self.util = WEAPON_DATA_DICT[self.icon_name]
 
 
 class Skill(BaseModel):
     level: int
     add_level: int
+    util: util_model.Skill = None
+
+    def set_util(self, skill: util_model.Skill):
+        self.util = skill
 
 
 class Character(BaseModel):
@@ -103,20 +135,30 @@ class Character(BaseModel):
     weapon: Weapon
     uid: int
     create_date: str
-    costume: str = "defalut"
+    costume_id: str = "defalut"
     build_type: str = None
+    costume: util_model.Costume = None
+    util: util_model.JpCharacterModel = None
 
-    def get_name(self):
-        return CHARACTER_DATA_DICT[self.id].name
+    @property
+    def build_name(self):
+        return BUILD_NAMES[self.build_type]
 
-    def get_gacha_icon_path(self):
-        return CHARACTER_DATA_DICT[self.id].costumes[self.costume].gacha_icon
+    @property
+    def elemental_jp_name(self):
+        return ELEMENTAL_NAME_DICT.get(self.elemental_name)
 
-    def get_side_icon_path(self):
-        return CHARACTER_DATA_DICT[self.id].costumes[self.costume].side_icon
+    def set_costume(self, costume_id: str):
+        self.costume = self.util.costumes[costume_id]
 
-    def get_avatar_icon_path(self):
-        return CHARACTER_DATA_DICT[self.id].costumes[self.costume].avatar_icon
+    def set_utils(self):
+        self.util = CHARACTER_DATA_DICT[self.id]
+        self.set_costume(self.costume_id)
+        self.weapon.set_util()
+        for artifact in self.artifacts.values():
+            artifact.set_util()
+        for skill, util_skill in zip(self.skills, self.util.skills):
+            skill.set_util(util_skill)
 
     def set_build_type(self, build_type: str):
         self.build_type = build_type

@@ -22,15 +22,23 @@ class Artifact(BaseModel):
 
 
 class Skill(BaseModel):
+    name: str
     icon: Icon
     id: str
     proud_id: str
+
+
+class Position(BaseModel):
+    x: int
+    y: int
+    scale: int
 
 
 class Costume(BaseModel):
     side_icon: Icon
     avatar_icon: Icon
     gacha_icon: Icon
+    position: Position
 
 
 class JpCharacterModel(BaseModel):

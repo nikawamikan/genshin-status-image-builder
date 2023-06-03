@@ -27,7 +27,7 @@ def none_to_empty_char(data: dict[str, str], keys: list[str]) -> str:
 
 
 ELEMENT_MAP = {
-    "": "30",
+    "Physics": "30",
     "Fire": "40",
     "Electric": "41",
     "Water": "42",
@@ -36,6 +36,7 @@ ELEMENT_MAP = {
     "Rock": "45",
     "Ice": "46",
 }
+
 
 ELEMENT_DAMAGE_TYPES = {
     v: k for k, v in ELEMENT_MAP.items()
@@ -144,18 +145,6 @@ def get_skills(id: str, skill_levels: dict[str, int], extra_skill_levels: dict[s
     ]
 
 
-def get_constellations(chara: dict):
-    try:
-        constellations = str(len(chara["talentIdList"]))
-        if constellations == "6":
-            constellations = "完"
-        elif constellations == "0":
-            constellations = "無"
-    except:
-        constellations = "無"
-    return constellations
-
-
 def get_elemental_name_value(id: str, avatar_info: enka_model.AvatarInfo):
 
     elemental_name = None
@@ -167,9 +156,10 @@ def get_elemental_name_value(id: str, avatar_info: enka_model.AvatarInfo):
         if max_value < avatar_info.fightPropMap[k]:
             max_value = avatar_info.fightPropMap[k]
             max_key = k
+    character_element = CHARACTER_DATA_DICT[id].element
     if max_key is not None:
-        if max_value == avatar_info.fightPropMap[ELEMENT_MAP[CHARACTER_DATA_DICT[id].element]]:
-            elemental_name = CHARACTER_DATA_DICT[id].element
+        if max_value == avatar_info.fightPropMap[ELEMENT_MAP[character_element]]:
+            elemental_name = character_element
         else:
             elemental_name = ELEMENT_DAMAGE_TYPES[max_key]
         elemental_value = f"{round(max_value*100, 1)}%"
@@ -194,7 +184,7 @@ def get_character_status(uid: int, create_date: str, avatar_info: enka_model.Ava
     critical_rate = round(avatar_info.fightPropMap["20"] * 100, 1)
     critical_damage = round(avatar_info.fightPropMap["22"] * 100, 1)
     charge_efficiency = round(avatar_info.fightPropMap["23"] * 100, 1)
-    elemental_mastery = int(avatar_info.fightPropMap["23"])
+    elemental_mastery = int(avatar_info.fightPropMap["28"])
     love = avatar_info.fetterInfo.expLevel
 
     elemental_name, elemental_value = get_elemental_name_value(id, avatar_info)
@@ -228,5 +218,5 @@ def get_character_status(uid: int, create_date: str, avatar_info: enka_model.Ava
         weapon=weapon,
         uid=uid,
         create_date=create_date,
-        costume=avatar_info.costumeId
+        costume_id=avatar_info.costumeId
     )

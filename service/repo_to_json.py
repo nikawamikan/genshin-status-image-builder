@@ -2,7 +2,6 @@ from model.git_model import ArtifactModel, ArtifactSetNameModel,  WeaponModel, C
 from model.util_model import Artifact, Weapon, NameCard, Costume, Skill, Icon,  JpCharacterModel
 from lib.async_json import save_json
 import repository.git_repository as git_repo
-import os
 
 NAME_SUBSTR = len("UI_AvatarIcon_Side_")
 
@@ -27,6 +26,11 @@ def weapon_dict_builder(
     weapon_models = [
         v for v in weapon_models
         if v.nameTextMapHash in enka_names
+    ]
+
+    weapon_models = [
+        v for v in weapon_models
+        if v.storyId is not None
     ]
 
     return {
@@ -115,6 +119,7 @@ def get_jp_character_models(
     jp_name: dict[str, str]
 ) -> dict[str, JpCharacterModel]:
     result = {}
+    skill_names = ["通常攻撃",  "元素スキル", "元素爆発"]
     for k, v in config_model.items():
         name = v.SideIconName[NAME_SUBSTR:]
         base_path = f"image/character/{name}/"
@@ -165,13 +170,14 @@ def get_jp_character_models(
             ],
             skills=[
                 Skill(
+                    name=skill_names[i],
                     icon=Icon(
                         name=f"{v.Skills[v2]}.png",
                         path=f"{skill_path}{v.Skills[v2]}.png"
                     ),
                     id=v2,
                     proud_id=v.ProudMap[v2]
-                )for v2 in v.SkillOrder
+                )for i, v2 in enumerate(v.SkillOrder)
             ],
             name=jp_name[v.NameTextMapHash],
             english_name=name,
@@ -190,7 +196,7 @@ async def updates():
     # 更新の必要性を確認します
     if not git_repo.confirmation_update_necessity():
         print("no update")
-        return
+        # return
 
     artifact_models = await git_repo.get_artifact_dict()
     artifact_set_name_models = await git_repo.get_artifact_set_name_dict()
