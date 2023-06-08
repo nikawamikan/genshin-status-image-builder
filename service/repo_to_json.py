@@ -122,8 +122,6 @@ def get_jp_character_models(
     def check_none_dict(data: dict, *keys: str):
         if keys[0] in data:
             if len(keys) == 1:
-                global COUNTER
-                COUNTER += 1
                 return data[keys[0]]
             return check_none_dict(data[keys[0]], *keys[1:])
         else:
