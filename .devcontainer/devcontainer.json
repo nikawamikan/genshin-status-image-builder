@@ -3,20 +3,31 @@
 {
 	"name": "Python 3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/python:0-3.11",
+	"workspaceFolder": "/workspace",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+	"build": {"dockerfile": "../Dockerfile"},
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"pizzacat83.codic"
+				"pizzacat83.codic",
+				"GitHub.vscode-pull-request-github",
+				"felipecaputo.git-project-manager",
+				"njpwerner.autodocstring",
+				"ms-python.autopep8",
+				"ms-python.isort",
+				"MS-CEINTL.vscode-language-pack-ja",
+				"esbenp.prettier-vscode",
+				"ms-python.vscode-pylance",
+				"ms-python.python"
 			]
 		}
 	},
+	"postCreateCommand": "apk add git"
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install --user -r requirements.txt",
 	// Configure tool-specific properties.
 	// "customizations": {},
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.

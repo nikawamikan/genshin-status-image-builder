@@ -2,3 +2,5 @@ Pillow
 pydantic
 aiohttp
 requests
+aiofiles
+watchdog
