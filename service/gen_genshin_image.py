@@ -23,6 +23,10 @@ def __create_background(element: str, gacha_icon: str, position: util_model.Posi
         image_path=ASSETS.backgroundo_elements[element],
         default_font_size=26,
     )
+
+    img.add_image(
+        image_path=ASSETS.background_shadow,
+    )
     x, y = img.get_image().size
     x //= 2
     y //= 2

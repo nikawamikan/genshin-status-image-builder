@@ -14,6 +14,7 @@ def static_init():
 
     ASSETS = assets.Assets(
         background_base=str(BACKGROUND / "base.png"),
+        background_shadow=str(BACKGROUND/ "shadow.png"),
         backgroundo_elements={
             "Electric": str(BACKGROUND / "Electric.png"),
             "Fire": str(BACKGROUND / "Fire.png"),

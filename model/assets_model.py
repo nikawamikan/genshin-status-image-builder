@@ -20,6 +20,7 @@ class Icon(BaseModel):
 class Assets(BaseModel):
     artufact_bg: list[str]
     background_base: str
+    background_shadow: str
     backgroundo_elements: dict[Union[None, str], str]
     icon: Icon
     star: str
