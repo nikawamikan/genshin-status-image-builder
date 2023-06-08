@@ -15,6 +15,7 @@ async def save_json(path: str, obj: dict):
             json.dumps(
                 obj,
                 ensure_ascii=False,
+                indent=4,
             )
         )
 
