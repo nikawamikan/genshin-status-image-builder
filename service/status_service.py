@@ -3,7 +3,7 @@ import re
 import datetime
 import model.status_model as status_model
 import model.enka_model as enka_model
-from repository.util_data import CHARACTER_DATA_DICT
+from repository.util_repository import CHARACTER_DATA_DICT
 
 
 PERCENT_PATTERN = re.compile(

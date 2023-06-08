@@ -29,9 +29,9 @@ class Skill(BaseModel):
 
 
 class Position(BaseModel):
-    x: int
-    y: int
-    scale: int
+    x: int = -221
+    y: int = 34
+    scale: int = 97
 
 
 class Costume(BaseModel):

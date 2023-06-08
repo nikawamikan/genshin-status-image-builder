@@ -11,6 +11,6 @@ async def get_enka_model(uid: int):
         enka_model = Enka(** data)
     except:
         print(data)
-        with open(f"error/error{uid}.json", "w") as f:
+        with open(f"error/userdata/{uid}.json", "w") as f:
             f.write(data)
     return enka_model

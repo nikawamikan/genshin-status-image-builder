@@ -1,7 +1,8 @@
 from model.git_model import ArtifactModel, ArtifactSetNameModel,  WeaponModel, CharacterConfigModel
-from model.util_model import Artifact, Weapon, NameCard, Costume, Skill, Icon,  JpCharacterModel
+from model.util_model import Artifact, Weapon, NameCard, Costume, Skill, Icon,  JpCharacterModel, Position
 from lib.async_json import save_json
 import repository.git_repository as git_repo
+import repository.util_repository as util_repository
 
 NAME_SUBSTR = len("UI_AvatarIcon_Side_")
 
@@ -118,6 +119,16 @@ def get_jp_character_models(
     config_model: dict[str, CharacterConfigModel],
     jp_name: dict[str, str]
 ) -> dict[str, JpCharacterModel]:
+    def check_none_dict(data: dict, *keys: str):
+        if keys[0] in data:
+            if len(keys) == 1:
+                global COUNTER
+                COUNTER += 1
+                return data[keys[0]]
+            return check_none_dict(data[keys[0]], *keys[1:])
+        else:
+            return Position()
+
     result = {}
     skill_names = ["通常攻撃",  "元素スキル", "元素爆発"]
     for k, v in config_model.items():
@@ -143,6 +154,11 @@ def get_jp_character_models(
                     name=f'{v.art}.png',
                     path=f'{chara_icon_path}{k}/{v.art}.png'
                 ),
+                position=check_none_dict(
+                    util_repository.POSITION_DATA_DICT,
+                    name,
+                    k
+                )
             ) for k, v in v.Costumes.items()
         }
         costume["default"] = Costume(
@@ -157,6 +173,11 @@ def get_jp_character_models(
             gacha_icon=Icon(
                 name=gacha_icon,
                 path=f"{chara_icon_path_default}{gacha_icon}"
+            ),
+            position=check_none_dict(
+                util_repository.POSITION_DATA_DICT,
+                name,
+                "default",
             )
         )
         data = JpCharacterModel(
@@ -186,17 +207,18 @@ def get_jp_character_models(
             costumes=costume,
         )
         result[k] = data
+
     return result
 
 
-async def updates():
+async def updates(debug_flg: bool = False):
     """gihhubよりAPIに必要なデータの構築を行い保存する処理を行います。
     """
 
     # 更新の必要性を確認します
-    if not git_repo.confirmation_update_necessity():
+    if not git_repo.confirmation_update_necessity() and not debug_flg:
         print("no update")
-        # return
+        return
 
     artifact_models = await git_repo.get_artifact_dict()
     artifact_set_name_models = await git_repo.get_artifact_set_name_dict()

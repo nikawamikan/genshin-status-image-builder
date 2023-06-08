@@ -1,4 +1,4 @@
-import repository.util_data as util_data
+import repository.util_repository as util_repository
 from lib.downloader import images_update
 from model.util_model import Icon
 
@@ -15,10 +15,10 @@ def get_url_and_paths(obj):
 
 
 async def util_image_update():
-    weapons = await util_data.get_weapon_model_dict()
-    artifacts = await util_data.get_artfact_model_dict()
-    namecades = await util_data.get_namecard_model_dict()
-    characters = await util_data.get_character_model_dict()
+    weapons = await util_repository.get_weapon_model_dict()
+    artifacts = await util_repository.get_artfact_model_dict()
+    namecades = await util_repository.get_namecard_model_dict()
+    characters = await util_repository.get_character_model_dict()
     charcter_urlpaths = []
     for character in characters.values():
         for costume in character.costumes.values():

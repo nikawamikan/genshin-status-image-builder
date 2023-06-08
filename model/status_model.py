@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from decimal import Decimal
 import lib.score_calc as score_calc
 import model.util_model as util_model
-from repository.util_data import \
+from repository.util_repository import \
     CHARACTER_DATA_DICT, WEAPON_DATA_DICT, ARTIFACT_DATA_DICT, STATUS_NAMEHASH_DICT
 from lib.score_calc import BUILD_NAMES
 

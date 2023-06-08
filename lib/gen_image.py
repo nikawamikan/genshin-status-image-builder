@@ -243,12 +243,10 @@ class GImage:
             im = im.resize(size=size)
         elif scale is not None:
 
-            print(im.size)
             x = im.size[0] * scale // 100
             y = im.size[1] * scale // 100
             im = im.resize(size=(x, y))
 
-            print(im.size, scale)
         box = (
             box[0] - int(im.size[0]*image_anchor[0]),
             box[1] - int(im.size[1]*image_anchor[1])
