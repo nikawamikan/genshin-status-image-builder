@@ -1,0 +1,7 @@
+image/*
+!image/assets
+*.pyc
+sample
+test.py
+font
+test/*

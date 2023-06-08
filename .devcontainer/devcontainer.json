@@ -18,7 +18,9 @@
 				"MS-CEINTL.vscode-language-pack-ja",
 				"esbenp.prettier-vscode",
 				"ms-python.vscode-pylance",
-				"ms-python.python"
+				"ms-python.python",
+				"teledemic.branch-warnings",
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	},
