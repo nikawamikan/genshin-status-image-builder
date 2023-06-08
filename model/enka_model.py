@@ -89,9 +89,9 @@ class PlayerInfo(BaseModel):
     nickname: str
     level: int
     signature: str = ""
-    worldLevel: int
+    worldLevel: int = None
     nameCardId: str
-    finishAchievementNum: int
+    finishAchievementNum: int = None
     towerFloorIndex: int = 0
     towerLevelIndex: int = 0
     showAvatarInfoList: list[ShowAvatarInfo] = []

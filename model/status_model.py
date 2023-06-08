@@ -171,9 +171,9 @@ class UserData(BaseModel):
     uid: int
     level: int
     signature: str
-    world_level: int
+    world_level: int = None
     name_card_id: int
-    finish_achievement_num: int
+    finish_achievement_num: int = None
     tower_floor_index: int
     tower_level_index: int
     nickname: str
