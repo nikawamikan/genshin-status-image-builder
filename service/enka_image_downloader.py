@@ -32,5 +32,4 @@ async def util_image_update():
     url_and_paths = get_url_and_paths(weapons) + get_url_and_paths(
         artifacts) + get_url_and_paths(namecades) + charcter_urlpaths
 
-    print(len(url_and_paths))
     await images_update(url_and_paths)
