@@ -4,3 +4,4 @@ aiohttp
 requests
 aiofiles
 watchdog
+PyGithub
