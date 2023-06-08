@@ -1,0 +1,545 @@
+{
+    "Ayaka": {
+        "200201": {
+            "x": -265,
+            "y": 8,
+            "scale": 95
+        },
+        "default": {
+            "x": -227,
+            "y": -2,
+            "scale": 71
+        }
+    },
+    "Qin": {
+        "200301": {
+            "x": -236,
+            "y": 53,
+            "scale": 105
+        },
+        "200302": {
+            "x": -241,
+            "y": 38,
+            "scale": 85
+        },
+        "default": {
+            "x": -241,
+            "y": 38,
+            "scale": 85
+        }
+    },
+    "PlayerBoy": {
+        "default": {
+            "x": -210,
+            "y": 32,
+            "scale": 95
+        }
+    },
+    "Lisa": {
+        "200601": {
+            "x": -266,
+            "y": 45,
+            "scale": 133
+        },
+        "default": {
+            "x": -251,
+            "y": 55,
+            "scale": 101
+        }
+    },
+    "PlayerGirl": {
+        "default": {
+            "x": -210,
+            "y": 32,
+            "scale": 95
+        }
+    },
+    "Barbara": {
+        "201401": {
+            "x": -239,
+            "y": 5,
+            "scale": 106
+        },
+        "default": {
+            "x": -239,
+            "y": -8,
+            "scale": 90
+        }
+    },
+    "Kaeya": {
+        "default": {
+            "x": -212,
+            "y": 71,
+            "scale": 99
+        }
+    },
+    "Diluc": {
+        "201601": {
+            "x": -232,
+            "y": 79,
+            "scale": 106
+        },
+        "default": {
+            "x": -174,
+            "y": 23,
+            "scale": 83
+        }
+    },
+    "Razor": {
+        "default": {
+            "x": -231,
+            "y": 97,
+            "scale": 95
+        }
+    },
+    "Ambor": {
+        "202101": {
+            "x": -237,
+            "y": -2,
+            "scale": 92
+        },
+        "default": {
+            "x": -237,
+            "y": -2,
+            "scale": 92
+        }
+    },
+    "Venti": {
+        "default": {
+            "x": -202,
+            "y": 71,
+            "scale": 91
+        }
+    },
+    "Xiangling": {
+        "default": {
+            "x": -261,
+            "y": 4,
+            "scale": 99
+        }
+    },
+    "Beidou": {
+        "default": {
+            "x": -239,
+            "y": 12,
+            "scale": 83
+        }
+    },
+    "Xingqiu": {
+        "default": {
+            "x": -210,
+            "y": 26,
+            "scale": 99
+        }
+    },
+    "Xiao": {
+        "default": {
+            "x": -221,
+            "y": -61,
+            "scale": 99
+        }
+    },
+    "Ningguang": {
+        "202701": {
+            "x": -240,
+            "y": 76,
+            "scale": 113
+        },
+        "default": {
+            "x": -192,
+            "y": 28,
+            "scale": 98
+        }
+    },
+    "Klee": {
+        "default": {
+            "x": -200,
+            "y": 3,
+            "scale": 101
+        }
+    },
+    "Zhongli": {
+        "default": {
+            "x": -196,
+            "y": 119,
+            "scale": 120
+        }
+    },
+    "Fischl": {
+        "203101": {
+            "x": -212,
+            "y": 75,
+            "scale": 106
+        },
+        "default": {
+            "x": -191,
+            "y": 92,
+            "scale": 103
+        }
+    },
+    "Bennett": {
+        "default": {
+            "x": -190,
+            "y": 14,
+            "scale": 83
+        }
+    },
+    "Tartaglia": {
+        "default": {
+            "x": -219,
+            "y": 6,
+            "scale": 91
+        }
+    },
+    "Noel": {
+        "default": {
+            "x": -189,
+            "y": 7,
+            "scale": 98
+        }
+    },
+    "Qiqi": {
+        "default": {
+            "x": -245,
+            "y": 1,
+            "scale": 85
+        }
+    },
+    "Chongyun": {
+        "default": {
+            "x": -238,
+            "y": 11,
+            "scale": 90
+        }
+    },
+    "Ganyu": {
+        "default": {
+            "x": -212,
+            "y": 36,
+            "scale": 103
+        }
+    },
+    "Albedo": {
+        "default": {
+            "x": -257,
+            "y": 26,
+            "scale": 75
+        }
+    },
+    "Diona": {
+        "default": {
+            "x": -204,
+            "y": 6,
+            "scale": 110
+        }
+    },
+    "Mona": {
+        "204101": {
+            "x": -233,
+            "y": 59,
+            "scale": 92
+        },
+        "default": {
+            "x": -233,
+            "y": 59,
+            "scale": 92
+        }
+    },
+    "Keqing": {
+        "204201": {
+            "x": -257,
+            "y": 71,
+            "scale": 122
+        },
+        "default": {
+            "x": -185,
+            "y": -6,
+            "scale": 88
+        }
+    },
+    "Sucrose": {
+        "default": {
+            "x": -176,
+            "y": 42,
+            "scale": 99
+        }
+    },
+    "Xinyan": {
+        "default": {
+            "x": -207,
+            "y": 27,
+            "scale": 92
+        }
+    },
+    "Rosaria": {
+        "204501": {
+            "x": -248,
+            "y": 50,
+            "scale": 95
+        },
+        "default": {
+            "x": -248,
+            "y": 50,
+            "scale": 95
+        }
+    },
+    "Hutao": {
+        "default": {
+            "x": -242,
+            "y": 29,
+            "scale": 93
+        }
+    },
+    "Kazuha": {
+        "default": {
+            "x": -199,
+            "y": 18,
+            "scale": 88
+        }
+    },
+    "Feiyan": {
+        "default": {
+            "x": -203,
+            "y": 35,
+            "scale": 103
+        }
+    },
+    "Yoimiya": {
+        "default": {
+            "x": -198,
+            "y": 69,
+            "scale": 109
+        }
+    },
+    "Tohma": {
+        "default": {
+            "x": -214,
+            "y": 31,
+            "scale": 91
+        }
+    },
+    "Eula": {
+        "default": {
+            "x": -229,
+            "y": 123,
+            "scale": 103
+        }
+    },
+    "Shougun": {
+        "default": {
+            "x": -178,
+            "y": 59,
+            "scale": 99
+        }
+    },
+    "Sayu": {
+        "default": {
+            "x": -239,
+            "y": 37,
+            "scale": 99
+        }
+    },
+    "Kokomi": {
+        "default": {
+            "x": -200,
+            "y": 10,
+            "scale": 101
+        }
+    },
+    "Gorou": {
+        "default": {
+            "x": -200,
+            "y": 45,
+            "scale": 103
+        }
+    },
+    "Sara": {
+        "default": {
+            "x": -218,
+            "y": 71,
+            "scale": 95
+        }
+    },
+    "Itto": {
+        "default": {
+            "x": -261,
+            "y": 57,
+            "scale": 99
+        }
+    },
+    "Yae": {
+        "default": {
+            "x": -133,
+            "y": 39,
+            "scale": 101
+        }
+    },
+    "Heizo": {
+        "default": {
+            "x": -228,
+            "y": 66,
+            "scale": 103
+        }
+    },
+    "Yelan": {
+        "default": {
+            "x": -208,
+            "y": 91,
+            "scale": 121
+        }
+    },
+    "Momoka": {
+        "default": {
+            "x": -306,
+            "y": 12,
+            "scale": 95
+        }
+    },
+    "Aloy": {
+        "default": {
+            "x": -237,
+            "y": -14,
+            "scale": 84
+        }
+    },
+    "Shenhe": {
+        "default": {
+            "x": -200,
+            "y": 79,
+            "scale": 99
+        }
+    },
+    "Yunjin": {
+        "default": {
+            "x": -210,
+            "y": 94,
+            "scale": 120
+        }
+    },
+    "Shinobu": {
+        "default": {
+            "x": -230,
+            "y": 42,
+            "scale": 99
+        }
+    },
+    "Ayato": {
+        "default": {
+            "x": -220,
+            "y": 10,
+            "scale": 82
+        }
+    },
+    "Collei": {
+        "default": {
+            "x": -237,
+            "y": 46,
+            "scale": 90
+        }
+    },
+    "Dori": {
+        "default": {
+            "x": -176,
+            "y": 5,
+            "scale": 105
+        }
+    },
+    "Tighnari": {
+        "default": {
+            "x": -231,
+            "y": 13,
+            "scale": 91
+        }
+    },
+    "Nilou": {
+        "default": {
+            "x": -217,
+            "y": 51,
+            "scale": 98
+        }
+    },
+    "Cyno": {
+        "default": {
+            "x": -227,
+            "y": 28,
+            "scale": 100
+        }
+    },
+    "Candace": {
+        "default": {
+            "x": -255,
+            "y": 30,
+            "scale": 90
+        }
+    },
+    "Nahida": {
+        "default": {
+            "x": -234,
+            "y": -34,
+            "scale": 98
+        }
+    },
+    "Layla": {
+        "default": {
+            "x": -200,
+            "y": 3,
+            "scale": 101
+        }
+    },
+    "Wanderer": {
+        "default": {
+            "x": -202,
+            "y": 10,
+            "scale": 99
+        }
+    },
+    "Faruzan": {
+        "default": {
+            "x": -242,
+            "y": 58,
+            "scale": 103
+        }
+    },
+    "Yaoyao": {
+        "default": {
+            "x": -214,
+            "y": 7,
+            "scale": 121
+        }
+    },
+    "Alhatham": {
+        "default": {
+            "x": -257,
+            "y": -22,
+            "scale": 75
+        }
+    },
+    "Dehya": {
+        "default": {
+            "x": -209,
+            "y": -10,
+            "scale": 83
+        }
+    },
+    "Mika": {
+        "default": {
+            "x": -267,
+            "y": 71,
+            "scale": 101
+        }
+    },
+    "Kaveh": {
+        "default": {
+            "x": -175,
+            "y": 22,
+            "scale": 96
+        }
+    },
+    "Baizhuer": {
+        "default": {
+            "x": -262,
+            "y": 8,
+            "scale": 81
+        }
+    }
+}
