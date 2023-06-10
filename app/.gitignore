@@ -1,8 +1,10 @@
-image/*/*
+image/**/*/*
 !image/assets
 *.pyc
 sample
 test.py
 font
 test/*
+!image/character/sample
+!image/character/sample/**
 !**/.gitkeep
