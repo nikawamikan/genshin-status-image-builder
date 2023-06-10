@@ -24,7 +24,7 @@ def json_update_observation_start():
         "namecards.json": util_repository.update_namecard_model_dict,
         "names.json": util_repository.update_namehash_model_dict,
         "characters.json": util_repository.update_character_model_dict,
-        "positions.json": util_repository.update_position_model_dict,
+        # "positions.json": util_repository.get_position_model_dict,
         "statusnames.json": util_repository.update_status_namehash_model_dict,
     }
     dir_path = "data"

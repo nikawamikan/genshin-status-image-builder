@@ -1,5 +1,6 @@
 from PIL import Image, ImageFont, ImageDraw
 from typing import TypeVar, Union
+import os
 
 
 class Colors:
@@ -66,6 +67,16 @@ class Algin:
 TypeGImage = TypeVar("TypeGImage", bound="GImage",)
 
 
+def _open_image(path: str, raise_exception: bool = False):
+    if os.path.exists(path):
+        return Image.open(path)
+    elif raise_exception:
+        raise FileNotFoundError(path)
+    else:
+        # pathが存在しない場合はデフォルトの場合は1pxの透明画像を返却します
+        return Image.new(mode="RGBA", size=[100, 100], color=Colors.CLEAR)
+
+
 class GImage:
     """Pillowを利用した画像を生成するラッパークラスです。自身をベースに他のGImageオブジェクトを合成するなどの操作が可能です。
     """
@@ -92,7 +103,7 @@ class GImage:
         """
         # raiseの種類たぶんカバレッジおいきれてないので他のエラー出たら気にしとく事
         if image_path is not None:
-            self.__image = Image.open(image_path).convert('RGBA').copy()
+            self.__image = _open_image(image_path).convert('RGBA').copy()
         elif len(box_size) == 2:
             self.__image = Image.new(
                 mode="RGBA", size=box_size, color=Colors.CLEAR)
@@ -230,7 +241,7 @@ class GImage:
             size (tuple[int, int], optional): 画像サイズ（縦横比を固定しているため、はみ出る部分の上限として考えてください）. Defaults to None.
             image_anchor (tuple[int, int], optional): 基準点. Defaults to ImageAnchors.LEFT_TOP.
         """
-        im = Image.open(image_path).convert('RGBA')
+        im = _open_image(image_path).convert('RGBA')
         if size is not None:
             x = size[0]
             y = size[1]
@@ -269,7 +280,7 @@ class GImage:
             size (tuple[int, int], optional): 画像サイズ（縦横比を固定しているため、はみ出る部分の上限として考えてください）. Defaults to None.
             image_anchor (tuple[int, int], optional): 基準点. Defaults to ImageAnchors.LEFT_TOP.
         """
-        im = Image.open(image_path).convert('RGBA')
+        im = _open_image(image_path).convert('RGBA')
         if size is not None:
             im.thumbnail(size=size)
         bg = Image.new(mode="RGBA", size=(

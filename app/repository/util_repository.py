@@ -57,7 +57,6 @@ async def update_namehash_model_dict():
 
 
 async def static_init():
-    await update_position_model_dict()
     await update_artfact_model_dict()
     await update_character_model_dict()
     await update_namecard_model_dict()

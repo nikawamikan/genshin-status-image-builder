@@ -13,7 +13,7 @@
     "FIGHT_PROP_CRITICAL": "会心率",
     "FIGHT_PROP_ANTI_CRITICAL": "会心耐性",
     "FIGHT_PROP_CRITICAL_HURT": "会心ダメ",
-    "FIGHT_PROP_CHARGE_EFFICIENCY": "元素チャ効率",
+    "FIGHT_PROP_CHARGE_EFFICIENCY": "元チャ効率",
     "FIGHT_PROP_ADD_HURT": "ダメージ増加",
     "FIGHT_PROP_SUB_HURT": "被ダメージ軽減",
     "FIGHT_PROP_HEAL_ADD": "与える治療効果",

@@ -20,12 +20,12 @@ def __create_background(element: str, gacha_icon: str, position: util_model.Posi
     """
     # 元素別の画像
     img = GImage(
-        image_path=ASSETS.backgroundo_elements[element],
+        image_path=ASSETS.genshin_status.backgroundo_elements[element],
         default_font_size=26,
     )
 
     img.add_image(
-        image_path=ASSETS.background_shadow,
+        image_path=ASSETS.genshin_status.background_shadow,
     )
     x, y = img.get_image().size
     x //= 2
@@ -38,7 +38,7 @@ def __create_background(element: str, gacha_icon: str, position: util_model.Posi
         image_anchor=ImageAnchors.MIDDLE_MIDDLE
     )
     # オーバーレイ画像
-    img.add_image(image_path=ASSETS.background_base)
+    img.add_image(image_path=ASSETS.genshin_status.background_base)
 
     return img
 
@@ -65,7 +65,7 @@ def __create_star_and_lv(quantity: int, lv: int, constellations: str) -> Image.I
     # ★の合成
     for i in range(quantity):
         img.add_image(
-            image_path=ASSETS.star,
+            image_path=ASSETS.genshin_status.star,
             box=(i*35, 2),
         )
     # レベルと凸
@@ -405,7 +405,7 @@ def __create_artifact(artifact: status_model.Artifact, angle: int, element_color
 
     # 聖遺物の背景を合成
     base_img.add_rotate_image(
-        image_path=ASSETS.artufact_bg[artifact.star],
+        image_path=ASSETS.genshin_status.artufact_bg[artifact.star],
         box=(66, 70),
         size=(220, 220),
         angle=angle,

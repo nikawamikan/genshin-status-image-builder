@@ -12,7 +12,7 @@ async def save_json_file(file_name: str, obj: dict):
     await save_json(f"data/{file_name}", obj)
 
 
-def weapon_dict_builder(
+async def weapon_dict_builder(
     weapon_models: list[WeaponModel],
     enka_names: list[str, str]
 ) -> dict[str, Weapon]:
@@ -68,7 +68,7 @@ def unique_artifact_list(artifact_models: list[ArtifactModel]) -> list[ArtifactM
     return result
 
 
-def artifact_dict_builder(
+async def artifact_dict_builder(
     artifact_models: list[ArtifactModel],
     artifact_name_models: list[ArtifactSetNameModel],
     enka_names: list[str, str]
@@ -116,7 +116,7 @@ def namecard_dict_builder(namecards: dict[str, str]):
     }
 
 
-def get_jp_character_models(
+async def get_jp_character_models(
     config_model: dict[str, CharacterConfigModel],
     jp_name: dict[str, str]
 ) -> dict[str, JpCharacterModel]:
@@ -129,7 +129,7 @@ def get_jp_character_models(
         else:
             return Position()
 
-    position_data = asyncio.run(util_repository.get_position_model_dict())
+    position_data = await util_repository.get_position_model_dict()
     result = {}
     skill_names = ["通常攻撃",  "元素スキル", "元素爆発"]
     for k, v in config_model.items():
@@ -229,20 +229,20 @@ async def updates(debug_flg: bool = False):
     namecards = await git_repo.get_namecard_dict()
 
     # 聖遺物情報を扱いやすい形に変換
-    artifact_dict = artifact_dict_builder(
+    artifact_dict = await artifact_dict_builder(
         artifact_models=artifact_models,
         artifact_name_models=artifact_set_name_models,
         enka_names=names["ja"],
     )
 
     # 武器情報を扱いやすい形に変換
-    weapon_dict = weapon_dict_builder(
+    weapon_dict = await weapon_dict_builder(
         weapon_models=weapon_models,
         enka_names=names["ja"]
     )
 
     # キャラクター情報を扱いやすい形に変換
-    character_dict = get_jp_character_models(
+    character_dict = await get_jp_character_models(
         config_model=characters,
         jp_name=names["ja"]
     )
