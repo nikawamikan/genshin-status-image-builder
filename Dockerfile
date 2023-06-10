@@ -4,4 +4,5 @@ WORKDIR /usr/src
 COPY requirements.txt .
 COPY init.sh .
 
-RUN sh init.sh && pip install --no-cache-dir -r requirements.txt
+RUN sh init.sh
+RUN pip install --no-cache-dir -r requirements.txt
