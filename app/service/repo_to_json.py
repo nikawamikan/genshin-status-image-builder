@@ -3,7 +3,7 @@ from model.util_model import Artifact, Weapon, NameCard, Costume, Skill, Icon,  
 from lib.async_json import save_json
 import repository.git_repository as git_repo
 import repository.util_repository as util_repository
-import asyncio
+
 
 NAME_SUBSTR = len("UI_AvatarIcon_Side_")
 
@@ -219,7 +219,7 @@ async def updates(debug_flg: bool = False):
     # 更新の必要性を確認します
     if not git_repo.confirmation_update_necessity() and not debug_flg:
         print("no update")
-        return
+        return False
 
     artifact_models = await git_repo.get_artifact_dict()
     artifact_set_name_models = await git_repo.get_artifact_set_name_dict()
@@ -257,3 +257,5 @@ async def updates(debug_flg: bool = False):
     await save_json_file("characters.json", {k: v.dict() for k, v in character_dict.items()})
 
     git_repo.save_last_push_dates()
+
+    return True

@@ -1,4 +1,4 @@
-from model.util_model import Artifact, JpCharacterModel, NameCard,  Weapon, Position
+from model.util_model import Artifact, JpCharacterModel,  NameCard,  Weapon, Position
 from lib.async_json import load_json
 from pydantic import BaseModel
 import asyncio

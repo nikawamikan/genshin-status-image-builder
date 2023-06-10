@@ -1,10 +1,10 @@
 from pydantic import BaseModel
 from decimal import Decimal
-import lib.score_calc as score_calc
+import app.service.score_calc as score_calc
 import model.util_model as util_model
 from repository.util_repository import \
     CHARACTER_DATA_DICT, WEAPON_DATA_DICT, ARTIFACT_DATA_DICT, STATUS_NAMEHASH_DICT
-from lib.score_calc import BUILD_NAMES
+from app.service.score_calc import BUILD_NAMES
 
 
 ELEMENTAL_NAME_DICT = {
@@ -148,12 +148,9 @@ class Character(BaseModel):
     def elemental_jp_name(self):
         return ELEMENTAL_NAME_DICT.get(self.elemental_name)
 
-    def set_costume(self, costume_id: str):
-        self.costume = self.util.costumes[costume_id]
-
-    def set_utils(self):
+    def init_utils(self):
         self.util = CHARACTER_DATA_DICT[self.id]
-        self.set_costume(self.costume_id)
+        self.costume = self.util.costumes[self.costume_id]
         self.weapon.set_util()
         for artifact in self.artifacts.values():
             artifact.set_util()

@@ -6,6 +6,7 @@ import model.util_model as util_model
 from PIL import Image, ImageFilter, ImageDraw
 from repository.assets_repository import ASSETS
 from decimal import Decimal
+import lib.cache_image as cache_image
 
 
 def __create_background(element: str, gacha_icon: str, position: util_model.Position) -> GImage:
@@ -741,6 +742,11 @@ def get_character_image_bytes(character_status: status_model.Character) -> bytes
 
 
 def save_image(file_path: str, character_status: status_model.Character):
+    if cache_image.check_cache_exists(file_path=file_path):
+        return
+
+    character_status.init_utils()
     image = __create_image(character=character_status)
     image = image.convert("RGB")
     image.save(file_path, optimize=True, quality=100)
+    cache_image.cache_append(file_path=file_path)

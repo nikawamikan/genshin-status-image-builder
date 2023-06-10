@@ -15,10 +15,10 @@ def get_url_and_paths(obj):
 
 
 async def util_image_update():
-    weapons = await util_repository.get_weapon_model_dict()
-    artifacts = await util_repository.get_artfact_model_dict()
-    namecades = await util_repository.get_namecard_model_dict()
-    characters = await util_repository.get_character_model_dict()
+    weapons = await util_repository.WEAPON_DATA_DICT
+    artifacts = await util_repository.ARTIFACT_DATA_DICT
+    namecades = await util_repository.NAMECARD_DATA_DICT
+    characters = await util_repository.CHARACTER_DATA_DICT
     charcter_urlpaths = []
     for character in characters.values():
         for costume in character.costumes.values():
