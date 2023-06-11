@@ -196,6 +196,37 @@ class GImage:
             align=align,
         )
 
+    def draw_text_with_max_width(
+        self,
+        text: str,
+        position: tuple[int, int],
+        max_width: int,
+        anchor: str = None,
+        align: str = None,
+        font_size: int = None,
+        font_color: tuple[int, int, int, int] = None,
+        font_path: str = None,
+    ):
+        draw = ImageDraw.Draw(im=self.__image)
+        font = self.__get_font(font_path=font_path, font_size=font_size)
+        font_size = font.size
+        print(font_size)
+
+        textsize = draw.textsize(text=text, font=font)
+
+        if max_width < textsize[0]:
+            print(font_size)
+            font_size = int(font_size * max_width / textsize[0])
+
+        draw.text(
+            xy=position,
+            text=str(text),
+            fill=font_color,
+            font=self.__get_font(font_path=font_path, font_size=font_size),
+            anchor=anchor,
+            align=align,
+        )
+
     def paste(
         self,
         im: Union[Image.Image, TypeGImage],

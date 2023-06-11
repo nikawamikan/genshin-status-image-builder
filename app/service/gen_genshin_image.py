@@ -99,7 +99,7 @@ def __create_status_add(base: int, add: int, type: str, path: str) -> Image.Imag
     img.add_image(
         image_path=path,
         box=(50, 50),
-        size=(55, 55),
+        size=(45, 45),
         image_anchor=ImageAnchors.MIDDLE_MIDDLE
     )
 
@@ -153,7 +153,7 @@ def __create_status(status: Decimal, type: str, path: str, suffix="%") -> Image.
     img.add_image(
         image_path=path,
         box=(50, 50),
-        size=(55, 55),
+        size=(45, 45),
         image_anchor=ImageAnchors.MIDDLE_MIDDLE
     )
 
@@ -572,8 +572,9 @@ def __create_weapon(weapon: status_model.Weapon, element_color: tuple[int, int, 
         image_anchor=ImageAnchors.LEFT_BOTTOM
     )
     # 武器名の合成
-    img.draw_text(
+    img.draw_text_with_max_width(
         text=weapon.util.name,
+        max_width=400,
         position=(570, 160),
         anchor=Anchors.RIGHT_BOTTOM,
     )
