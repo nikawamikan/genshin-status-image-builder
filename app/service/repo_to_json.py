@@ -1,6 +1,6 @@
 from model.git_model import ArtifactModel, ArtifactSetNameModel,  WeaponModel, CharacterConfigModel
 from model.util_model import Artifact, Weapon, NameCard, Costume, Skill, Icon,  JpCharacterModel, Position
-from lib.async_json import save_json
+from lib.json_lib import save_json
 import repository.git_repository as git_repo
 import repository.util_repository as util_repository
 

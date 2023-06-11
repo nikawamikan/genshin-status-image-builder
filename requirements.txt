@@ -5,3 +5,5 @@ requests
 aiofiles
 watchdog
 PyGithub
+uvicorn[standard]
+fastapi

@@ -7,7 +7,7 @@ import model.status_model as status_model
 router = APIRouter(prefix="/buildimage")
 
 
-@router.post("/genshinstat")
+@router.post("/genshinstat", tags=["image generator"])
 def get_genshin_status_build_image(char_stat: status_model.Character):
     filename = f"{char_stat.create_date}_{char_stat.uid}_{char_stat.id}_{char_stat.build_type}.jpg"
     file_path = f"build_images/{filename}"

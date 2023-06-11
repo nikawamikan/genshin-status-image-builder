@@ -1,4 +1,4 @@
-from lib.async_json import load_json, save_json
+from lib.json_lib import load_json, save_json
 import asyncio
 from repository.util_repository import CHARACTER_DATA_DICT
 from model.util_model import Position

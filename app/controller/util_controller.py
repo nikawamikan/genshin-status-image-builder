@@ -6,7 +6,7 @@ import service.character_position_service as chara_position
 from model.response_json_model import CharacterPosition
 
 
-router = APIRouter(prefix="/util")
+router = APIRouter(prefix="/util", tags=["util"])
 
 
 @router.put("/update-image")

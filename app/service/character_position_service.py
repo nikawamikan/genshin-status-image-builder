@@ -1,6 +1,6 @@
 from model.response_json_model import CharacterPosition, Position
 import repository.util_repository as util_repo
-from lib.async_json import save_json
+from lib.json_lib import save_json
 
 
 class Set(set):

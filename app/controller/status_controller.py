@@ -3,7 +3,7 @@ import service.status_service as status_service
 import repository.enka_repository as enka_repository
 
 
-router = APIRouter(prefix="/status")
+router = APIRouter(prefix="/status", tags=["status data"])
 
 
 @router.get("/uid/{uid}")
