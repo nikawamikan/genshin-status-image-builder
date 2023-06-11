@@ -210,12 +210,10 @@ class GImage:
         draw = ImageDraw.Draw(im=self.__image)
         font = self.__get_font(font_path=font_path, font_size=font_size)
         font_size = font.size
-        print(font_size)
 
         textsize = draw.textsize(text=text, font=font)
 
         if max_width < textsize[0]:
-            print(font_size)
             font_size = int(font_size * max_width / textsize[0])
 
         draw.text(
