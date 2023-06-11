@@ -302,7 +302,7 @@ def __create_full_status(
     return img.get_image()
 
 
-def __create_skill(skill_icon: str, skill_name: str, skill_lv: str, element_color: tuple[int, int, int]) -> Image.Image:
+def __create_skill(skill: status_model.Skill, element_color: tuple[int, int, int]) -> Image.Image:
     """個別のスキルの画像を生成します
 
     Args:
@@ -315,23 +315,28 @@ def __create_skill(skill_icon: str, skill_name: str, skill_lv: str, element_colo
     Returns:
         Image.Image: スキル画像
     """
+
+    fontcolor = Colors.GENSHIN_LIGHT_BLUE if skill.add_level > 0 else None
+
     img = GImage(
         box_size=(320, 100),
         default_font_size=48,
     )
     # スキルの画像を合成
-    img.add_image(image_path=skill_icon, box=(60, 50), size=(
+    img.add_image(image_path=skill.util.icon.path, box=(60, 50), size=(
         100, 100), image_anchor=ImageAnchors.MIDDLE_MIDDLE)
     # スキルレベルの合成
     img.draw_text(
         text="Lv",
         position=(165, 0),
-        anchor=Anchors.LEFT_ASCENDER
+        anchor=Anchors.LEFT_ASCENDER,
+        font_color=fontcolor,
     )
     img.draw_text(
-        text=skill_lv,
+        text=str(skill.level + skill.add_level),
         position=(300, 0),
-        anchor=Anchors.RIGHT_ASCENDER
+        anchor=Anchors.RIGHT_ASCENDER,
+        font_color=fontcolor,
     )
     skill_type_base = Image.new(
         mode="RGBA",
@@ -343,7 +348,7 @@ def __create_skill(skill_icon: str, skill_name: str, skill_lv: str, element_colo
     img.paste(im=skill_type_base, box=name_position,
               image_anchor=ImageAnchors.MIDDLE_MIDDLE)
     img.draw_text(
-        text=skill_name,
+        text=skill.util.name,
         position=name_position,
         anchor=Anchors.MIDDLE_MIDDLE,
         align=Algin.CENTER,
@@ -373,9 +378,7 @@ def __create_skill_list(skills: list[status_model.Skill], element_color: tuple[i
             futures.append(
                 pool.submit(
                     __create_skill,
-                    skill.util.icon.path,
-                    skill.util.name,
-                    skill.level + skill.add_level,
+                    skill,
                     element_color
                 )
             )
