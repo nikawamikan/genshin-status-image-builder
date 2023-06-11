@@ -9,7 +9,7 @@ NAME_SUBSTR = len("UI_AvatarIcon_Side_")
 
 
 async def save_json_file(file_name: str, obj: dict):
-    await save_json(f"data/{file_name}", obj)
+    save_json(f"data/{file_name}", obj)
 
 
 async def weapon_dict_builder(
@@ -129,7 +129,7 @@ async def get_jp_character_models(
         else:
             return Position()
 
-    position_data = await util_repository.get_position_model_dict()
+    position_data = util_repository.get_position_model_dict()
     result = {}
     skill_names = ["通常攻撃",  "元素スキル", "元素爆発"]
     for k, v in config_model.items():

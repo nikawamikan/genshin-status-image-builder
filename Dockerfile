@@ -1,6 +1,6 @@
 FROM python:3.11.4-alpine3.18
 
-WORKDIR /usr/src
+WORKDIR /usr/src/app
 COPY requirements.txt .
 COPY init.sh .
 

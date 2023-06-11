@@ -7,3 +7,5 @@ watchdog
 PyGithub
 uvicorn[standard]
 fastapi
+ordered_set
+redis

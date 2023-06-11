@@ -746,6 +746,7 @@ def save_image(file_path: str, character_status: status_model.Character):
         return
 
     character_status.init_utils()
+    character_status.init_score()
     image = __create_image(character=character_status)
     image = image.convert("RGB")
     image.save(file_path, optimize=True, quality=100)

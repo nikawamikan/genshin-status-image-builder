@@ -3,8 +3,14 @@ import re
 import datetime
 import model.status_model as status_model
 import model.enka_model as enka_model
+import repository.enka_repository as enka_repository
 from repository.util_repository import CHARACTER_DATA_DICT
+import redis
+import json
 
+
+pool = redis.ConnectionPool(host="redis")
+redis_obj = redis.StrictRedis(connection_pool=pool)
 
 PERCENT_PATTERN = re.compile(
     r"PERCENT|CRITICAL|FIGHT_PROP_CHARGE_EFFICIENCY|_ADD_HURT")
@@ -56,27 +62,6 @@ def get_characters(
         get_character_status(uid, create_date, v) for v in avatar_info_list
     ]
     return characters
-
-
-def get_user_data(enka: enka_model.Enka) -> status_model.UserData:
-    create_date = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-    char_name_map = {CHARACTER_DATA_DICT[c.avatarId].name: i for i, c in enumerate(
-        enka.playerInfo.showAvatarInfoList)}
-    char_list = get_characters(enka.uid, create_date, enka.avatarInfoList)
-    return status_model.UserData(
-        uid=enka.uid,
-        level=enka.playerInfo.level,
-        signature=enka.playerInfo.signature,
-        world_level=enka.playerInfo.worldLevel,
-        name_card_id=enka.playerInfo.nameCardId,
-        finish_achievement_num=enka.playerInfo.finishAchievementNum,
-        tower_floor_index=enka.playerInfo.towerFloorIndex,
-        tower_level_index=enka.playerInfo.towerLevelIndex,
-        nickname=enka.playerInfo.nickname,
-        create_date=create_date,
-        char_name_map=char_name_map,
-        characters=char_list,
-    )
 
 
 def get_artifact(equip: enka_model.Equip):
@@ -220,3 +205,32 @@ def get_character_status(uid: int, create_date: str, avatar_info: enka_model.Ava
         create_date=create_date,
         costume_id=avatar_info.costumeId
     )
+
+
+async def get_user_data(uid) -> status_model.UserData:
+    if redis_obj.keys(uid):
+        return status_model.UserData(** json.loads(redis_obj.get(uid)))
+
+    enka = await enka_repository.get_enka_model(uid)
+    create_date = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+    char_name_map = {CHARACTER_DATA_DICT[c.avatarId].name: i for i, c in enumerate(
+        enka.playerInfo.showAvatarInfoList)}
+    char_list = get_characters(enka.uid, create_date, enka.avatarInfoList)
+
+    user_data = status_model.UserData(
+        uid=enka.uid,
+        level=enka.playerInfo.level,
+        signature=enka.playerInfo.signature,
+        world_level=enka.playerInfo.worldLevel,
+        name_card_id=enka.playerInfo.nameCardId,
+        finish_achievement_num=enka.playerInfo.finishAchievementNum,
+        tower_floor_index=enka.playerInfo.towerFloorIndex,
+        tower_level_index=enka.playerInfo.towerLevelIndex,
+        nickname=enka.playerInfo.nickname,
+        create_date=create_date,
+        char_name_map=char_name_map,
+        characters=char_list,
+    )
+    redis_obj.set(uid, user_data.json())
+    redis_obj.expire(uid, 600)
+    return user_data

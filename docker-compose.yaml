@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    volumes:
+      - ./app:/usr/src/app
+    command: "sh start_script.sh"
+    env_file:
+      - github.env
+    networks:
+      - api_network
+      - default
+    ports:
+      - 80:80
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:alpine
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 128M
+        reservations:
+          cpus: "0.25"
+          memory: 20M
+    networks:
+      - default
+    
+networks:
+  default:
+  api_network:
+    name: ${NETWORK}

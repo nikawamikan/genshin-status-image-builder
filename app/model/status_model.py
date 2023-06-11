@@ -156,9 +156,8 @@ class Character(BaseModel):
         for skill, util_skill in zip(self.skills, self.util.skills):
             skill.set_util(util_skill)
 
-    def set_build_type(self, build_type: str):
-        self.build_type = build_type
-        calc = score_calc.ScoreCalc(build_type)
+    def init_score(self):
+        calc = score_calc.ScoreCalc(self.build_type)
         for artifact in self.artifacts.values():
             artifact.set_calc_score(calc)
 
