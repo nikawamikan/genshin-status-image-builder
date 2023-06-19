@@ -14,6 +14,7 @@ def static_init():
     ARTIFACTER = BASE_PATH / "artifacter_assets"
     GRADES = ARTIFACTER / "artifact_grades"
     ART_BG = ARTIFACTER / "background"
+    CONSTELLATION = ARTIFACTER / "constellations"
     MASK = ARTIFACTER / "mask"
     RARLITY = ARTIFACTER / "Rarlity"
 
@@ -67,7 +68,7 @@ def static_init():
                 artifact_mask=str(MASK / "ArtifactMask.png"),
                 character_mask=str(MASK / "CharacterMask.png")
             ),
-            rarlity=[
+            reality=[
                 "",
                 str(RARLITY / "1.png"),
                 str(RARLITY / "2.png"),
@@ -78,6 +79,36 @@ def static_init():
             love=str(ARTIFACTER / "Love.png"),
             shadow=str(ARTIFACTER / "Shadow.png"),
             talent_back=str(ARTIFACTER/"TalentBack.png"),
+            constellations={
+                "Electric": assets.Constellation(
+                    lock=str(CONSTELLATION / "Electric.png"),
+                    unlock=str(CONSTELLATION / "ElectricLock.png")
+                ),
+                "Fire": assets.Constellation(
+                    lock=str(CONSTELLATION / "Fire.png"),
+                    unlock=str(CONSTELLATION / "FireLock.png")
+                ),
+                "Grass": assets.Constellation(
+                    lock=str(CONSTELLATION / "Grass.png"),
+                    unlock=str(CONSTELLATION / "GrassLock.png")
+                ),
+                "Ice": assets.Constellation(
+                    lock=str(CONSTELLATION / "Ice.png"),
+                    unlock=str(CONSTELLATION / "IceLock.png")
+                ),
+                "Rock": assets.Constellation(
+                    lock=str(CONSTELLATION / "Rock.png"),
+                    unlock=str(CONSTELLATION / "RockLock.png")
+                ),
+                "Water": assets.Constellation(
+                    lock=str(CONSTELLATION / "Water.png"),
+                    unlock=str(CONSTELLATION / "WaterLock.png")
+                ),
+                "Wind": assets.Constellation(
+                    lock=str(CONSTELLATION / "Wind.png"),
+                    unlock=str(CONSTELLATION / "WindLock.png")
+                ),
+            }
         ),
         # 以下共有部
         icon=assets.Icon(

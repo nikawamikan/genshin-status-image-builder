@@ -1,35 +1,34 @@
 from PIL import Image, ImageFont, ImageDraw, ImageEnhance, ImageFilter
 import os
 from collections import Counter
-import base64
-from model.enka_model import Character, Weapon, Artifact
+import model.status_model as status_model
 from concurrent.futures import ThreadPoolExecutor
+from lib.gen_image import GImage
+from repository.assets_repository import ASSETS
 
 cwd = os.path.abspath(os.path.dirname(__file__))
 
 BASE_SIZE = (1920, 1080)
 TALENT_BASE_SIZE = (int(149/1.5), int(137/1.5))
-TALENT_BASE = Image.open(
-    f'{cwd}/Assets/TalentBack.png').resize(TALENT_BASE_SIZE)
+TALENT_BACK = Image.open()
+TALENT_BASE = Image.open(ASSETS.artifacter.talent_back).resize(TALENT_BASE_SIZE)
+
+CONSTELLATIONBACKS = {
+    k: (
+        Image.open(v.unlock).resize((90, 90)).convert('RGBA'),
+        Image.open(v.lock).resize((90, 90)).convert('RGBA'),
+    ) for k, v in ASSETS.artifacter.constellations.items()
+}
 
 
 def config_font(size):
     return ImageFont.truetype(f'{cwd}/Assets/ja-jp.ttf', size)
 
 
-def __gen_base_img(character: Character):
-    bg = Image.open(f'{cwd}/Base/{character.element}.png')
-
-    character_costume_id = character.costume_id
-
-    if character_costume_id:
-        character_avater_path = f'{cwd}/character/{character.get_dir()}/{character_costume_id}.png'
-    else:
-        character_avater_path = f'{cwd}/character/{character.get_dir()}/avater.png'
-
-    chara_img = Image.open(character_avater_path).convert("RGBA")
-
-    shadow = Image.open(f'{cwd}/Assets/shadow.png').resize(bg.size)
+def __gen_base_img(character: status_model.Character):
+    bg = GImage(ASSETS.artifacter.background[character.util.element]).get_image()
+    chara_img = GImage(character.costume.gacha_icon.path).get_image()
+    shadow = Image.open(ASSETS.artifacter.shadow).resize(bg.size)
     chara_img = chara_img.crop((289, 0, 1728, 1024))
     chara_img = chara_img.resize(
         (
@@ -37,13 +36,11 @@ def __gen_base_img(character: Character):
             int(chara_img.height*0.75)
         )
     )
-
     chara_mask = chara_img.copy()
-
-    if character.english_name == 'Alhaitham':
-        mask_path = f'{cwd}/Assets/Alhaitham.png'
+    if character.util.english_name == 'Alhaitham':
+        mask_path = ASSETS.artifacter.mask.alhaithem
     else:
-        mask_path = f'{cwd}/Assets/CharacterMask.png'
+        mask_path = ASSETS.artifacter.mask.character_mask
 
     avater_mask = Image.open(mask_path).convert('L').resize(chara_img.size)
     chara_img.putalpha(avater_mask)
@@ -57,22 +54,21 @@ def __gen_base_img(character: Character):
     return bg
 
 
-def __gen_weapon_img(weapon: Weapon, img_size: tuple(int, int)):
-    weapon_img = Image.open(
-        f'{cwd}/weapon/{weapon.icon_name}.png').convert("RGBA").resize((128, 128))
+def __gen_weapon_img(weapon: status_model.Weapon, img_size: tuple(int, int)):
+    weapon_img = Image.open(weapon.util.icon.path).convert("RGBA").resize((128, 128))
     weapon_paste = Image.new("RGBA", img_size, (255, 255, 255, 0))
 
-    mask = Weapon.copy()
+    mask = weapon_img.copy()
     weapon_paste.paste(weapon_img, (1430, 50), mask=mask)
 
     return weapon_paste
 
 
-def __gen_weapon_reality(weapon: Weapon):
-    img = Image.open(
-        f'{cwd}/Assets/Rarelity/{weapon.rank}.png').convert("RGBA")
+def __gen_weapon_reality(weapon: status_model.Weapon):
+    img = Image.open(ASSETS.artifacter.reality[weapon.rank]).convert("RGBA")
     img = img.resize(
-        (int(img.width*0.97), int(img.height*0.97)))
+        (int(img.width*0.97), int(img.height*0.97))
+    )
     paste = Image.new("RGBA", BASE_SIZE, (255, 255, 255, 0))
     mask = img.copy()
 
@@ -80,11 +76,9 @@ def __gen_weapon_reality(weapon: Weapon):
     return paste
 
 
-def __gen_talent_img(chara_name: str, talent_type: int):
+def __gen_talent_img(talent_path: str):
     paste = Image.new("RGBA", TALENT_BASE_SIZE, (255, 255, 255, 0))
-    talent = Image.open(
-        f'{cwd}/character/{chara_name}/{talent_type}.png'
-    ).resize((50, 50)).convert('RGBA')
+    talent = Image.open(talent_path).resize((50, 50)).convert('RGBA')
     mask = talent.copy()
     paste.paste(
         talent,
@@ -95,12 +89,12 @@ def __gen_talent_img(chara_name: str, talent_type: int):
     return talent_obj
 
 
-def __gen_talents_img(character: Character):
+def __gen_talent_list_img(character: status_model.Character):
     paste = Image.new("RGBA", BASE_SIZE, (255, 255, 255, 0))
     with ThreadPoolExecutor(thread_name_prefix="talents") as executor:
         talents = [
-            executor.submit(__gen_talent_img, character.english_name, v) for v in
-            ["attack", "skill, burst"]
+            executor.submit(__gen_talent_img, v.util.icon.path) for v in
+            character.skills
         ]
     for i, v in enumerate(talents):
         talent = v.result()
@@ -108,39 +102,35 @@ def __gen_talents_img(character: Character):
     return paste
 
 
-def __gen_constellation_img():
-    pass
+def __gen_constellation_img(constellation_icon_path: str, c_base: Image.Image):
+    chara_c = Image.open(constellation_icon_path).convert("RGBA").resize((45, 45))
+    chara_c_paste = Image.new("RGBA", c_base.size, (255, 255, 255, 0))
+    chara_c_mask = chara_c.copy()
+    chara_c_paste.paste(chara_c, (int(chara_c_paste.width/2)-25,
+                        int(chara_c_paste.height/2)-23), mask=chara_c_mask)
+    c_object = Image.alpha_composite(c_base, chara_c_paste)
+    return c_object
 
 
-def __gen_constellations_img():
-    pass
+def __gen_constellation_list_img(character: status_model.Character):
+    c_paste = Image.new("RGBA", BASE_SIZE, (255, 255, 255, 0))
+    c_base, c_lock = CONSTELLATIONBACKS[character.util.element]
+    clock_mask = c_lock.copy()
+    with ThreadPoolExecutor(thread_name_prefix="constellations") as executor:
+        c_objects = [
+            executor.submit(__gen_constellation_img, v.path, c_base) for v in character.constellation_list
+        ]
+    for i in range(6):
+        if len(c_objects) > i:
+            c_paste.paste(c_objects[i], (666, 83+i*93))
+        else:
+            c_paste.paste(c_lock, (666, 83+i*93), mask=clock_mask)
+
 
 
 def generation(data):
+    
 
-    # 凸
-    CBase = Image.open(
-        f'{cwd}/命の星座/{element}.png').resize((90, 90)).convert('RGBA')
-    Clock = Image.open(
-        f'{cwd}/命の星座/{element}LOCK.png').resize((90, 90)).convert('RGBA')
-    ClockMask = Clock.copy()
-
-    CPaste = Image.new("RGBA", BASE_SIZE, (255, 255, 255, 0))
-    for c in range(1, 7):
-        if c > CharacterConstellations:
-            CPaste.paste(Clock, (666, -10+c*93), mask=ClockMask)
-        else:
-            CharaC = Image.open(
-                f'{cwd}/character/{CharacterName}/{c}.png').convert("RGBA").resize((45, 45))
-            CharaCPaste = Image.new("RGBA", CBASE_SIZE, (255, 255, 255, 0))
-            CharaCMask = CharaC.copy()
-            CharaCPaste.paste(CharaC, (int(CharaCPaste.width/2)-25,
-                              int(CharaCPaste.height/2)-23), mask=CharaCMask)
-
-            Cobject = Image.alpha_composite(CBase, CharaCPaste)
-            CPaste.paste(Cobject, (666, -10+c*93))
-
-    Base = Image.alpha_composite(Base, CPaste)
     D = ImageDraw.Draw(Base)
 
     D.text((30, 20), CharacterName, font=config_font(48))

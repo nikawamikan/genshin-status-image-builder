@@ -140,6 +140,10 @@ class Character(BaseModel):
     util: util_model.JpCharacterModel = None
 
     @property
+    def constellation_list(self):
+        return self.util.consts[:self.constellations]
+
+    @property
     def build_name(self):
         return score_calc.BUILD_NAMES[self.build_type]
 

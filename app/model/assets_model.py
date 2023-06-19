@@ -22,15 +22,19 @@ class ArtifacterMask(BaseModel):
     artifact_mask: str
     character_mask: str
 
+class Constellation(BaseModel):
+    lock: str
+    unlock: str
 
 class ArtifacterAssets(BaseModel):
     artifact_grades: list[str]
     background: dict[str, str]
     mask: ArtifacterMask
-    rarlity: list[str]
+    reality: list[str]
     love: str
     shadow: str
     talent_back: str
+    constellations: dict[str, Constellation]
 
 
 class GenshinStatusAssets(BaseModel):
