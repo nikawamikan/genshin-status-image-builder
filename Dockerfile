@@ -4,5 +4,5 @@ WORKDIR /usr/src/app
 COPY requirements.txt .
 COPY init.sh .
 
-RUN sh init.sh
+RUN apk update && apk add --no-cache gcc g++ libffi-dev
 RUN pip install --no-cache-dir -r requirements.txt

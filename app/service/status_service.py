@@ -13,7 +13,8 @@ pool = redis.ConnectionPool(host="redis")
 redis_obj = redis.StrictRedis(connection_pool=pool)
 
 PERCENT_PATTERN = re.compile(
-    r"PERCENT|CRITICAL|FIGHT_PROP_CHARGE_EFFICIENCY|_ADD_HURT")
+    r"PERCENT|CRITICAL|FIGHT_PROP_CHARGE_EFFICIENCY|_ADD_HURT"
+)
 
 
 def get_suffix(name: str):

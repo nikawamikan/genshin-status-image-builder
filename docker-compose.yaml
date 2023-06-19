@@ -28,7 +28,7 @@ services:
           memory: 20M
     networks:
       - default
-    
+
 networks:
   default:
   api_network:
