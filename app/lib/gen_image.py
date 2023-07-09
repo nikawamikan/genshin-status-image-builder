@@ -225,6 +225,16 @@ class GImage:
             align=align,
         )
 
+    def get_textsize(
+        self,
+        text: str,
+        font_size: int = None,
+        font_path: str = None,
+    ):
+        draw = ImageDraw.Draw(im=self.__image)
+        font = self.__get_font(font_path=font_path, font_size=font_size)
+        return draw.textsize(text=text, font=font)
+
     def paste(
         self,
         im: Union[Image.Image, TypeGImage],

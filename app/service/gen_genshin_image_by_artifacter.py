@@ -3,7 +3,7 @@ import os
 from collections import Counter
 import model.status_model as status_model
 from concurrent.futures import ThreadPoolExecutor
-from lib.gen_image import GImage
+from lib.gen_image import GImage, Colors, Anchors
 from repository.assets_repository import ASSETS
 
 cwd = os.path.abspath(os.path.dirname(__file__))
@@ -11,7 +11,8 @@ cwd = os.path.abspath(os.path.dirname(__file__))
 BASE_SIZE = (1920, 1080)
 TALENT_BASE_SIZE = (int(149/1.5), int(137/1.5))
 TALENT_BACK = Image.open()
-TALENT_BASE = Image.open(ASSETS.artifacter.talent_back).resize(TALENT_BASE_SIZE)
+TALENT_BASE = Image.open(
+    ASSETS.artifacter.talent_back).resize(TALENT_BASE_SIZE)
 
 CONSTELLATIONBACKS = {
     k: (
@@ -26,7 +27,8 @@ def config_font(size):
 
 
 def __gen_base_img(character: status_model.Character):
-    bg = GImage(ASSETS.artifacter.background[character.util.element]).get_image()
+    bg = GImage(
+        ASSETS.artifacter.background[character.util.element]).get_image()
     chara_img = GImage(character.costume.gacha_icon.path).get_image()
     shadow = Image.open(ASSETS.artifacter.shadow).resize(bg.size)
     chara_img = chara_img.crop((289, 0, 1728, 1024))
@@ -55,7 +57,8 @@ def __gen_base_img(character: status_model.Character):
 
 
 def __gen_weapon_img(weapon: status_model.Weapon, img_size: tuple(int, int)):
-    weapon_img = Image.open(weapon.util.icon.path).convert("RGBA").resize((128, 128))
+    weapon_img = Image.open(weapon.util.icon.path).convert(
+        "RGBA").resize((128, 128))
     weapon_paste = Image.new("RGBA", img_size, (255, 255, 255, 0))
 
     mask = weapon_img.copy()
@@ -103,7 +106,8 @@ def __gen_talent_list_img(character: status_model.Character):
 
 
 def __gen_constellation_img(constellation_icon_path: str, c_base: Image.Image):
-    chara_c = Image.open(constellation_icon_path).convert("RGBA").resize((45, 45))
+    chara_c = Image.open(constellation_icon_path).convert(
+        "RGBA").resize((45, 45))
     chara_c_paste = Image.new("RGBA", c_base.size, (255, 255, 255, 0))
     chara_c_mask = chara_c.copy()
     chara_c_paste.paste(chara_c, (int(chara_c_paste.width/2)-25,
@@ -127,31 +131,80 @@ def __gen_constellation_list_img(character: status_model.Character):
             c_paste.paste(c_lock, (666, 83+i*93), mask=clock_mask)
 
 
+def __get_rounded_rectangle(xy: tuple[tuple[int, int], tuple[int, int]]):
+    # image以外のオブジェクト読み込んでるので変更したほうがいいかも・・・
+    img = GImage(box_size=BASE_SIZE).get_image()
+    draw = ImageDraw.Draw(img)
+    draw.rounded_rectangle(xy=xy,  radius=2, fill="black")
+    return img
+
+
+def __gen_charcter_status_img(character: status_model.Character):
+    base = GImage(box_size=BASE_SIZE, default_font_size=25)
+    base.draw_text(position=(30, 20), text=character.util.name, font_size=48)
+    chara_lv = f"Lv.{character.level:>2}"
+    love = str(character.love)
+    chara_lv_length = base.get_textsize(chara_lv)[0]
+    love_length = base.get_textsize(love)[0]
+    base.draw_text(position=(30, 20), text=chara_lv)
+    base.paste(
+        __get_rounded_rectangle(xy=(
+            (40 + chara_lv_length[0], 74),
+            (77 + chara_lv_length + love_length, 102)
+        ))
+    )
+    base.add_image(
+        box=(42+chara_lv_length, 76),
+        image_path=ASSETS.artifacter.love,
+        size=(25, 25)
+    )
+    base.draw_text(position=(73+chara_lv_length, 74), text=love)
+    for i, skill in enumerate(character.skills):
+        base.draw_text(
+            position=(42, 397 + (i * 105)),
+            text=f"Lv.{skill.level}",
+            font_size=17,
+            font_color=Colors.GENSHIN_LIGHT_BLUE if skill.level >= 10 else Colors.WHITE
+        )
+
+    for i, v in enumerate(
+        [
+            str(character.base_hp + character.added_hp),  # HP
+            str(character.base_attack + character.added_attack),  # Attack
+            str(character.base_defense + character.added_defense),  # defense
+            str(character.elemental_mastery),  # mastery
+            str(character.critical_rate) + "%",  # critical_rate
+            str(character.critical_damage) + "%",  # critical_damage
+            str(character.charge_efficiency) + "%",  # charge_efficiency
+        ]
+    ):
+        base.draw_text(
+            text=v,
+            position=(1360, 67+i*70),
+            font_size=26,
+            anchor=Anchors.RIGHT_TOP
+        )
+    if character.elemental_name is not None:
+        base.add_image(
+            image=ASSETS.icon.element[character.elemental_name],
+            box=(789, 555),
+            size=(40, 40)
+        )
+        base.draw_text(
+            text=character.elemental_name,
+            position=(844, 555),
+            font_size=26
+        )
+        base.draw_text(
+            text=str(character.elemental_value) + "%",
+            position=(1360, 555),
+            font_size=26,
+            anchor=Anchors.RIGHT_TOP
+        )
+
 
 def generation(data):
-    
-
     D = ImageDraw.Draw(Base)
-
-    D.text((30, 20), CharacterName, font=config_font(48))
-    levellength = D.textlength("Lv."+str(CharacterLevel), font=config_font(25))
-    friendshiplength = D.textlength(str(FriendShip), font=config_font(25))
-    D.text((35, 75), "Lv."+str(CharacterLevel), font=config_font(25))
-    D.rounded_rectangle((35+levellength+5, 74, 77+levellength +
-                        friendshiplength, 102), radius=2, fill="black")
-    FriendShipIcon = Image.open(f'{cwd}/Assets/Love.png').convert("RGBA")
-    FriendShipIcon = FriendShipIcon.resize(
-        (int(FriendShipIcon.width*(24/FriendShipIcon.height)), 24))
-    Fmask = FriendShipIcon.copy()
-    Base.paste(FriendShipIcon, (42+int(levellength), 76), mask=Fmask)
-    D.text((73+levellength, 74), str(FriendShip), font=config_font(25))
-
-    D.text((42, 397), f'Lv.{CharacterTalent["通常"]}', font=config_font(
-        17), fill='aqua' if CharacterTalent["通常"] >= 10 else None)
-    D.text((42, 502), f'Lv.{CharacterTalent["スキル"]}', font=config_font(
-        17), fill='aqua' if CharacterTalent["スキル"] >= 10 else None)
-    D.text((42, 607), f'Lv.{CharacterTalent["爆発"]}', font=config_font(
-        17), fill='aqua' if CharacterTalent["爆発"] >= 10 else None)
 
     def genbasetext(state):
         sumv = CharacterStatus[state]
