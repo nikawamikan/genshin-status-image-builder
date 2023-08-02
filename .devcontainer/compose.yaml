@@ -1,0 +1,24 @@
+services:
+  main:
+    build: .
+    volumes:
+      - ..:/workspace
+    env_file:
+      - ../github.env
+    depends_on:
+      - redis
+    tty: true
+    stdin_open: true
+    
+
+  redis:
+    image: redis:alpine
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 128M
+        reservations:
+          cpus: "0.25"
+          memory: 20M
+

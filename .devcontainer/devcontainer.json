@@ -4,8 +4,8 @@
 	"name": "Python 3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"workspaceFolder": "/workspace",
-	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
-	"build": {"dockerfile": "../Dockerfile"},
+	"dockerComposeFile": "compose.yaml",
+	"service": "main",
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -24,7 +24,7 @@
 			]
 		}
 	},
-	"postCreateCommand": "apk add git"
+	"postCreateCommand": "pip install --no-cache-dir -r requirements.txt"
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
