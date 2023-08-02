@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 from decimal import Decimal
+from typing import Optional
 
 
 PLAYER_IDS = set(["10000007", "10000005"])
@@ -17,7 +18,7 @@ class ProfilePicture(BaseModel):
 class Prop(BaseModel):
     type: int
     ival: str
-    val: str = None
+    val: Optional[str] = None
 
 
 class Reliquary(BaseModel):
@@ -43,11 +44,11 @@ class WeaponStats(BaseModel):
 
 class Flat(BaseModel):
     rankLevel: int
-    equipType: str = None
+    equipType: Optional[str] = None
     icon: str
-    reliquaryMainstat: ReliquaryStat = None
-    reliquarySubstats: list[ReliquarySubstat] = None
-    weaponStats: list[WeaponStats] = None
+    reliquaryMainstat: Optional[ReliquaryStat] = None
+    reliquarySubstats: Optional[list[ReliquarySubstat]] = None
+    weaponStats: Optional[list[WeaponStats]] = None
 
 
 class Weapon(BaseModel):
@@ -56,8 +57,8 @@ class Weapon(BaseModel):
 
 class Equip(BaseModel):
     itemId: int
-    reliquary: Reliquary = None
-    weapon: Weapon = None
+    reliquary: Optional[Reliquary] = None
+    weapon: Optional[Weapon] = None
     flat: Flat
 
 
@@ -89,14 +90,14 @@ class PlayerInfo(BaseModel):
     nickname: str
     level: int
     signature: str = ""
-    worldLevel: int = None
+    worldLevel: Optional[int] = None
     nameCardId: str
-    finishAchievementNum: int = None
+    finishAchievementNum: Optional[int] = None
     towerFloorIndex: int = 0
     towerLevelIndex: int = 0
     showAvatarInfoList: list[ShowAvatarInfo] = []
     showNameCardIdList: list[int] = []
-    profilePicture: ProfilePicture = None
+    profilePicture: Optional[ProfilePicture] = None
 
 
 class Enka(BaseModel):

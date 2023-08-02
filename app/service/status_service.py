@@ -9,6 +9,9 @@ import redis
 import json
 
 
+TTL = 600
+
+
 pool = redis.ConnectionPool(host="redis")
 redis_obj = redis.StrictRedis(connection_pool=pool)
 
@@ -21,16 +24,6 @@ def get_suffix(name: str):
     if PERCENT_PATTERN.search(name):
         return "%"
     return ""
-
-
-def none_to_empty_char(data: dict[str, str], keys: list[str]) -> str:
-    if keys[0] in data:
-        if len(keys) == 1:
-            return data[keys[0]]
-        else:
-            return none_to_empty_char(data[keys[0]], keys[1:])
-    else:
-        return ""
 
 
 ELEMENT_MAP = {
@@ -232,6 +225,6 @@ async def get_user_data(uid) -> status_model.UserData:
         char_name_map=char_name_map,
         characters=char_list,
     )
-    redis_obj.set(uid, user_data.json())
-    redis_obj.expire(uid, 600)
+    redis_obj.set(uid, user_data.model_dump_json())
+    redis_obj.expire(uid, TTL)
     return user_data

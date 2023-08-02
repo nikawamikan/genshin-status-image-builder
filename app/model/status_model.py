@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from typing import Optional
 from decimal import Decimal
 import service.score_calc as score_calc
 import model.util_model as util_model
@@ -57,7 +58,7 @@ class Artifact(BaseModel):
     status: list[ArtifactStatus]
     star: int
     score: Decimal = Decimal(0.0)
-    util: util_model.Artifact = None
+    util: Optional[util_model.Artifact] = None
 
     def set_util(self):
         self.util = ARTIFACT_DATA_DICT[self.icon_name]
@@ -84,11 +85,11 @@ class Weapon(BaseModel):
     icon_name: str
     main_name: str
     main_value: Decimal
-    sub_name: str = None
-    sub_value: Decimal = None
+    sub_name: Optional[str] = None
+    sub_value: Optional[Decimal] = None
     level: int
     rank: int
-    util: util_model.Weapon = None
+    util: Optional[util_model.Weapon] = None
 
     @property
     def main_jp_name(self):
@@ -105,7 +106,7 @@ class Weapon(BaseModel):
 class Skill(BaseModel):
     level: int
     add_level: int
-    util: util_model.Skill = None
+    util: Optional[util_model.Skill] = None
 
     def set_util(self, skill: util_model.Skill):
         self.util = skill
@@ -127,17 +128,17 @@ class Character(BaseModel):
     critical_damage: Decimal
     charge_efficiency: Decimal
     elemental_mastery: int
-    elemental_name: str = None
-    elemental_value: str = None
+    elemental_name: Optional[str] = None
+    elemental_value: Optional[str] = None
     skills: list[Skill]
     artifacts: dict[str, Artifact]
     weapon: Weapon
     uid: int
     create_date: str
     costume_id: str = "defalut"
-    build_type: str = None
-    costume: util_model.Costume = None
-    util: util_model.JpCharacterModel = None
+    build_type: Optional[str] = None
+    costume: Optional[util_model.Costume] = None
+    util: Optional[util_model.JpCharacterModel] = None
 
     @property
     def constellation_list(self):
@@ -170,9 +171,9 @@ class UserData(BaseModel):
     uid: int
     level: int
     signature: str
-    world_level: int = None
+    world_level: Optional[int] = None
     name_card_id: int
-    finish_achievement_num: int = None
+    finish_achievement_num: Optional[int] = None
     tower_floor_index: int
     tower_level_index: int
     nickname: str

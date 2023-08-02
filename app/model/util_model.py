@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from typing import Optional
 
 
 class Icon(BaseModel):
@@ -17,7 +18,7 @@ class Weapon(BaseModel):
 
 class Artifact(BaseModel):
     icon: Icon
-    set_name: str = None
+    set_name: Optional[str] = None
     equip_type: str
 
 
