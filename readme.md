@@ -1,9 +1,9 @@
 # Genshin-status-image-builder API
 
-![jpg](https://github.com/CinnamonSea2073/genshin-status-image-builder/github/20230619063328_804079022_10000037_atk_0hoge.jpg)
+![jpg](https://github.com/CinnamonSea2073/genshin-status-image-builder/blob/dev/github/20230619063328_804079022_10000037_atk_0hoge.jpg)
 
 ## Overview
-![png](https://github.com/CinnamonSea2073/genshin-status-image-builder/github/chart.png)
+![png](https://github.com/CinnamonSea2073/genshin-status-image-builder/blob/dev/github/chart.png)
 原神のビルド画像の生成などを行うことのできるサービス『原神ステータスBot』の画像生成処理をAPIとして分離させたものです。
 画像生成を最適化し、多少の処理速度向上も目指しています。
 
