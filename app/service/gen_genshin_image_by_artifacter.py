@@ -14,7 +14,7 @@ cwd = os.path.abspath(os.path.dirname(__file__))
 
 BASE_SIZE = (1920, 1080)
 TALENT_BASE_SIZE = (int(149/1.5), int(137/1.5))
-TALENT_BACK = Image.open()
+# TALENT_BACK = Image.open(ASSETS.artifacter.b)
 TALENT_BASE = Image.open(
     ASSETS.artifacter.talent_back).resize(TALENT_BASE_SIZE)
 
@@ -26,12 +26,12 @@ CONSTELLATIONBACKS = {
 }
 
 ARTIFACTER_REFER = {
-    "total": [220, 200, 180],
-    "flower": [50, 45, 40],
-    "wing": [50, 45, 40],
-    "clock": [ 45, 40, 35],
-    "cup": [45, 40, 37],
-    "crown": [40, 35, 30]
+    "TOTAL": [220, 200, 180],
+    "EQUIP_BRACER": [50, 45, 40],
+    "EQUIP_NECKLACE": [50, 45, 40],
+    "EQUIP_SHOES": [ 45, 40, 35],
+    "EQUIP_RING": [45, 40, 37],
+    "EQUIP_DRESS": [40, 35, 30]
 }
 
 def __create_background(character: status_model.Character):
@@ -71,10 +71,14 @@ def __create_background(character: status_model.Character):
     bg = Image.alpha_composite(bg, chara_paste)
     bg = Image.alpha_composite(bg, shadow)
 
-    return bg
+    # Image→GImageに変換
+    gimage_bg = GImage(box_size=BASE_SIZE)
+    gimage_bg.paste(im=bg)
+
+    return gimage_bg
 
 
-def __create_weapon_img(weapon: status_model.Weapon, img_size: tuple(int, int)):
+def __create_weapon_img(weapon: status_model.Weapon, img_size: tuple[int, int]):
     """武器画像を生成します
 
     Args:
@@ -158,6 +162,7 @@ def __gen_artifact_image(artifact: status_model.Artifact):
         Image.Image: 聖遺物の画像
     """
     PreviewPaste = Image.new('RGBA', BASE_SIZE, (255, 255, 255, 0))
+    print(type(artifact))
     Preview = Image.open(artifact.util.icon.path).resize((256, 256))
     enhancer = ImageEnhance.Brightness(Preview)
     Preview = enhancer.enhance(0.6)
@@ -165,8 +170,7 @@ def __gen_artifact_image(artifact: status_model.Artifact):
         (int(Preview.width*1.3), int(Preview.height*1.3)))
     Pmask1 = Preview.copy()
 
-    Pmask = Image.open(
-        f'{cwd}/Assets/ArtifactMask.png').convert('L').resize(Preview.size)
+    Pmask = Image.open(ASSETS.artifacter.mask.artifact_mask).convert('L').resize(Preview.size)
     Preview.putalpha(Pmask)
     if artifact.util.equip_type in ['flower', 'crown']:
         PreviewPaste.paste(Preview, (-37+373*0, 570), mask=Pmask1)
@@ -174,6 +178,7 @@ def __gen_artifact_image(artifact: status_model.Artifact):
         PreviewPaste.paste(Preview, (-36+373*0, 570), mask=Pmask1)
     else:
         PreviewPaste.paste(Preview, (-35+373*0, 570), mask=Pmask1)
+    Base = Image.new('RGBA', BASE_SIZE, (255, 255, 255, 0))
     Base = Image.alpha_composite(Base, PreviewPaste)
     return Base
 
@@ -463,6 +468,7 @@ def __create_full_character_status(character: status_model.Character):
         box_size=BASE_SIZE,
         default_font_size=25,
     )
+    print("一応うごいてんぞ")
     base.draw_text(position=(30, 20), text=character.util.name, font_size=48)
     chara_lv = f"Lv.{character.level:>2}"
     love = str(character.love)
@@ -471,7 +477,7 @@ def __create_full_character_status(character: status_model.Character):
     base.draw_text(position=(30, 20), text=chara_lv)
     base.paste(
         __get_rounded_rectangle(xy=(
-            (40 + chara_lv_length[0], 74),
+            (40 + chara_lv_length, 74),
             (77 + chara_lv_length + love_length, 102)
         ))
     )
@@ -533,8 +539,14 @@ def __create_weapon(weapon: status_model.Weapon) -> Image.Image:
         font_size=23,
         anchor=Anchors.RIGHT_BOTTOM,
     )
+    with ThreadPoolExecutor(max_workers=20, thread_name_prefix="__create_weapon_icon") as pool:
+        weapon_icon = pool.submit(
+            __gen_weapon_status_icon,
+            ASSETS.icon.status.attack,
+            (1600, 155)
+        )
     img.paste(
-        __gen_weapon_status_icon(ASSETS.icon.status.attack, (1600, 155))
+        weapon_icon
     )
     if weapon.sub_value is not None:
         img.draw_text(
@@ -543,14 +555,20 @@ def __create_weapon(weapon: status_model.Weapon) -> Image.Image:
             font_size=23,
             anchor=Anchors.RIGHT_BOTTOM,
         )
+        with ThreadPoolExecutor(max_workers=20, thread_name_prefix="__create_weapon_icon") as pool:
+            weapon_icon = pool.submit(
+                __gen_weapon_status_icon,
+                ASSETS.icon_namehash[weapon.sub_name],
+                (1600, 155)
+            )
         img.paste(
-            __gen_weapon_status_icon(ASSETS.icon_namehash[weapon.sub_name], (1600, 155))
+            weapon_icon
         )
     # 武器のレベル情報の合成
     img.paste(
         __get_rounded_rectangle(xy=(
             (1582, 80),
-            (1582 + img.get_textsize(weapon.level)[0], 108)
+            (1582 + img.get_textsize(str(weapon.level))[0], 108)
         ))
     )
     img.draw_text(
@@ -609,7 +627,7 @@ def __create_artifact(artifact: status_model.Artifact) -> Image.Image:
     # メインオプションアイコン
     base_img.add_image(
         ASSETS.icon_namehash[artifact.main_name],
-        (340+0*373-int(base_img.get_textsize(artifact.main_jp_name, 29)), 655),
+        (340+0*373-int(base_img.get_textsize(artifact.main_jp_name, 29)[0]), 655),
     )
     # 聖遺物のメインのステータスを合成
     base_img.draw_text(
@@ -619,13 +637,13 @@ def __create_artifact(artifact: status_model.Artifact) -> Image.Image:
         anchor=Anchors.RIGHT_DESCENDER
     )
     # 聖遺物レベル
-    levlen = base_img.get_textsize(f'+{artifact.level}', 21)
+    levlen = base_img.get_textsize(f'+{artifact.level}', 21)[0]
     base_img.paste(
-        __get_rounded_rectangle((373+0*373-int(levlen), 748), (375+0*373, 771))    
+        __get_rounded_rectangle(((373+0*373-int(levlen), 748), (375+0*373, 771)))
     )
     base_img.draw_text(
         text=f'+{artifact.level}', 
-        position=(374+i*373-levlen, 749), 
+        position=(374+0*373-levlen, 749), 
         font_size=21)
     
     # 聖遺物のサブステータスを合成
@@ -719,6 +737,7 @@ def __create_artifact_list(artifact_map: dict[status_model.Artifact]) -> Image.I
     Returns:
         Image.Image: 聖遺物一覧画像
     """
+    print("create_artifact_list起動")
     img = GImage(
         box_size=BASE_SIZE,
     )
@@ -730,7 +749,7 @@ def __create_artifact_list(artifact_map: dict[status_model.Artifact]) -> Image.I
             futures.append(
                 pool.submit(
                     __create_artifact,
-                    artifact_map
+                    artifact_map[v]
                 )
             )
     # 各ステータス画像の合成
@@ -749,6 +768,7 @@ def __create_image(character: status_model.Character) -> Image.Image:
     Returns:
         Image.Image: キャラ画像
     """
+    print("create_image起動")
     artifacts = character.artifacts
     weapon = character.weapon
 
@@ -811,7 +831,7 @@ def __create_image(character: status_model.Character) -> Image.Image:
         im=weapon_data,
         image_anchor=ImageAnchors.LEFT_BOTTOM
     )
-    return bg
+    return bg.get_image()
 
 def save_image(file_path: str, character_status: status_model.Character):
     if cache_image.check_cache_exists(file_path=file_path):

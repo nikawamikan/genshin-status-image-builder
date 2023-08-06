@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 from fastapi.responses import FileResponse
 import service.gen_genshin_image as gen_genshin_image
+import service.gen_genshin_image_by_artifacter as gen_artifacter_image
 import model.status_model as status_model
 
 
@@ -17,7 +18,7 @@ def get_genshin_status_build_image(char_stat: status_model.Character, gen_type:i
             character_status=char_stat,
         )
     elif gen_type == 1:
-        gen_genshin_image.save_image(
+        gen_artifacter_image.save_image(
             file_path=file_path,
             character_status=char_stat,
         )
