@@ -93,9 +93,15 @@ def __create_weapon_img(weapon: status_model.Weapon, img_size: tuple[int, int]):
     weapon_paste = Image.new("RGBA", img_size, (255, 255, 255, 0))
 
     mask = weapon_img.copy()
-    weapon_paste.paste(weapon_img, (1430, 50), mask=mask)
+    weapon_paste.paste(weapon_img, mask=mask)
+    bg = Image.new("RGBA", BASE_SIZE)
+    bg.paste(im=weapon_paste, box=(1430, 50))
 
-    return weapon_paste
+    bg = GImage(box_size=BASE_SIZE)
+    print(weapon.util.icon.path)
+    bg.add_image(image_path=weapon.util.icon.path, box=(1430, 50), size=(128, 128))
+
+    return bg.get_image()
 
 
 def __gen_weapon_reality(weapon: status_model.Weapon):
@@ -142,6 +148,7 @@ def __gen_talent_img(talent_path: str):
         Image.Image: 単体の天賦アイコン画像
     """
     paste = Image.new("RGBA", TALENT_BASE_SIZE, (255, 255, 255, 0))
+    paste = Image.alpha_composite(paste, TALENT_BASE)
     talent = Image.open(talent_path).resize((50, 50)).convert('RGBA')
     mask = talent.copy()
     paste.paste(
@@ -149,8 +156,7 @@ def __gen_talent_img(talent_path: str):
         (paste.width//2-25, paste.height//2-25,),
         mask=mask,
     )
-    talent_obj = Image.alpha_composite(paste, TALENT_BASE)
-    return talent_obj
+    return paste
 
 def __gen_artifact_image(artifact: status_model.Artifact):
     """聖遺物の画像を生成します
@@ -161,26 +167,18 @@ def __gen_artifact_image(artifact: status_model.Artifact):
     Returns:
         Image.Image: 聖遺物の画像
     """
-    PreviewPaste = Image.new('RGBA', BASE_SIZE, (255, 255, 255, 0))
-    print(type(artifact))
-    Preview = Image.open(artifact.util.icon.path).resize((256, 256))
-    enhancer = ImageEnhance.Brightness(Preview)
-    Preview = enhancer.enhance(0.6)
-    Preview = Preview.resize(
-        (int(Preview.width*1.3), int(Preview.height*1.3)))
-    Pmask1 = Preview.copy()
+    bg = Image.new('RGBA', BASE_SIZE, (255, 255, 255, 0))
+    artifact_image = Image.open(artifact.util.icon.path).resize((333, 333))
+    artifact_image_enchance = ImageEnhance.Brightness(artifact_image)
+    artifact_image = artifact_image_enchance.enhance(0.6)
+    artifact_image_copy = artifact_image.copy()
 
-    Pmask = Image.open(ASSETS.artifacter.mask.artifact_mask).convert('L').resize(Preview.size)
-    Preview.putalpha(Pmask)
-    if artifact.util.equip_type in ['flower', 'crown']:
-        PreviewPaste.paste(Preview, (-37+373*0, 570), mask=Pmask1)
-    elif artifact.util.equip_type in ['wing', 'cup']:
-        PreviewPaste.paste(Preview, (-36+373*0, 570), mask=Pmask1)
-    else:
-        PreviewPaste.paste(Preview, (-35+373*0, 570), mask=Pmask1)
+    artifact_image_mask = Image.open(ASSETS.artifacter.mask.artifact_mask).convert('L').resize((333, 333))
+    artifact_image.putalpha(artifact_image_mask)
+    bg.paste(artifact_image, mask=artifact_image_copy)
     Base = Image.new('RGBA', BASE_SIZE, (255, 255, 255, 0))
-    Base = Image.alpha_composite(Base, PreviewPaste)
-    return Base
+    Base = Image.alpha_composite(Base, bg)
+    return bg
 
 def __gen_talent_list_img(character: status_model.Character):
     """単体の天賦アイコン画像をリスト状にした画像を生成します
@@ -241,7 +239,7 @@ def __gen_constellation_list_img(character: status_model.Character):
         ]
     for i in range(6):
         if len(constellation_objects) > i:
-            constellation_paste.paste(constellation_objects[i], (666, 83+i*93))
+            constellation_paste.paste(constellation_objects[i].result(), (666, 83+i*93))
         else:
             constellation_paste.paste(constellation_lock, (666, 83+i*93), mask=clock_mask)
     return constellation_paste
@@ -262,7 +260,7 @@ def __get_rounded_rectangle(xy: tuple[tuple[int, int], tuple[int, int]]):
     draw.rounded_rectangle(xy=xy,  radius=2, fill="black")
     return img
 
-def __create_status_add(base: int, add: int, type: str, path: str) -> Image.Image:
+def __create_status_add(base: int, add: int, type: str = None, path: str = None) -> Image.Image:
     """キャラクターの個別のステータスの画像を取得します。これはHPなど合成数が利用されるもの専用です。
 
     Args:
@@ -274,49 +272,52 @@ def __create_status_add(base: int, add: int, type: str, path: str) -> Image.Imag
     """
 
     img = GImage(
-        box_size=(600, 100),
+        box_size=(1200, 100),
         default_font_size=22,
     )
 
-    img.add_image(
-        image_path=path,
-        box=(50, 50),
-        size=(45, 45),
-        image_anchor=ImageAnchors.MIDDLE_MIDDLE
-    )
+    if path:
+        img.add_image(
+            image_path=path,
+            box=(50, 50),
+            size=(45, 45),
+            image_anchor=ImageAnchors.MIDDLE_MIDDLE
+        )
+    if type:
+        img.draw_text(
+            text=type,
+            position=(86, 50),
+            anchor=Anchors.LEFT_MIDDLE,
+        )
 
-    img.draw_text(
-        text=type,
-        position=(86, 50),
-        anchor=Anchors.LEFT_MIDDLE,
-    )
+    add_text_size = img.get_textsize(text=f"+ {add}", font_size=18)
     # ベース値の合成
     img.draw_text(
-        text=str(base),
-        position=(302, 75),
-        anchor=Anchors.LEFT_MIDDLE,
+        text=str("{:,}".format(base)),
+        position=(602-add_text_size[0], 75),
+        anchor=Anchors.RIGHT_MIDDLE,
         font_size=18,
         font_color=Colors.GENSHIN_LIGHT_BLUE,
     )
     # 追加値の合成
     img.draw_text(
-        text=f"+ {add}",
-        position=(365, 75),
-        anchor=Anchors.LEFT_MIDDLE,
+        text=f"+ {'{:,}'.format(add)}",
+        position=(612, 75),
+        anchor=Anchors.RIGHT_MIDDLE,
         font_size=18,
         font_color=Colors.GENSHIN_GREEN,
     )
     # 合成値の合成
     img.draw_text(
-        text=str(base + add),
-        position=(300, 50),
-        anchor=Anchors.LEFT_MIDDLE,
+        text=str('{:,}'.format(base + add)),
+        position=(610, 50),
+        anchor=Anchors.RIGHT_MIDDLE,
         font_size=26
     )
 
     return img.get_image()
 
-def __create_status(status: Decimal, type: str, path: str, suffix="%") -> Image.Image:
+def __create_status(status: Decimal, type: str = None, path: str = None, suffix="%") -> Image.Image:
     """キャラクターの個別のステータスの画像を取得します。suffixは％などの文字列です
 
     Args:
@@ -327,28 +328,30 @@ def __create_status(status: Decimal, type: str, path: str, suffix="%") -> Image.
         Image.Image: キャラクターの個別のステータス画像
     """
     img = GImage(
-        box_size=(600, 100),
+        box_size=(1200, 100),
         default_font_size=26,
     )
 
     # ステータスのアイコン
-    img.add_image(
-        image_path=path,
-        box=(50, 50),
-        size=(40, 40),
-        image_anchor=ImageAnchors.MIDDLE_MIDDLE
-    )
+    if path:
+        img.add_image(
+            image_path=path,
+            box=(55, 50),
+            size=(40, 40),
+            image_anchor=ImageAnchors.MIDDLE_MIDDLE
+        )
     # ステータス名
-    img.draw_text(
-        text=type,
-        position=(86, 50),
-        anchor=Anchors.LEFT_MIDDLE,
-    )
+    if type:
+        img.draw_text(
+            text=type,
+            position=(95, 50),
+            anchor=Anchors.LEFT_MIDDLE,
+        )
     # ステータスの合成
     img.draw_text(
-        text=f"{status}{suffix}",
-        position=(300, 50),
-        anchor=Anchors.LEFT_MIDDLE,
+        text = status,
+        position=(610, 50),
+        anchor=Anchors.RIGHT_MIDDLE,
         font_size=26
     )
 
@@ -375,8 +378,6 @@ def __create_full_status(character: status_model.Character):
                 __create_status_add,
                 character.base_hp,
                 character.added_hp,
-                "HP",
-                ASSETS.icon.status.hp
             )
         )
         # 攻撃
@@ -385,8 +386,6 @@ def __create_full_status(character: status_model.Character):
                 __create_status_add,
                 character.base_attack,
                 character.added_attack,
-                "攻撃力",
-                ASSETS.icon.status.attack
             )
         )
         # 防御
@@ -395,8 +394,6 @@ def __create_full_status(character: status_model.Character):
                 __create_status_add,
                 character.base_defense,
                 character.added_defense,
-                "防御力",
-                ASSETS.icon.status.diffence
             )
         )
         # 元素熟知
@@ -404,8 +401,6 @@ def __create_full_status(character: status_model.Character):
             pool.submit(
                 __create_status,
                 character.elemental_mastery,
-                "元素熟知",
-                ASSETS.icon.status.element,
                 ""
             )
         )
@@ -414,8 +409,6 @@ def __create_full_status(character: status_model.Character):
             pool.submit(
                 __create_status,
                 character.critical_rate,
-                "会心率",
-                ASSETS.icon.status.critical
             )
         )
         # クリダメ
@@ -423,8 +416,6 @@ def __create_full_status(character: status_model.Character):
             pool.submit(
                 __create_status,
                 character.critical_damage,
-                "会心ダメージ",
-                ASSETS.icon.status.critical_per
             )
         )
         # 元チャ
@@ -432,8 +423,6 @@ def __create_full_status(character: status_model.Character):
             pool.submit(
                 __create_status,
                 character.charge_efficiency,
-                "元素チャージ効率",
-                ASSETS.icon.status.element_charge,
             )
         )
         # 元素攻撃力
@@ -442,7 +431,7 @@ def __create_full_status(character: status_model.Character):
                 pool.submit(
                     __create_status,
                     character.elemental_value,
-                    character.elemental_name,
+                    character.elemental_jp_name,
                     ASSETS.icon.element[character.elemental_name],
                     ""
                 )
@@ -451,7 +440,7 @@ def __create_full_status(character: status_model.Character):
     for i, f in enumerate(futures):
         im: Image = f.result()
         # 各画像を合成します
-        img.paste(im=im, box=(1360, 67+i*70))
+        img.paste(im=im, box=(750, 30+i*70))
 
     return img.get_image()
 
@@ -468,13 +457,12 @@ def __create_full_character_status(character: status_model.Character):
         box_size=BASE_SIZE,
         default_font_size=25,
     )
-    print("一応うごいてんぞ")
     base.draw_text(position=(30, 20), text=character.util.name, font_size=48)
     chara_lv = f"Lv.{character.level:>2}"
     love = str(character.love)
     chara_lv_length = base.get_textsize(chara_lv)[0]
     love_length = base.get_textsize(love)[0]
-    base.draw_text(position=(30, 20), text=chara_lv)
+    base.draw_text(position=(30, 75), text=chara_lv)
     base.paste(
         __get_rounded_rectangle(xy=(
             (40 + chara_lv_length, 74),
@@ -489,14 +477,20 @@ def __create_full_character_status(character: status_model.Character):
     base.draw_text(position=(73+chara_lv_length, 74), text=love)
     for i, skill in enumerate(character.skills):
         base.draw_text(
-            position=(42, 397 + (i * 105)),
+            position=(63, 397 + (i * 105)),
             text=f"Lv.{skill.level}",
             font_size=17,
-            font_color=Colors.GENSHIN_LIGHT_BLUE if skill.level >= 10 else Colors.WHITE
+            font_color=Colors.GENSHIN_LIGHT_BLUE if skill.level >= 10 else Colors.WHITE,
+            anchor=Anchors.MIDDLE_TOP
         )
 
     base.paste(
-        __create_full_status(
+        im=__create_full_status(
+            character=character
+        ),
+    )
+    base.paste(
+        __gen_constellation_list_img(
             character=character
         )
     )
@@ -518,7 +512,7 @@ def __create_weapon(weapon: status_model.Weapon) -> Image.Image:
     )
     # 武器画像を合成
     img.paste(
-        __create_weapon_img(weapon=weapon, img_size=(128, 128))
+        im=__create_weapon_img(weapon=weapon, img_size=(128, 128))
     )
     # 武器レアリティの合成
     img.paste(
@@ -530,52 +524,37 @@ def __create_weapon(weapon: status_model.Weapon) -> Image.Image:
         max_width=400,
         position=(1582, 47),
         font_size=24,
-        anchor=Anchors.RIGHT_BOTTOM,
     )
     # 武器のステータスの合成
     img.draw_text(
         text=f'基礎攻撃力  {weapon.main_value}',
         position=(1623, 120),
         font_size=23,
-        anchor=Anchors.RIGHT_BOTTOM,
     )
-    with ThreadPoolExecutor(max_workers=20, thread_name_prefix="__create_weapon_icon") as pool:
-        weapon_icon = pool.submit(
-            __gen_weapon_status_icon,
-            ASSETS.icon.status.attack,
-            (1600, 155)
-        )
     img.paste(
-        weapon_icon
+        __gen_weapon_status_icon(ASSETS.icon.status.attack, (1600, 120))
     )
     if weapon.sub_value is not None:
         img.draw_text(
             text=f'{weapon.sub_jp_name}  {weapon.sub_value}',
             position=(1623, 155),
             font_size=23,
-            anchor=Anchors.RIGHT_BOTTOM,
         )
-        with ThreadPoolExecutor(max_workers=20, thread_name_prefix="__create_weapon_icon") as pool:
-            weapon_icon = pool.submit(
-                __gen_weapon_status_icon,
-                ASSETS.icon_namehash[weapon.sub_name],
-                (1600, 155)
-            )
         img.paste(
-            weapon_icon
+            __gen_weapon_status_icon(ASSETS.icon_namehash[weapon.sub_name], (1600, 155))
         )
     # 武器のレベル情報の合成
     img.paste(
         __get_rounded_rectangle(xy=(
             (1582, 80),
-            (1582 + img.get_textsize(str(weapon.level))[0], 108)
+            (1585 + img.get_textsize(text=f'Lv.{weapon.level}', font_size=24)[0], 108)
         ))
     )
     img.draw_text(
-        text=f'R{weapon.level}',
+        text=f'Lv.{weapon.level}',
         position=(1584, 82), 
         font_size=24, 
-        anchor=Anchors.RIGHT_BOTTOM)
+        )
     # 武器の凸情報の合成
     img.paste(
         __get_rounded_rectangle(xy=(
@@ -587,7 +566,7 @@ def __create_weapon(weapon: status_model.Weapon) -> Image.Image:
         text=f'R{weapon.rank}',
         position=(1433, 46), 
         font_size=24, 
-        anchor=Anchors.RIGHT_BOTTOM)
+        )
 
     return img.get_image()
 
@@ -609,77 +588,100 @@ def __create_artifact(artifact: status_model.Artifact) -> Image.Image:
 
     # 聖遺物の画像を合成
     base_img.paste(
-        im=__gen_artifact_image(artifact=artifact),    
-    )
-    # 聖遺物の画像を合成
-    base_img.add_image(
-        image_path=artifact.util.icon.path,
-        size=(66, 70),
-        box=(70, 70),
-        image_anchor=ImageAnchors.MIDDLE_MIDDLE
+        im=__gen_artifact_image(artifact=artifact), 
+        box=(-68, -78)   
     )
     # メインオプション名
     base_img.draw_text(
         text=artifact.main_jp_name, 
-        position=(375, 655), 
-        anchor=Anchors.MIDDLE_BOTTOM, 
+        position=(345, 12), 
+        anchor=Anchors.RIGHT_TOP, 
         font_size=29)
     # メインオプションアイコン
     base_img.add_image(
         ASSETS.icon_namehash[artifact.main_name],
-        (340+0*373-int(base_img.get_textsize(artifact.main_jp_name, 29)[0]), 655),
+        (345-int(base_img.get_textsize(artifact.main_jp_name, 29)[0]), 8),
+        (35, 35),
+        image_anchor=ImageAnchors.RIGHT_TOP
     )
     # 聖遺物のメインのステータスを合成
     base_img.draw_text(
-        text=artifact.main_value_str + artifact.suffix,
-        position=(375+0*373, 690),
+        text='{:,}'.format(artifact.main_value) + artifact.suffix,
+        position=(345, 50),
         font_size=49,
-        anchor=Anchors.RIGHT_DESCENDER
+        anchor=Anchors.RIGHT_TOP
     )
     # 聖遺物レベル
-    levlen = base_img.get_textsize(f'+{artifact.level}', 21)[0]
     base_img.paste(
-        __get_rounded_rectangle(((373+0*373-int(levlen), 748), (375+0*373, 771)))
+        __get_rounded_rectangle(((345-int(base_img.get_textsize(f'+{artifact.level}', 21)[0]), 100), (345, 123)))
     )
     base_img.draw_text(
         text=f'+{artifact.level}', 
-        position=(374+0*373-levlen, 749), 
-        font_size=21)
+        position=(345, 105), 
+        font_size=21,
+        anchor=Anchors.RIGHT_TOP
+    )
     
     # 聖遺物のサブステータスを合成
     for i, v in enumerate(artifact.status):
         # 色分け処理
         if v.jp_name in ['HP', '攻撃力', '防御力']:
             base_img.draw_text(
-                position=(79+373*0, 811+50*i),
+                position=(50, 180+45*i), 
                 text=v.jp_name,
                 font_size=25,
                 font_color=(255, 255, 255, 190),
-                anchor=Anchors.RIGHT_BOTTOM
+                anchor=Anchors.LEFT_TOP
             )
-            base_img.draw_text(text=v.value_str, position=(375, 811+50*i), font_size=25, font_color=(255, 255, 255, 190))
+            base_img.draw_text(
+                text=v.value_str, 
+                position=(345, 180+45*i), 
+                font_size=25, 
+                font_color=(255, 255, 255, 190),
+                anchor=Anchors.RIGHT_TOP)
         else:
             base_img.draw_text(
-                position=(79+373*0, 811+50*i),
+                position=(50, 180+45*i), 
                 text=v.jp_name,
                 font_size=25,
-                anchor=Anchors.RIGHT_BOTTOM
+                anchor=Anchors.LEFT_TOP
             )
-            base_img.draw_text(text=v.value_str, position=(375, 811+50*i), font_size=25)
-        substatus_icon = GImage(image_path=ASSETS.icon_namehash[v.name])
-        base_img.paste(im=substatus_icon, box=(44, 811+50*i))
+            base_img.draw_text(
+                text=v.value_str, 
+                position=(345, 180+45*i), 
+                font_size=25, 
+                anchor=Anchors.RIGHT_TOP)
+        base_img.add_image(
+            image_path=ASSETS.icon_namehash[v.name], 
+            box=(15, 180+45*i), 
+            size=(30, 30), 
+            image_anchor=ImageAnchors.LEFT_TOP)
 
-    base_img.draw_text(text=artifact.score, position=(380, 1016), font_size=36, anchor=Anchors.RIGHT_BOTTOM)
-    base_img.draw_text(text='Score', position=(295, 1025), font_size=27, font_color=(160, 160, 160, 0))
+    base_img.draw_text(
+        text=artifact.score, 
+        position=(345, 370), 
+        font_size=36, 
+        anchor=Anchors.RIGHT_TOP)
+    base_img.draw_text(
+        text='Score', 
+        position=(
+            340-base_img.get_textsize(
+                text=str(artifact.score), 
+                font_size=36)[0], 
+            380
+        ), 
+        font_size=27, 
+        font_color=(160, 160, 160, 256),
+        anchor=Anchors.RIGHT_TOP)
 
     for grade in [0, 1, 2]:
         if artifact.score >= ARTIFACTER_REFER[artifact.util.equip_type][grade]:
-            ScoreImage = GImage(image_path=ASSETS.artifacter.artifact_grades[3-grade])
+            ScoreImage = ASSETS.artifacter.artifact_grades[3-grade]
             break
     else:
-        ScoreImage = GImage(image_path=ASSETS.artifacter.artifact_grades[0])
+        ScoreImage = ASSETS.artifacter.artifact_grades[0]
 
-    base_img.paste(ScoreImage, (85, 1013))
+    base_img.add_image(ScoreImage, (55, 365), (45, 45))
 
     return base_img.get_image()
 
@@ -700,14 +702,14 @@ def __create_total_socre(artifact_list: dict[str, status_model.Artifact], build_
         position=(1652, 420), 
         text=str(total_score), 
         font_size=75,
-        anchor=Anchors.MIDDLE_BOTTOM
+        anchor=Anchors.MIDDLE_TOP
     )
     # スコア計算方法
     img.draw_text(
         position=(1867, 585), 
         text=f'{build_type}換算', 
         font_size=24,
-        anchor=Anchors.RIGHT_BOTTOM
+        anchor=Anchors.RIGHT_TOP
     )
 
     if total_score >= 220:
@@ -737,7 +739,6 @@ def __create_artifact_list(artifact_map: dict[status_model.Artifact]) -> Image.I
     Returns:
         Image.Image: 聖遺物一覧画像
     """
-    print("create_artifact_list起動")
     img = GImage(
         box_size=BASE_SIZE,
     )
@@ -755,8 +756,42 @@ def __create_artifact_list(artifact_map: dict[status_model.Artifact]) -> Image.I
     # 各ステータス画像の合成
     for i, v in enumerate(futures):
         im: Image = v.result()
-        img.paste(im=im, box=(375*i, 1025))
+        img.paste(im=im, box=(373*i+30, 648))
+        print("hogehoge")
+    return img.get_image()
 
+def __create_artifact_set(character: status_model.Character) -> Image.Image:
+    """聖遺物のセット名を表示する画像を生成します。
+
+    Args:
+        character (Character): キャラデータ
+
+    Returns:
+        Image.Image: 聖遺物のセット名画像
+    """
+    img = GImage(
+        box_size=BASE_SIZE,
+    )
+    set_name = [character.artifacts[v].util.set_name for v in ['EQUIP_BRACER', 'EQUIP_NECKLACE', 'EQUIP_SHOES', 'EQUIP_RING', 'EQUIP_DRESS']]
+    count_dict = {item: set_name.count(item) for item in set(set_name)}
+    counts = count_dict.values()
+    print(set_name)
+    print(count_dict)
+    if 2 <= max(counts) <= 3:
+        print(count_dict.keys())
+        text=[k for k, v in count_dict.items() if v >= 2]
+        img.draw_text(
+            text=text[0]+'、'+text[1], 
+            position=(1530, 263),
+            font_size=20,
+            font_color=Colors.GENSHIN_GREEN)
+    elif 4 <= max(counts) <= 5:
+        img.draw_text(
+            text=''.join([k for k, v in count_dict.items() if v >= 4]), 
+            position=(1530, 260),
+            font_size=28,
+            font_color=Colors.GENSHIN_GREEN)
+    
     return img.get_image()
 
 def __create_image(character: status_model.Character) -> Image.Image:
@@ -807,6 +842,11 @@ def __create_image(character: status_model.Character) -> Image.Image:
             weapon,
         )
 
+        artifactsetf: Future = pool.submit(
+            __create_artifact_set,
+            character,
+        )
+
     # 各リザルトを取得
     bg = bgf.result()
     lv = lvf.result()
@@ -814,28 +854,29 @@ def __create_image(character: status_model.Character) -> Image.Image:
     artifact = artifactf.result()
     total_score = total_scoref.result()
     weapon_data = weapon_dataf.result()
+    artifactsetf = artifactsetf.result()
 
     # レベルなど合成
-    bg.paste(im=lv, image_anchor=ImageAnchors.LEFT_BOTTOM)
+    bg.paste(im=lv)
     # 天賦を合成
     bg.paste(im=skill)
     # 聖遺物を合成
     bg.paste(
         im=artifact,
-        image_anchor=ImageAnchors.RIGHT_TOP
     )
     # 聖遺物のトータルスコアを合成
     bg.paste(im=total_score)
     # 武器画像を合成
     bg.paste(
         im=weapon_data,
-        image_anchor=ImageAnchors.LEFT_BOTTOM
     )
+    bg.paste(
+        im=artifactsetf)
     return bg.get_image()
 
 def save_image(file_path: str, character_status: status_model.Character):
-    if cache_image.check_cache_exists(file_path=file_path):
-        return
+    # if cache_image.check_cache_exists(file_path=file_path):
+        # return
 
     character_status.init_utils()
     character_status.init_score()
