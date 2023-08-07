@@ -21,7 +21,7 @@ def __create_background(element: str, gacha_icon: str, position: util_model.Posi
     """
     # 元素別の画像
     img = GImage(
-        image_path=ASSETS.genshin_status.backgroundo_elements[element],
+        image_path=ASSETS.genshin_status.background_elements[element],
         default_font_size=26,
     )
 

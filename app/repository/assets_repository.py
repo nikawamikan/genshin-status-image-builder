@@ -27,7 +27,7 @@ def static_init():
         genshin_status=assets.GenshinStatusAssets(
             background_base=str(BACKGROUND / "base.png"),
             background_shadow=str(BACKGROUND / "shadow.png"),
-            backgroundo_elements={
+            background_elements={
                 "Electric": str(BACKGROUND / "Electric.png"),
                 "Fire": str(BACKGROUND / "Fire.png"),
                 "Grass": str(BACKGROUND / "Grass.png"),
