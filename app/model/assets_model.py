@@ -41,7 +41,7 @@ class GenshinStatusAssets(BaseModel):
     star: str
     background_base: str
     background_shadow: str
-    backgroundo_elements: dict[str, str]
+    background_elements: dict[str, str]
     artufact_bg: list[str]
 
 

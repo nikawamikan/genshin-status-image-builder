@@ -57,7 +57,7 @@
       ],
       "artifacts": {
         "EQUIP_BRACER": {
-          "icon_name": "UI_RelicIcon_15026_4",
+          "icon_name": "UI_RelicIcon_15030_4",
           "main_name": "FIGHT_PROP_HP",
           "main_value": 4780,
           "suffix": "",
@@ -89,7 +89,7 @@
           "util": null
         },
         "EQUIP_NECKLACE": {
-          "icon_name": "UI_RelicIcon_15026_2",
+          "icon_name": "UI_RelicIcon_15029_2",
           "main_name": "FIGHT_PROP_ATTACK",
           "main_value": 311,
           "suffix": "",
@@ -121,7 +121,7 @@
           "util": null
         },
         "EQUIP_SHOES": {
-          "icon_name": "UI_RelicIcon_15026_5",
+          "icon_name": "UI_RelicIcon_15028_5",
           "main_name": "FIGHT_PROP_ELEMENT_MASTERY",
           "main_value": 187,
           "suffix": "",
@@ -153,7 +153,7 @@
           "util": null
         },
         "EQUIP_RING": {
-          "icon_name": "UI_RelicIcon_15026_1",
+          "icon_name": "UI_RelicIcon_15027_1",
           "main_name": "FIGHT_PROP_ELEMENT_MASTERY",
           "main_value": 187,
           "suffix": "",
