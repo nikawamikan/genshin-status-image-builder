@@ -1,11 +1,11 @@
 Pillow==9.5.0
-pydantic
-aiohttp
-requests
-aiofiles
-watchdog
-PyGithub
-uvicorn[standard]
-fastapi
-ordered_set
-redis
+pydantic == 1.10.12
+aiohttp == 3.8.5
+requests == 2.31.0
+aiofiles == 23.1.0
+watchdog == 3.0.0
+PyGithub == 1.59.1
+uvicorn[standard] == 0.23.2
+fastapi == 0.101.0
+ordered_set == 4.1.0
+redis == 4.6.0
