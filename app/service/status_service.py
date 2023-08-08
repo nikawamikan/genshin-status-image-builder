@@ -225,6 +225,6 @@ async def get_user_data(uid) -> status_model.UserData:
         char_name_map=char_name_map,
         characters=char_list,
     )
-    redis_obj.set(uid, user_data.model_dump_json())
+    redis_obj.set(uid, user_data.json())
     redis_obj.expire(uid, TTL)
     return user_data
