@@ -224,6 +224,10 @@ async def get_user_data(uid) -> status_model.UserData:
         create_date=create_date,
         char_name_map=char_name_map,
         characters=char_list,
+        profile_picture=status_model.ProfilePicture(
+            id=enka.playerInfo.profilePicture.avatarId,
+            costume_id=enka.playerInfo.profilePicture.costumeId
+        )
     )
     redis_obj.set(uid, user_data.json())
     redis_obj.expire(uid, TTL)

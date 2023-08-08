@@ -67,7 +67,7 @@ class Algin:
 TypeGImage = TypeVar("TypeGImage", bound="GImage",)
 
 
-def _open_image(path: str, raise_exception: bool = False):
+def _open_image(path: str, raise_exception: bool = True):
     if os.path.exists(path):
         return Image.open(path)
     elif raise_exception:

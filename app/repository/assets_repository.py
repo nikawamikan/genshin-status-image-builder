@@ -22,6 +22,8 @@ def static_init():
     ICON_ELEMENT = ICON / "element"
     ICON_STATUS = ICON / "status"
 
+    PROFILE = BASE_PATH / "profile_assets"
+
     ASSETS = assets.Assets(
         # 原神すてーぼ用のディレクトリ
         genshin_status=assets.GenshinStatusAssets(
@@ -109,6 +111,10 @@ def static_init():
                     unlock=str(CONSTELLATION / "WindLock.png")
                 ),
             }
+        ),
+        # Profile 用の画像ディレクトリ
+        profile=assets.ProfileAssets(
+            layer=str(PROFILE / "Layer.png")
         ),
         # 以下共有部
         icon=assets.Icon(

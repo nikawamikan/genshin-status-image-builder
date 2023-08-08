@@ -14,6 +14,8 @@ cwd = os.path.abspath(os.path.dirname(__file__))
 
 BASE_SIZE = (1920, 1080)
 TALENT_BASE_SIZE = (int(149/1.5), int(137/1.5))
+IGNORE_PATTERN = set(['FIGHT_PROP_HP', 'FIGHT_PROP_ATTACK', 'FIGHT_PROP_DEFENSE'])
+
 # TALENT_BACK = Image.open(ASSETS.artifacter.b)
 TALENT_BASE = Image.open(
     ASSETS.artifacter.talent_back).resize(TALENT_BASE_SIZE)
@@ -625,7 +627,7 @@ def __create_artifact(artifact: status_model.Artifact) -> Image.Image:
     # 聖遺物のサブステータスを合成
     for i, v in enumerate(artifact.status):
         # 色分け処理
-        if v.jp_name in ['HP', '攻撃力', '防御力']:
+        if v.name in IGNORE_PATTERN:
             base_img.draw_text(
                 position=(50, 180+45*i), 
                 text=v.jp_name,

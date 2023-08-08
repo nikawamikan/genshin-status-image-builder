@@ -5,7 +5,7 @@ sample
 test.py
 font
 test/*
-!image/assets
+!image/assets/**
 !image/character/sample
 !image/character/sample/**
 !**/.gitkeep
