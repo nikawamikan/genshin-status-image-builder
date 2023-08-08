@@ -952,5 +952,11 @@
             "name": "UI_NameCardPic_Bp24_P.png",
             "path": "image/namecard/UI_NameCardPic_Bp24_P.png"
         }
+    },
+    "210164": {
+        "icon": {
+            "name": "UI_NameCardPic_Bp25_P.png",
+            "path": "image/namecard/.png"
+        }
     }
 }
