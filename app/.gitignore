@@ -9,3 +9,5 @@ test/*
 !image/character/sample
 !image/character/sample/**
 !**/.gitkeep
+error/*
+profile_images/*
