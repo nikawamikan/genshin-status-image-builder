@@ -32,4 +32,4 @@ services:
 networks:
   default:
   api_network:
-    name: ${NETWORK}
+    external: true

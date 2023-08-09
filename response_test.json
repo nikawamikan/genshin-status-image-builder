@@ -1,0 +1,1728 @@
+{
+    "uid": 857377017,
+    "level": 57,
+    "signature":"\xe3\x81\xa9\xe3\x81\x86\xe3\x81\xa7\xe3\x82\x82\xe3\x81\x84\xe3\x81\x84\xe3\x82\xad\xe3\x83\xa3\xe3\x83\xa9\xe3\x81\xab\xe9\x99\x90\xe3\x81\xa3\xe3\x81\xa6\xe7\xa5\x9e\xe5\xbc\x95\xe3\x81\x8d\xe3\x81\x97\xe3\x81\x8c\xe3\x81\xa1",
+    "world_level": 8,
+    "name_card_id": 210147,
+    "finish_achievement_num": 609,
+    "tower_floor_index": 8,
+    "tower_level_index": 3,
+    "nickname":"\xe3\x81\x97\xe3\x81\xaa\xe3\x82\x82\xe3\x82\x93",
+    "create_date": "20230807110650",
+    "char_name_map": {"\xe3\x83\x8a\xe3\x83\x92\xe3\x83\xbc\xe3\x83\x80": 0,"\xe9\x9b\xb7\xe9\x9b\xbb\xe5\xb0\x86\xe8\xbb\x8d": 1,"\xe9\x8d\xbe\xe9\x9b\xa2": 2,"\xe5\xa4\x9c\xe8\x98\xad": 3,"\xe7\x94\x98\xe9\x9b\xa8": 4,"\xe6\xa5\x93\xe5\x8e\x9f\xe4\xb8\x87\xe8\x91\x89": 5,"\xe3\x83\x8b\xe3\x82\xa3\xe3\x83\xad\xe3\x82\xa6": 6,"\xe3\x82\xa2\xe3\x83\xab\xe3\x83\x8f\xe3\x82\xa4\xe3\x82\xbc\xe3\x83\xb3": 7
+    },
+    "characters": [
+        {
+            "id": "10000073",
+            "star": 5,
+            "constellations": 6,
+            "level": 90,
+            "love": 10,
+            "base_hp": 10360,
+            "added_hp": 5019,
+            "base_attack": 840,
+            "added_attack": 665,
+            "base_defense": 630,
+            "added_defense": 198,
+            "critical_rate": 48.5,
+            "critical_damage": 100.5,
+            "charge_efficiency": 120.7,
+            "elemental_mastery": 815,
+            "elemental_name": "Grass",
+            "elemental_value": "15.0%",
+            "skills": [
+                {
+                    "level": 6,
+                    "add_level": 0,
+                    "util": null
+                },
+                {
+                    "level": 10,
+                    "add_level": 0,
+                    "util": null
+                },
+                {
+                    "level": 10,
+                    "add_level": 0,
+                    "util": null
+                }
+            ],
+            "artifacts": {
+                "EQUIP_BRACER": {
+                    "icon_name": "UI_RelicIcon_15025_4",
+                    "main_name": "FIGHT_PROP_HP",
+                    "main_value": 4780,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 30.3,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 2.7,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 6.5,
+                            "name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 4.7,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_NECKLACE": {
+                    "icon_name": "UI_RelicIcon_15025_2",
+                    "main_name": "FIGHT_PROP_ATTACK",
+                    "main_value": 311,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 6.6,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 37.0,
+                            "name": "FIGHT_PROP_DEFENSE",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 23.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 20.2,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_SHOES": {
+                    "icon_name": "UI_RelicIcon_15026_5",
+                    "main_name": "FIGHT_PROP_ELEMENT_MASTERY",
+                    "main_value": 187,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 4.1,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 14.2,
+                            "name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 47.0,
+                            "name": "FIGHT_PROP_ATTACK",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 46.0,
+                            "name": "FIGHT_PROP_DEFENSE",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_RING": {
+                    "icon_name": "UI_RelicIcon_15025_1",
+                    "main_name": "FIGHT_PROP_ELEMENT_MASTERY",
+                    "main_value": 187,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 3.1,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 11.7,
+                            "name": "FIGHT_PROP_DEFENSE_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 42.0,
+                            "name": "FIGHT_PROP_DEFENSE",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 16.3,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_DRESS": {
+                    "icon_name": "UI_RelicIcon_15025_3",
+                    "main_name": "FIGHT_PROP_CRITICAL",
+                    "main_value": 31.1,
+                    "suffix": "%",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 40.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 4.1,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 239.0,
+                            "name": "FIGHT_PROP_HP",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 62.0,
+                            "name": "FIGHT_PROP_ATTACK",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                }
+            },
+            "weapon": {
+                "icon_name": "UI_EquipIcon_Catalyst_Ayus",
+                "main_name": "FIGHT_PROP_BASE_ATTACK",
+                "main_value": 542,
+                "sub_name": "FIGHT_PROP_ELEMENT_MASTERY",
+                "sub_value": 265,
+                "level": 90,
+                "rank": 5,
+                "util": null
+            },
+            "uid": 857377017,
+            "create_date": "20230807110650",
+            "costume_id": "default",
+            "build_type": null,
+            "costume": null,
+            "util": null
+        },
+        {
+            "id": "10000052",
+            "star": 5,
+            "constellations": 6,
+            "level": 90,
+            "love": 10,
+            "base_hp": 12907,
+            "added_hp": 6333,
+            "base_attack": 785,
+            "added_attack": 380,
+            "base_defense": 789,
+            "added_defense": 148,
+            "critical_rate": 42.3,
+            "critical_damage": 124.6,
+            "charge_efficiency": 276.8,
+            "elemental_mastery": 111,
+            "elemental_name": "Electric",
+            "elemental_value": "117.3%",
+            "skills": [
+                {
+                    "level": 4,
+                    "add_level": 0,
+                    "util": null
+                },
+                {
+                    "level": 9,
+                    "add_level": 0,
+                    "util": null
+                },
+                {
+                    "level": 9,
+                    "add_level": 0,
+                    "util": null
+                }
+            ],
+            "artifacts": {
+                "EQUIP_BRACER": {
+                    "icon_name": "UI_RelicIcon_15020_4",
+                    "main_name": "FIGHT_PROP_HP",
+                    "main_value": 4780,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 6.2,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 11.7,
+                            "name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 37.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 13.2,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_NECKLACE": {
+                    "icon_name": "UI_RelicIcon_15020_2",
+                    "main_name": "FIGHT_PROP_ATTACK",
+                    "main_value": 311,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 6.5,
+                            "name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 21.8,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 35.0,
+                            "name": "FIGHT_PROP_DEFENSE",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 538.0,
+                            "name": "FIGHT_PROP_HP",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_SHOES": {
+                    "icon_name": "UI_RelicIcon_15020_5",
+                    "main_name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                    "main_value": 51.8,
+                    "suffix": "%",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 478.0,
+                            "name": "FIGHT_PROP_HP",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 12.4,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 40.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 37.0,
+                            "name": "FIGHT_PROP_DEFENSE",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_RING": {
+                    "icon_name": "UI_RelicIcon_15003_1",
+                    "main_name": "FIGHT_PROP_ELEC_ADD_HURT",
+                    "main_value": 46.6,
+                    "suffix": "%",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 8.7,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 14.0,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 35.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 39.0,
+                            "name": "FIGHT_PROP_DEFENSE",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_DRESS": {
+                    "icon_name": "UI_RelicIcon_15020_3",
+                    "main_name": "FIGHT_PROP_CRITICAL",
+                    "main_value": 31.1,
+                    "suffix": "%",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 13.0,
+                            "name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 37.0,
+                            "name": "FIGHT_PROP_DEFENSE",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 538.0,
+                            "name": "FIGHT_PROP_HP",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 13.2,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                }
+            },
+            "weapon": {
+                "icon_name": "UI_EquipIcon_Pole_Mori",
+                "main_name": "FIGHT_PROP_BASE_ATTACK",
+                "main_value": 449,
+                "sub_name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "sub_value": 41.9,
+                "level": 80,
+                "rank": 4,
+                "util": null
+            },
+            "uid": 857377017,
+            "create_date": "20230807110650",
+            "costume_id": "default",
+            "build_type": null,
+            "costume": null,
+            "util": null
+        },
+        {
+            "id": "10000030",
+            "star": 5,
+            "constellations": 6,
+            "level": 90,
+            "love": 10,
+            "base_hp": 14695,
+            "added_hp": 18699,
+            "base_attack": 747,
+            "added_attack": 669,
+            "base_defense": 737,
+            "added_defense": 40,
+            "critical_rate": 54.0,
+            "critical_damage": 104.4,
+            "charge_efficiency": 137.6,
+            "elemental_mastery": 23,
+            "elemental_name": "Rock",
+            "elemental_value": "75.4%",
+            "skills": [
+                {
+                    "level": 6,
+                    "add_level": 0,
+                    "util": null
+                },
+                {
+                    "level": 9,
+                    "add_level": 0,
+                    "util": null
+                },
+                {
+                    "level": 9,
+                    "add_level": 0,
+                    "util": null
+                }
+            ],
+            "artifacts": {
+                "EQUIP_BRACER": {
+                    "icon_name": "UI_RelicIcon_15017_4",
+                    "main_name": "FIGHT_PROP_HP",
+                    "main_value": 4780,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 15.5,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 3.9,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 39.0,
+                            "name": "FIGHT_PROP_DEFENSE",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 54.0,
+                            "name": "FIGHT_PROP_ATTACK",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_NECKLACE": {
+                    "icon_name": "UI_RelicIcon_15017_2",
+                    "main_name": "FIGHT_PROP_ATTACK",
+                    "main_value": 311,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 6.6,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 8.7,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 18.7,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 299.0,
+                            "name": "FIGHT_PROP_HP",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_SHOES": {
+                    "icon_name": "UI_RelicIcon_15017_5",
+                    "main_name": "FIGHT_PROP_HP_PERCENT",
+                    "main_value": 46.6,
+                    "suffix": "%",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 299.0,
+                            "name": "FIGHT_PROP_HP",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 5.4,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 51.0,
+                            "name": "FIGHT_PROP_ATTACK",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 15.7,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_RING": {
+                    "icon_name": "UI_RelicIcon_15020_1",
+                    "main_name": "FIGHT_PROP_ROCK_ADD_HURT",
+                    "main_value": 46.6,
+                    "suffix": "%",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 9.7,
+                            "name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 717.0,
+                            "name": "FIGHT_PROP_HP",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 7.4,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 9.3,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_DRESS": {
+                    "icon_name": "UI_RelicIcon_15017_3",
+                    "main_name": "FIGHT_PROP_CRITICAL",
+                    "main_value": 31.1,
+                    "suffix": "%",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 418.0,
+                            "name": "FIGHT_PROP_HP",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 14.8,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 16.3,
+                            "name": "FIGHT_PROP_HP_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 23.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                }
+            },
+            "weapon": {
+                "icon_name": "UI_EquipIcon_Pole_Zephyrus",
+                "main_name": "FIGHT_PROP_BASE_ATTACK",
+                "main_value": 497,
+                "sub_name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "sub_value": 27.9,
+                "level": 80,
+                "rank": 4,
+                "util": null
+            },
+            "uid": 857377017,
+            "create_date": "20230807110650",
+            "costume_id": "default",
+            "build_type": null,
+            "costume": null,
+            "util": null
+        },
+        {
+            "id": "10000060",
+            "star": 5,
+            "constellations": 6,
+            "level": 90,
+            "love": 10,
+            "base_hp": 14450,
+            "added_hp": 16509,
+            "base_attack": 644,
+            "added_attack": 409,
+            "base_defense": 547,
+            "added_defense": 63,
+            "critical_rate": 51.4,
+            "critical_damage": 180.6,
+            "charge_efficiency": 185.6,
+            "elemental_mastery": 93,
+            "elemental_name": "Water",
+            "elemental_value": "46.6%",
+            "skills": [
+                {
+                    "level": 3,
+                    "add_level": 0,
+                    "util": null
+                },
+                {
+                    "level": 9,
+                    "add_level": 0,
+                    "util": null
+                },
+                {
+                    "level": 9,
+                    "add_level": 0,
+                    "util": null
+                }
+            ],
+            "artifacts": {
+                "EQUIP_BRACER": {
+                    "icon_name": "UI_RelicIcon_15020_4",
+                    "main_name": "FIGHT_PROP_HP",
+                    "main_value": 4780,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 3.1,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 4.1,
+                            "name": "FIGHT_PROP_HP_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 20.2,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 63.0,
+                            "name": "FIGHT_PROP_DEFENSE",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_NECKLACE": {
+                    "icon_name": "UI_RelicIcon_15020_2",
+                    "main_name": "FIGHT_PROP_ATTACK",
+                    "main_value": 311,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 8.7,
+                            "name": "FIGHT_PROP_HP_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 21.8,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 448.0,
+                            "name": "FIGHT_PROP_HP",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 16.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_SHOES": {
+                    "icon_name": "UI_RelicIcon_15020_5",
+                    "main_name": "FIGHT_PROP_HP_PERCENT",
+                    "main_value": 46.6,
+                    "suffix": "%",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 19.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 18.7,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 9.3,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 5.2,
+                            "name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_RING": {
+                    "icon_name": "UI_RelicIcon_14004_1",
+                    "main_name": "FIGHT_PROP_WATER_ADD_HURT",
+                    "main_value": 46.6,
+                    "suffix": "%",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 8.7,
+                            "name": "FIGHT_PROP_HP_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 5.8,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 14.8,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 7.8,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_DRESS": {
+                    "icon_name": "UI_RelicIcon_15020_3",
+                    "main_name": "FIGHT_PROP_CRITICAL_HURT",
+                    "main_value": 62.2,
+                    "suffix": "%",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 4.5,
+                            "name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 9.9,
+                            "name": "FIGHT_PROP_HP_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 58.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 9.3,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                }
+            },
+            "weapon": {
+                "icon_name": "UI_EquipIcon_Bow_Zephyrus",
+                "main_name": "FIGHT_PROP_BASE_ATTACK",
+                "main_value": 401,
+                "sub_name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "sub_value": 55.9,
+                "level": 80,
+                "rank": 4,
+                "util": null
+            },
+            "uid": 857377017,
+            "create_date": "20230807110650",
+            "costume_id": "default",
+            "build_type": null,
+            "costume": null,
+            "util": null
+        },
+        {
+            "id": "10000037",
+            "star": 5,
+            "constellations": 6,
+            "level": 80,
+            "love": 10,
+            "base_hp": 9108,
+            "added_hp": 4989,
+            "base_attack": 843,
+            "added_attack": 1183,
+            "base_defense": 585,
+            "added_defense": 210,
+            "critical_rate": 66.8,
+            "critical_damage": 196.9,
+            "charge_efficiency": 128.5,
+            "elemental_mastery": 138,
+            "elemental_name": "Ice",
+            "elemental_value": "46.6%",
+            "skills": [
+                {
+                    "level": 9,
+                    "add_level": 0,
+                    "util": null
+                },
+                {
+                    "level": 1,
+                    "add_level": 0,
+                    "util": null
+                },
+                {
+                    "level": 6,
+                    "add_level": 0,
+                    "util": null
+                }
+            ],
+            "artifacts": {
+                "EQUIP_BRACER": {
+                    "icon_name": "UI_RelicIcon_15003_4",
+                    "main_name": "FIGHT_PROP_HP",
+                    "main_value": 4780,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 10.4,
+                            "name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 7.0,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 12.2,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 6.6,
+                            "name": "FIGHT_PROP_DEFENSE_PERCENT",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_NECKLACE": {
+                    "icon_name": "UI_RelicIcon_15003_2",
+                    "main_name": "FIGHT_PROP_ATTACK",
+                    "main_value": 311,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 14.0,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 13.2,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 7.8,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 209.0,
+                            "name": "FIGHT_PROP_HP",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_SHOES": {
+                    "icon_name": "UI_RelicIcon_15003_5",
+                    "main_name": "FIGHT_PROP_ATTACK_PERCENT",
+                    "main_value": 46.6,
+                    "suffix": "%",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 14.0,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 19.0,
+                            "name": "FIGHT_PROP_ATTACK",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 58.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 8.9,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_RING": {
+                    "icon_name": "UI_RelicIcon_15007_1",
+                    "main_name": "FIGHT_PROP_ICE_ADD_HURT",
+                    "main_value": 46.6,
+                    "suffix": "%",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 11.7,
+                            "name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 10.2,
+                            "name": "FIGHT_PROP_DEFENSE_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 7.0,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 35.0,
+                            "name": "FIGHT_PROP_ATTACK",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_DRESS": {
+                    "icon_name": "UI_RelicIcon_15003_3",
+                    "main_name": "FIGHT_PROP_CRITICAL",
+                    "main_value": 31.1,
+                    "suffix": "%",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 19.0,
+                            "name": "FIGHT_PROP_DEFENSE_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 6.5,
+                            "name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 21.0,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 35.0,
+                            "name": "FIGHT_PROP_ATTACK",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                }
+            },
+            "weapon": {
+                "icon_name": "UI_EquipIcon_Bow_Narukami",
+                "main_name": "FIGHT_PROP_BASE_ATTACK",
+                "main_value": 532,
+                "sub_name": "FIGHT_PROP_CRITICAL_HURT",
+                "sub_value": 60.3,
+                "level": 80,
+                "rank": 5,
+                "util": null
+            },
+            "uid": 857377017,
+            "create_date": "20230807110650",
+            "costume_id": "default",
+            "build_type": null,
+            "costume": null,
+            "util": null
+        },
+        {
+            "id": "10000047",
+            "star": 5,
+            "constellations": 6,
+            "level": 80,
+            "love": 10,
+            "base_hp": 11776,
+            "added_hp": 8697,
+            "base_attack": 662,
+            "added_attack": 587,
+            "base_defense": 711,
+            "added_defense": 95,
+            "critical_rate": 14.3,
+            "critical_damage": 77.2,
+            "charge_efficiency": 161.0,
+            "elemental_mastery": 713,
+            "elemental_name": "Wind",
+            "elemental_value": "15.0%",
+            "skills": [
+                {
+                    "level": 2,
+                    "add_level": 0,
+                    "util": null
+                },
+                {
+                    "level": 8,
+                    "add_level": 0,
+                    "util": null
+                },
+                {
+                    "level": 6,
+                    "add_level": 0,
+                    "util": null
+                }
+            ],
+            "artifacts": {
+                "EQUIP_BRACER": {
+                    "icon_name": "UI_RelicIcon_15002_4",
+                    "main_name": "FIGHT_PROP_HP",
+                    "main_value": 3155,
+                    "suffix": "",
+                    "level": 12,
+                    "status": [
+                        {
+                            "value": 10.5,
+                            "name": "FIGHT_PROP_HP_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 13.2,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 21.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 4.7,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_NECKLACE": {
+                    "icon_name": "UI_RelicIcon_15002_2",
+                    "main_name": "FIGHT_PROP_ATTACK",
+                    "main_value": 258,
+                    "suffix": "",
+                    "level": 16,
+                    "status": [
+                        {
+                            "value": 598.0,
+                            "name": "FIGHT_PROP_HP",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 5.2,
+                            "name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 47.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 13.4,
+                            "name": "FIGHT_PROP_HP_PERCENT",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_SHOES": {
+                    "icon_name": "UI_RelicIcon_15002_5",
+                    "main_name": "FIGHT_PROP_ELEMENT_MASTERY",
+                    "main_value": 187,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 53.0,
+                            "name": "FIGHT_PROP_ATTACK",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 6.6,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 9.3,
+                            "name": "FIGHT_PROP_HP_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 42.0,
+                            "name": "FIGHT_PROP_DEFENSE",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_RING": {
+                    "icon_name": "UI_RelicIcon_15006_1",
+                    "main_name": "FIGHT_PROP_ELEMENT_MASTERY",
+                    "main_value": 187,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 4.7,
+                            "name": "FIGHT_PROP_HP_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 14.0,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 53.0,
+                            "name": "FIGHT_PROP_ATTACK",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 15.2,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_DRESS": {
+                    "icon_name": "UI_RelicIcon_15002_3",
+                    "main_name": "FIGHT_PROP_ELEMENT_MASTERY",
+                    "main_value": 187,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 2.7,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 4.1,
+                            "name": "FIGHT_PROP_HP_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 14.0,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 53.0,
+                            "name": "FIGHT_PROP_DEFENSE",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                }
+            },
+            "weapon": {
+                "icon_name": "UI_EquipIcon_Sword_Fossil",
+                "main_name": "FIGHT_PROP_BASE_ATTACK",
+                "main_value": 401,
+                "sub_name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "sub_value": 55.9,
+                "level": 80,
+                "rank": 4,
+                "util": null
+            },
+            "uid": 857377017,
+            "create_date": "20230807110650",
+            "costume_id": "default",
+            "build_type": null,
+            "costume": null,
+            "util": null
+        },
+        {
+            "id": "10000070",
+            "star": 5,
+            "constellations": 6,
+            "level": 80,
+            "love": 2,
+            "base_hp": 13397,
+            "added_hp": 31610,
+            "base_attack": 549,
+            "added_attack": 525,
+            "base_defense": 642,
+            "added_defense": 17,
+            "critical_rate": 31.1,
+            "critical_damage": 95.1,
+            "charge_efficiency": 161.5,
+            "elemental_mastery": 198,
+            "elemental_name": null,
+            "elemental_value": null,
+            "skills": [
+                {
+                    "level": 1,
+                    "add_level": 0,
+                    "util": null
+                },
+                {
+                    "level": 1,
+                    "add_level": 0,
+                    "util": null
+                },
+                {
+                    "level": 1,
+                    "add_level": 0,
+                    "util": null
+                }
+            ],
+            "artifacts": {
+                "EQUIP_BRACER": {
+                    "icon_name": "UI_RelicIcon_15017_4",
+                    "main_name": "FIGHT_PROP_HP",
+                    "main_value": 4780,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 15.7,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 18.1,
+                            "name": "FIGHT_PROP_HP_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 4.5,
+                            "name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 23.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_NECKLACE": {
+                    "icon_name": "UI_RelicIcon_15017_2",
+                    "main_name": "FIGHT_PROP_ATTACK",
+                    "main_value": 311,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 37.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 209.0,
+                            "name": "FIGHT_PROP_HP",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 26.4,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 6.5,
+                            "name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_SHOES": {
+                    "icon_name": "UI_RelicIcon_15026_5",
+                    "main_name": "FIGHT_PROP_HP_PERCENT",
+                    "main_value": 46.6,
+                    "suffix": "%",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 4.1,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 956.0,
+                            "name": "FIGHT_PROP_HP",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 5.8,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 12.4,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_RING": {
+                    "icon_name": "UI_RelicIcon_15026_1",
+                    "main_name": "FIGHT_PROP_HP_PERCENT",
+                    "main_value": 46.6,
+                    "suffix": "%",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 6.2,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 23.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 14.0,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 10.9,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_DRESS": {
+                    "icon_name": "UI_RelicIcon_15026_3",
+                    "main_name": "FIGHT_PROP_HP_PERCENT",
+                    "main_value": 38.7,
+                    "suffix": "%",
+                    "level": 16,
+                    "status": [
+                        {
+                            "value": 5.3,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 9.3,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 35.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 16.0,
+                            "name": "FIGHT_PROP_DEFENSE",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                }
+            },
+            "weapon": {
+                "icon_name": "UI_EquipIcon_Sword_Fossil",
+                "main_name": "FIGHT_PROP_BASE_ATTACK",
+                "main_value": 347,
+                "sub_name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                "sub_value": 50.5,
+                "level": 70,
+                "rank": 4,
+                "util": null
+            },
+            "uid": 857377017,
+            "create_date": "20230807110650",
+            "costume_id": "default",
+            "build_type": null,
+            "costume": null,
+            "util": null
+        },
+        {
+            "id": "10000078",
+            "star": 5,
+            "constellations": 6,
+            "level": 90,
+            "love": 10,
+            "base_hp": 13348,
+            "added_hp": 6572,
+            "base_attack": 762,
+            "added_attack": 712,
+            "base_defense": 781,
+            "added_defense": 35,
+            "critical_rate": 43.5,
+            "critical_damage": 112.9,
+            "charge_efficiency": 127.9,
+            "elemental_mastery": 515,
+            "elemental_name": "Grass",
+            "elemental_value": "75.4%",
+            "skills": [
+                {
+                    "level": 8,
+                    "add_level": 0,
+                    "util": null
+                },
+                {
+                    "level": 9,
+                    "add_level": 0,
+                    "util": null
+                },
+                {
+                    "level": 6,
+                    "add_level": 0,
+                    "util": null
+                }
+            ],
+            "artifacts": {
+                "EQUIP_BRACER": {
+                    "icon_name": "UI_RelicIcon_15026_4",
+                    "main_name": "FIGHT_PROP_HP",
+                    "main_value": 4780,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 5.2,
+                            "name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 21.0,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 44.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 9.3,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_NECKLACE": {
+                    "icon_name": "UI_RelicIcon_15026_2",
+                    "main_name": "FIGHT_PROP_ATTACK",
+                    "main_value": 311,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 35.0,
+                            "name": "FIGHT_PROP_DEFENSE",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 19.8,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 3.5,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 37.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_SHOES": {
+                    "icon_name": "UI_RelicIcon_15026_5",
+                    "main_name": "FIGHT_PROP_ELEMENT_MASTERY",
+                    "main_value": 187,
+                    "suffix": "",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 37.0,
+                            "name": "FIGHT_PROP_ATTACK",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 11.0,
+                            "name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 8.7,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 478.0,
+                            "name": "FIGHT_PROP_HP",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_RING": {
+                    "icon_name": "UI_RelicIcon_15003_1",
+                    "main_name": "FIGHT_PROP_GRASS_ADD_HURT",
+                    "main_value": 46.6,
+                    "suffix": "%",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 9.9,
+                            "name": "FIGHT_PROP_ATTACK_PERCENT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 21.0,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 3.9,
+                            "name": "FIGHT_PROP_CRITICAL",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 777.0,
+                            "name": "FIGHT_PROP_HP",
+                            "suffix": ""
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                },
+                "EQUIP_DRESS": {
+                    "icon_name": "UI_RelicIcon_15026_3",
+                    "main_name": "FIGHT_PROP_CRITICAL",
+                    "main_value": 31.1,
+                    "suffix": "%",
+                    "level": 20,
+                    "status": [
+                        {
+                            "value": 538.0,
+                            "name": "FIGHT_PROP_HP",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 11.7,
+                            "name": "FIGHT_PROP_CHARGE_EFFICIENCY",
+                            "suffix": "%"
+                        },
+                        {
+                            "value": 16.0,
+                            "name": "FIGHT_PROP_ELEMENT_MASTERY",
+                            "suffix": ""
+                        },
+                        {
+                            "value": 21.0,
+                            "name": "FIGHT_PROP_CRITICAL_HURT",
+                            "suffix": "%"
+                        }
+                    ],
+                    "star": 5,
+                    "score": 0,
+                    "util": null
+                }
+            },
+            "weapon": {
+                "icon_name": "UI_EquipIcon_Sword_Exotic",
+                "main_name": "FIGHT_PROP_BASE_ATTACK",
+                "main_value": 449,
+                "sub_name": "FIGHT_PROP_ELEMENT_MASTERY",
+                "sub_value": 151,
+                "level": 80,
+                "rank": 4,
+                "util": null
+            },
+            "uid": 857377017,
+            "create_date": "20230807110650",
+            "costume_id": "default",
+            "build_type": null,
+            "costume": null,
+            "util": null
+        }
+    ]
+}

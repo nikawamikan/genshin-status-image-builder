@@ -4,7 +4,7 @@ from decimal import Decimal
 import service.score_calc as score_calc
 import model.util_model as util_model
 from repository.util_repository import \
-    CHARACTER_DATA_DICT, WEAPON_DATA_DICT, ARTIFACT_DATA_DICT, STATUS_NAMEHASH_DICT
+    CHARACTER_DATA_DICT, WEAPON_DATA_DICT, ARTIFACT_DATA_DICT, STATUS_NAMEHASH_DICT, NAMECARD_DATA_DICT
 
 
 ELEMENTAL_NAME_DICT = {
@@ -166,6 +166,14 @@ class Character(BaseModel):
         for artifact in self.artifacts.values():
             artifact.set_calc_score(calc)
 
+class ProfilePicture(BaseModel):
+    id: str
+    costume_id: Optional[str] = "default"
+
+    @property
+    def avatar_icon(self):
+        return CHARACTER_DATA_DICT[self.id].costumes[self.costume_id].avatar_icon
+
 
 class UserData(BaseModel):
     uid: int
@@ -173,6 +181,7 @@ class UserData(BaseModel):
     signature: str
     world_level: Optional[int] = None
     name_card_id: int
+    name_card: Optional[util_model.NameCard] = None
     finish_achievement_num: Optional[int] = None
     tower_floor_index: int
     tower_level_index: int
@@ -180,3 +189,7 @@ class UserData(BaseModel):
     create_date: str
     char_name_map: dict[str, int]
     characters: list[Character]
+    profile_picture: ProfilePicture
+
+    def set_namecard(self):
+        self.name_card = NAMECARD_DATA_DICT[str(self.name_card_id)]
