@@ -13,7 +13,7 @@ router = APIRouter(prefix="/util", tags=["util"])
 async def get_status():
     result = await repo_to_json.updates()
     if result:
-        return Response(content={"message": "image update!"}, status_code=201)
+        return Response(status_code=201)
     else:
         return Response(status_code=204)
 

@@ -1,7 +1,6 @@
 from pydantic import BaseModel
 from typing import Union
 
-
 class Status(BaseModel):
     attack: str
     element_charge: str
@@ -45,8 +44,12 @@ class GenshinStatusAssets(BaseModel):
     artufact_bg: list[str]
 
 
+class ProfileAssets(BaseModel):
+    layer: str
+
 class Assets(BaseModel):
     artifacter: ArtifacterAssets
     genshin_status: GenshinStatusAssets
+    profile: ProfileAssets
     icon: Icon
     icon_namehash: dict[str, str]

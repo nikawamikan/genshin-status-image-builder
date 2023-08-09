@@ -682,6 +682,25 @@
         },
         "quality": 4,
         "costumes": {
+            "201501": {
+                "side_icon": {
+                    "name": "UI_AvatarIcon_Side_KaeyaCostumeDancer.png",
+                    "path": "image/character/Kaeya/avatar/201501/UI_AvatarIcon_Side_KaeyaCostumeDancer.png"
+                },
+                "avatar_icon": {
+                    "name": "UI_AvatarIcon_KaeyaCostumeDancer.png",
+                    "path": "image/character/Kaeya/avatar/201501/UI_AvatarIcon_KaeyaCostumeDancer.png"
+                },
+                "gacha_icon": {
+                    "name": "UI_Costume_KaeyaCostumeDancer.png",
+                    "path": "image/character/Kaeya/avatar/201501/UI_Costume_KaeyaCostumeDancer.png"
+                },
+                "position": {
+                    "x": -221,
+                    "y": 34,
+                    "scale": 97
+                }
+            },
             "default": {
                 "side_icon": {
                     "name": "UI_AvatarIcon_Side_Kaeya.png",
@@ -1609,6 +1628,25 @@
         },
         "quality": 5,
         "costumes": {
+            "202901": {
+                "side_icon": {
+                    "name": "UI_AvatarIcon_Side_KleeCostumeWitch.png",
+                    "path": "image/character/Klee/avatar/202901/UI_AvatarIcon_Side_KleeCostumeWitch.png"
+                },
+                "avatar_icon": {
+                    "name": "UI_AvatarIcon_KleeCostumeWitch.png",
+                    "path": "image/character/Klee/avatar/202901/UI_AvatarIcon_KleeCostumeWitch.png"
+                },
+                "gacha_icon": {
+                    "name": "UI_Costume_KleeCostumeWitch.png",
+                    "path": "image/character/Klee/avatar/202901/UI_Costume_KleeCostumeWitch.png"
+                },
+                "position": {
+                    "x": -221,
+                    "y": 34,
+                    "scale": 97
+                }
+            },
             "default": {
                 "side_icon": {
                     "name": "UI_AvatarIcon_Side_Klee.png",

@@ -14,6 +14,8 @@ cwd = os.path.abspath(os.path.dirname(__file__))
 
 BASE_SIZE = (1920, 1080)
 TALENT_BASE_SIZE = (int(149/1.5), int(137/1.5))
+IGNORE_PATTERN = set(['FIGHT_PROP_HP', 'FIGHT_PROP_ATTACK', 'FIGHT_PROP_DEFENSE'])
+
 # TALENT_BACK = Image.open(ASSETS.artifacter.b)
 TALENT_BASE = Image.open(
     ASSETS.artifacter.talent_back).resize(TALENT_BASE_SIZE)
@@ -625,7 +627,7 @@ def __create_artifact(artifact: status_model.Artifact) -> Image.Image:
     # 聖遺物のサブステータスを合成
     for i, v in enumerate(artifact.status):
         # 色分け処理
-        if v.jp_name in ['HP', '攻撃力', '防御力']:
+        if v.name in IGNORE_PATTERN:
             base_img.draw_text(
                 position=(50, 180+45*i), 
                 text=v.jp_name,
@@ -747,13 +749,16 @@ def __create_artifact_list(artifact_map: dict[status_model.Artifact]) -> Image.I
     # 各聖遺物のステータス画像の生成
     with ThreadPoolExecutor(max_workers=20, thread_name_prefix="__create_artifact") as pool:
         for i, v in enumerate(['EQUIP_BRACER', 'EQUIP_NECKLACE', 'EQUIP_SHOES', 'EQUIP_RING', 'EQUIP_DRESS']):
-            futures.append(
-                pool.submit(
-                    __create_artifact,
-                    artifact_map[v]
+            try:
+                futures.append(
+                    pool.submit(
+                        __create_artifact,
+                        artifact_map[v]
+                    )
                 )
-            )
-    # 各ステータス画像の合成
+            except KeyError:
+                continue
+        # 各ステータス画像の合成
     for i, v in enumerate(futures):
         im: Image = v.result()
         img.paste(im=im, box=(373*i+30, 648))
@@ -772,22 +777,38 @@ def __create_artifact_set(character: status_model.Character) -> Image.Image:
     img = GImage(
         box_size=BASE_SIZE,
     )
-    set_name = [character.artifacts[v].util.set_name for v in ['EQUIP_BRACER', 'EQUIP_NECKLACE', 'EQUIP_SHOES', 'EQUIP_RING', 'EQUIP_DRESS']]
+    set_name = []
+    for v in ['EQUIP_BRACER', 'EQUIP_NECKLACE', 'EQUIP_SHOES', 'EQUIP_RING', 'EQUIP_DRESS']:
+        try:
+            set_name.append(character.artifacts[v].util.set_name)
+        except KeyError:
+            continue
     count_dict = {item: set_name.count(item) for item in set(set_name)}
     counts = count_dict.values()
     print(set_name)
     print(count_dict)
+    try:
+        max(counts)
+    except ValueError:
+        return img.get_image()
     if 2 <= max(counts) <= 3:
         print(count_dict.keys())
         text=[k for k, v in count_dict.items() if v >= 2]
-        img.draw_text(
-            text=text[0]+'、'+text[1], 
-            position=(1530, 263),
-            font_size=20,
-            font_color=Colors.GENSHIN_GREEN)
+        try:
+            img.draw_text(
+                text=text[0]+'(2)'+'、'+text[1]+'(2)', 
+                position=(1530, 263),
+                font_size=20,
+                font_color=Colors.GENSHIN_GREEN)
+        except IndexError:
+            img.draw_text(
+                text=text[0]+'(2)', 
+                position=(1530, 260),
+                font_size=28,
+                font_color=Colors.GENSHIN_GREEN)
     elif 4 <= max(counts) <= 5:
         img.draw_text(
-            text=''.join([k for k, v in count_dict.items() if v >= 4]), 
+            text=''.join([k for k, v in count_dict.items() if v >= 4])+'(4)', 
             position=(1530, 260),
             font_size=28,
             font_color=Colors.GENSHIN_GREEN)
