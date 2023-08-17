@@ -3,6 +3,7 @@ from fastapi.responses import Response
 import service.repo_to_json as repo_to_json
 import service.score_calc as score_calc
 import service.character_position_service as chara_position
+import service.enka_image_downloader as enka_image_downloader
 from model.response_json_model import CharacterPosition
 
 
@@ -36,3 +37,8 @@ async def update_position(position: CharacterPosition):
         position=position.position
     )
     return Response(content="position update!", status_code=201)
+
+@router.put("/update-image-only")
+async def update_image_only():
+    await enka_image_downloader.util_image_update()
+    return Response(status_code=200)

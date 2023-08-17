@@ -158,7 +158,7 @@ if select=="1":
     print(f"処理時間：{str(time.time() - start)}秒")
 
 elif select=="2":
-    endpoint_url = f"http://localhost/status/uid/{UID}/"
+    endpoint_url = f"http://localhost/status/uid/{UID}"
     # JSONをPOSTリクエストで送信
     response = requests.get(endpoint_url)
     print(response)

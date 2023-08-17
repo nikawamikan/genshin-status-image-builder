@@ -26,11 +26,12 @@ def get_genshin_status_build_image(char_stat: status_model.Character, gen_type:i
     return FileResponse(file_path, filename=filename)
 
 @router.post("/profile/")
-def get_genshin_status_build_image(user_data: status_model.UserData):
+def get_genshin_profile_image(user_data: status_model.UserData):
     filename = f"{user_data.create_date}_{user_data.create_date}_{user_data.uid}.jpg"
     file_path = f"profile_images/{filename}"
     gen_profile_image.save_image(
         file_path=file_path,
         userdata=user_data,
     )
+
     return FileResponse(file_path, filename=filename)
