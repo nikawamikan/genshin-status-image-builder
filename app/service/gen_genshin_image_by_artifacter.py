@@ -100,7 +100,6 @@ def __create_weapon_img(weapon: status_model.Weapon, img_size: tuple[int, int]):
     bg.paste(im=weapon_paste, box=(1430, 50))
 
     bg = GImage(box_size=BASE_SIZE)
-    print(weapon.util.icon.path)
     bg.add_image(image_path=weapon.util.icon.path, box=(1430, 50), size=(128, 128))
 
     return bg.get_image()
@@ -762,7 +761,6 @@ def __create_artifact_list(artifact_map: dict[status_model.Artifact]) -> Image.I
     for i, v in enumerate(futures):
         im: Image = v.result()
         img.paste(im=im, box=(373*i+30, 648))
-        print("hogehoge")
     return img.get_image()
 
 def __create_artifact_set(character: status_model.Character) -> Image.Image:
@@ -785,14 +783,11 @@ def __create_artifact_set(character: status_model.Character) -> Image.Image:
             continue
     count_dict = {item: set_name.count(item) for item in set(set_name)}
     counts = count_dict.values()
-    print(set_name)
-    print(count_dict)
     try:
         max(counts)
     except ValueError:
         return img.get_image()
     if 2 <= max(counts) <= 3:
-        print(count_dict.keys())
         text=[k for k, v in count_dict.items() if v >= 2]
         try:
             img.draw_text(
