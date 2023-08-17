@@ -1111,5 +1111,89 @@
             "path": "image/weapon/UI_EquipIcon_Bow_Ayus.png"
         },
         "name": "狩人の道"
+    },
+    "UI_EquipIcon_Sword_Boreas": {
+        "icon": {
+            "name": "UI_EquipIcon_Sword_Boreas.png",
+            "path": "image/weapon/UI_EquipIcon_Sword_Boreas.png"
+        },
+        "name": "狼牙"
+    },
+    "UI_EquipIcon_Sword_Vorpal": {
+        "icon": {
+            "name": "UI_EquipIcon_Sword_Vorpal.png",
+            "path": "image/weapon/UI_EquipIcon_Sword_Vorpal.png"
+        },
+        "name": "海淵のフィナーレ"
+    },
+    "UI_EquipIcon_Sword_Machination": {
+        "icon": {
+            "name": "UI_EquipIcon_Sword_Machination.png",
+            "path": "image/weapon/UI_EquipIcon_Sword_Machination.png"
+        },
+        "name": "サーンドルの渡し守"
+    },
+    "UI_EquipIcon_Claymore_BeastTamer": {
+        "icon": {
+            "name": "UI_EquipIcon_Claymore_BeastTamer.png",
+            "path": "image/weapon/UI_EquipIcon_Claymore_BeastTamer.png"
+        },
+        "name": "話死合い棒"
+    },
+    "UI_EquipIcon_Claymore_Vorpal": {
+        "icon": {
+            "name": "UI_EquipIcon_Claymore_Vorpal.png",
+            "path": "image/weapon/UI_EquipIcon_Claymore_Vorpal.png"
+        },
+        "name": "タイダルシャドー"
+    },
+    "UI_EquipIcon_Pole_Shanty": {
+        "icon": {
+            "name": "UI_EquipIcon_Pole_Shanty.png",
+            "path": "image/weapon/UI_EquipIcon_Pole_Shanty.png"
+        },
+        "name": "フィヨルドの歌"
+    },
+    "UI_EquipIcon_Pole_Vorpal": {
+        "icon": {
+            "name": "UI_EquipIcon_Pole_Vorpal.png",
+            "path": "image/weapon/UI_EquipIcon_Pole_Vorpal.png"
+        },
+        "name": "正義の報酬"
+    },
+    "UI_EquipIcon_Catalyst_Yue": {
+        "icon": {
+            "name": "UI_EquipIcon_Catalyst_Yue.png",
+            "path": "image/weapon/UI_EquipIcon_Catalyst_Yue.png"
+        },
+        "name": "古祠の瓏"
+    },
+    "UI_EquipIcon_Catalyst_Vorpal": {
+        "icon": {
+            "name": "UI_EquipIcon_Catalyst_Vorpal.png",
+            "path": "image/weapon/UI_EquipIcon_Catalyst_Vorpal.png"
+        },
+        "name": "純水流華"
+    },
+    "UI_EquipIcon_Bow_Gurabad": {
+        "icon": {
+            "name": "UI_EquipIcon_Bow_Gurabad.png",
+            "path": "image/weapon/UI_EquipIcon_Bow_Gurabad.png"
+        },
+        "name": "烈日の後嗣"
+    },
+    "UI_EquipIcon_Bow_Vorpal": {
+        "icon": {
+            "name": "UI_EquipIcon_Bow_Vorpal.png",
+            "path": "image/weapon/UI_EquipIcon_Bow_Vorpal.png"
+        },
+        "name": "静寂の唄"
+    },
+    "UI_EquipIcon_Bow_Pledge": {
+        "icon": {
+            "name": "UI_EquipIcon_Bow_Pledge.png",
+            "path": "image/weapon/UI_EquipIcon_Bow_Pledge.png"
+        },
+        "name": "始まりの大魔術"
     }
 }

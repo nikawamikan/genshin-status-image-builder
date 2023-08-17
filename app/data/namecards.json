@@ -958,5 +958,59 @@
             "name": "UI_NameCardPic_Bp25_P.png",
             "path": "image/namecard/.png"
         }
+    },
+    "210165": {
+        "icon": {
+            "name": "UI_NameCardPic_Liney_P.png",
+            "path": "image/namecard/.png"
+        }
+    },
+    "210166": {
+        "icon": {
+            "name": "UI_NameCardPic_Linette_P.png",
+            "path": "image/namecard/.png"
+        }
+    },
+    "210167": {
+        "icon": {
+            "name": "UI_NameCardPic_Freminet_P.png",
+            "path": "image/namecard/.png"
+        }
+    },
+    "210168": {
+        "icon": {
+            "name": "UI_NameCardPic_FD1_P.png",
+            "path": "image/namecard/.png"
+        }
+    },
+    "210169": {
+        "icon": {
+            "name": "UI_NameCardPic_Ysxf4_P.png",
+            "path": "image/namecard/.png"
+        }
+    },
+    "210170": {
+        "icon": {
+            "name": "UI_NameCardPic_Csxy4_P.png",
+            "path": "image/namecard/.png"
+        }
+    },
+    "210171": {
+        "icon": {
+            "name": "UI_NameCardPic_Fontaine1_P.png",
+            "path": "image/namecard/.png"
+        }
+    },
+    "210172": {
+        "icon": {
+            "name": "UI_NameCardPic_Fontaine2_P.png",
+            "path": "image/namecard/.png"
+        }
+    },
+    "210173": {
+        "icon": {
+            "name": "UI_NameCardPic_Bp26_P.png",
+            "path": "image/namecard/.png"
+        }
     }
 }

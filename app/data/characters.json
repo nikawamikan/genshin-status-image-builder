@@ -6268,6 +6268,267 @@
             }
         }
     },
+    "10000083": {
+        "element": "Wind",
+        "consts": [
+            {
+                "name": "UI_Talent_S_Linette_01.png",
+                "path": "image/character/Linette/consts/UI_Talent_S_Linette_01.png"
+            },
+            {
+                "name": "UI_Talent_S_Linette_02.png",
+                "path": "image/character/Linette/consts/UI_Talent_S_Linette_02.png"
+            },
+            {
+                "name": "UI_Talent_U_Linette_01.png",
+                "path": "image/character/Linette/consts/UI_Talent_U_Linette_01.png"
+            },
+            {
+                "name": "UI_Talent_S_Linette_03.png",
+                "path": "image/character/Linette/consts/UI_Talent_S_Linette_03.png"
+            },
+            {
+                "name": "UI_Talent_U_Linette_02.png",
+                "path": "image/character/Linette/consts/UI_Talent_U_Linette_02.png"
+            },
+            {
+                "name": "UI_Talent_S_Linette_04.png",
+                "path": "image/character/Linette/consts/UI_Talent_S_Linette_04.png"
+            }
+        ],
+        "skills": [
+            {
+                "name": "通常攻撃",
+                "icon": {
+                    "name": "Skill_A_01.png",
+                    "path": "image/character/Linette/skill/Skill_A_01.png"
+                },
+                "id": "10831",
+                "proud_id": "8331"
+            },
+            {
+                "name": "元素スキル",
+                "icon": {
+                    "name": "Skill_S_Linette_01.png",
+                    "path": "image/character/Linette/skill/Skill_S_Linette_01.png"
+                },
+                "id": "10832",
+                "proud_id": "8332"
+            },
+            {
+                "name": "元素爆発",
+                "icon": {
+                    "name": "Skill_E_Linette_01.png",
+                    "path": "image/character/Linette/skill/Skill_E_Linette_01.png"
+                },
+                "id": "10835",
+                "proud_id": "8339"
+            }
+        ],
+        "name": "リネット",
+        "english_name": "Linette",
+        "proud_map": {
+            "10831": "8331",
+            "10832": "8332",
+            "10835": "8339"
+        },
+        "quality": 4,
+        "costumes": {
+            "default": {
+                "side_icon": {
+                    "name": "UI_AvatarIcon_Side_Linette.png",
+                    "path": "image/character/Linette/avatar/default/UI_AvatarIcon_Side_Linette.png"
+                },
+                "avatar_icon": {
+                    "name": "UI_AvatarIcon_Linette.png",
+                    "path": "image/character/Linette/avatar/default/UI_AvatarIcon_Linette.png"
+                },
+                "gacha_icon": {
+                    "name": "UI_Gacha_AvatarImg_Linette.png",
+                    "path": "image/character/Linette/avatar/default/UI_Gacha_AvatarImg_Linette.png"
+                },
+                "position": {
+                    "x": -234,
+                    "y": 45,
+                    "scale": 120
+                }
+            }
+        }
+    },
+    "10000084": {
+        "element": "Fire",
+        "consts": [
+            {
+                "name": "UI_Talent_S_Liney_01.png",
+                "path": "image/character/Liney/consts/UI_Talent_S_Liney_01.png"
+            },
+            {
+                "name": "UI_Talent_S_Liney_03.png",
+                "path": "image/character/Liney/consts/UI_Talent_S_Liney_03.png"
+            },
+            {
+                "name": "UI_Talent_U_Liney_01.png",
+                "path": "image/character/Liney/consts/UI_Talent_U_Liney_01.png"
+            },
+            {
+                "name": "UI_Talent_S_Liney_02.png",
+                "path": "image/character/Liney/consts/UI_Talent_S_Liney_02.png"
+            },
+            {
+                "name": "UI_Talent_U_Liney_02.png",
+                "path": "image/character/Liney/consts/UI_Talent_U_Liney_02.png"
+            },
+            {
+                "name": "UI_Talent_S_Liney_04.png",
+                "path": "image/character/Liney/consts/UI_Talent_S_Liney_04.png"
+            }
+        ],
+        "skills": [
+            {
+                "name": "通常攻撃",
+                "icon": {
+                    "name": "Skill_A_02.png",
+                    "path": "image/character/Liney/skill/Skill_A_02.png"
+                },
+                "id": "10841",
+                "proud_id": "8431"
+            },
+            {
+                "name": "元素スキル",
+                "icon": {
+                    "name": "Skill_S_Liney_01.png",
+                    "path": "image/character/Liney/skill/Skill_S_Liney_01.png"
+                },
+                "id": "10842",
+                "proud_id": "8432"
+            },
+            {
+                "name": "元素爆発",
+                "icon": {
+                    "name": "Skill_E_Liney_01.png",
+                    "path": "image/character/Liney/skill/Skill_E_Liney_01.png"
+                },
+                "id": "10845",
+                "proud_id": "8439"
+            }
+        ],
+        "name": "リネ",
+        "english_name": "Liney",
+        "proud_map": {
+            "10841": "8431",
+            "10842": "8432",
+            "10845": "8439"
+        },
+        "quality": 5,
+        "costumes": {
+            "default": {
+                "side_icon": {
+                    "name": "UI_AvatarIcon_Side_Liney.png",
+                    "path": "image/character/Liney/avatar/default/UI_AvatarIcon_Side_Liney.png"
+                },
+                "avatar_icon": {
+                    "name": "UI_AvatarIcon_Liney.png",
+                    "path": "image/character/Liney/avatar/default/UI_AvatarIcon_Liney.png"
+                },
+                "gacha_icon": {
+                    "name": "UI_Gacha_AvatarImg_Liney.png",
+                    "path": "image/character/Liney/avatar/default/UI_Gacha_AvatarImg_Liney.png"
+                },
+                "position": {
+                    "x": -236,
+                    "y": -36,
+                    "scale": 96
+                }
+            }
+        }
+    },
+    "10000085": {
+        "element": "Ice",
+        "consts": [
+            {
+                "name": "UI_Talent_S_Freminet_01.png",
+                "path": "image/character/Freminet/consts/UI_Talent_S_Freminet_01.png"
+            },
+            {
+                "name": "UI_Talent_S_Freminet_02.png",
+                "path": "image/character/Freminet/consts/UI_Talent_S_Freminet_02.png"
+            },
+            {
+                "name": "UI_Talent_U_Freminet_01.png",
+                "path": "image/character/Freminet/consts/UI_Talent_U_Freminet_01.png"
+            },
+            {
+                "name": "UI_Talent_S_Freminet_03.png",
+                "path": "image/character/Freminet/consts/UI_Talent_S_Freminet_03.png"
+            },
+            {
+                "name": "UI_Talent_U_Freminet_02.png",
+                "path": "image/character/Freminet/consts/UI_Talent_U_Freminet_02.png"
+            },
+            {
+                "name": "UI_Talent_S_Freminet_04.png",
+                "path": "image/character/Freminet/consts/UI_Talent_S_Freminet_04.png"
+            }
+        ],
+        "skills": [
+            {
+                "name": "通常攻撃",
+                "icon": {
+                    "name": "Skill_A_04.png",
+                    "path": "image/character/Freminet/skill/Skill_A_04.png"
+                },
+                "id": "10851",
+                "proud_id": "8531"
+            },
+            {
+                "name": "元素スキル",
+                "icon": {
+                    "name": "Skill_S_Freminet_01.png",
+                    "path": "image/character/Freminet/skill/Skill_S_Freminet_01.png"
+                },
+                "id": "10852",
+                "proud_id": "8532"
+            },
+            {
+                "name": "元素爆発",
+                "icon": {
+                    "name": "Skill_E_Freminet_01.png",
+                    "path": "image/character/Freminet/skill/Skill_E_Freminet_01.png"
+                },
+                "id": "10855",
+                "proud_id": "8539"
+            }
+        ],
+        "name": "フレミネ",
+        "english_name": "Freminet",
+        "proud_map": {
+            "10851": "8531",
+            "10852": "8532",
+            "10855": "8539"
+        },
+        "quality": 4,
+        "costumes": {
+            "default": {
+                "side_icon": {
+                    "name": "UI_AvatarIcon_Side_Freminet.png",
+                    "path": "image/character/Freminet/avatar/default/UI_AvatarIcon_Side_Freminet.png"
+                },
+                "avatar_icon": {
+                    "name": "UI_AvatarIcon_Freminet.png",
+                    "path": "image/character/Freminet/avatar/default/UI_AvatarIcon_Freminet.png"
+                },
+                "gacha_icon": {
+                    "name": "UI_Gacha_AvatarImg_Freminet.png",
+                    "path": "image/character/Freminet/avatar/default/UI_Gacha_AvatarImg_Freminet.png"
+                },
+                "position": {
+                    "x": -236,
+                    "y": 17,
+                    "scale": 96
+                }
+            }
+        }
+    },
     "10000005-501": {
         "element": "None",
         "consts": [

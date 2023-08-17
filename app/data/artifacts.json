@@ -1759,6 +1759,86 @@
         "set_name": "花海甘露の光",
         "equip_type": "EQUIP_SHOES"
     },
+    "UI_RelicIcon_15031_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15031_1.png",
+            "path": "image/artifact/UI_RelicIcon_15031_1.png"
+        },
+        "set_name": "ファントムハンター",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15031_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15031_2.png",
+            "path": "image/artifact/UI_RelicIcon_15031_2.png"
+        },
+        "set_name": "ファントムハンター",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15031_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15031_3.png",
+            "path": "image/artifact/UI_RelicIcon_15031_3.png"
+        },
+        "set_name": "ファントムハンター",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15031_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15031_4.png",
+            "path": "image/artifact/UI_RelicIcon_15031_4.png"
+        },
+        "set_name": "ファントムハンター",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15031_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15031_5.png",
+            "path": "image/artifact/UI_RelicIcon_15031_5.png"
+        },
+        "set_name": "ファントムハンター",
+        "equip_type": "EQUIP_SHOES"
+    },
+    "UI_RelicIcon_15032_1": {
+        "icon": {
+            "name": "UI_RelicIcon_15032_1.png",
+            "path": "image/artifact/UI_RelicIcon_15032_1.png"
+        },
+        "set_name": "黄金の劇団",
+        "equip_type": "EQUIP_RING"
+    },
+    "UI_RelicIcon_15032_2": {
+        "icon": {
+            "name": "UI_RelicIcon_15032_2.png",
+            "path": "image/artifact/UI_RelicIcon_15032_2.png"
+        },
+        "set_name": "黄金の劇団",
+        "equip_type": "EQUIP_NECKLACE"
+    },
+    "UI_RelicIcon_15032_3": {
+        "icon": {
+            "name": "UI_RelicIcon_15032_3.png",
+            "path": "image/artifact/UI_RelicIcon_15032_3.png"
+        },
+        "set_name": "黄金の劇団",
+        "equip_type": "EQUIP_DRESS"
+    },
+    "UI_RelicIcon_15032_4": {
+        "icon": {
+            "name": "UI_RelicIcon_15032_4.png",
+            "path": "image/artifact/UI_RelicIcon_15032_4.png"
+        },
+        "set_name": "黄金の劇団",
+        "equip_type": "EQUIP_BRACER"
+    },
+    "UI_RelicIcon_15032_5": {
+        "icon": {
+            "name": "UI_RelicIcon_15032_5.png",
+            "path": "image/artifact/UI_RelicIcon_15032_5.png"
+        },
+        "set_name": "黄金の劇団",
+        "equip_type": "EQUIP_SHOES"
+    },
     "UI_RelicIcon_10000_2": {
         "icon": {
             "name": "UI_RelicIcon_10000_2.png",
