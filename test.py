@@ -88,7 +88,7 @@ def gen_image_test(gen_mode:str):
         #ビルドタイプを指定
         # json_data = json_data['characters'][2]
         json_data = i
-        json_data['build_type'] = 'atk'
+        json_data['build_type'] = 'ch2'
 
         # JSONをPOSTリクエストで送信
         response = requests.post(endpoint_url, json=json_data)

@@ -658,8 +658,10 @@ def __create_artifact(artifact: status_model.Artifact) -> Image.Image:
             size=(30, 30), 
             image_anchor=ImageAnchors.LEFT_TOP)
 
+    score = round(artifact.score, 1)
+
     base_img.draw_text(
-        text=artifact.score, 
+        text=score, 
         position=(345, 370), 
         font_size=36, 
         anchor=Anchors.RIGHT_TOP)
@@ -667,7 +669,7 @@ def __create_artifact(artifact: status_model.Artifact) -> Image.Image:
         text='Score', 
         position=(
             340-base_img.get_textsize(
-                text=str(artifact.score), 
+                text=str(score), 
                 font_size=36)[0], 
             380
         ), 
@@ -676,7 +678,7 @@ def __create_artifact(artifact: status_model.Artifact) -> Image.Image:
         anchor=Anchors.RIGHT_TOP)
 
     for grade in [0, 1, 2]:
-        if artifact.score >= ARTIFACTER_REFER[artifact.util.equip_type][grade]:
+        if score >= ARTIFACTER_REFER[artifact.util.equip_type][grade]:
             ScoreImage = ASSETS.artifacter.artifact_grades[3-grade]
             break
     else:
