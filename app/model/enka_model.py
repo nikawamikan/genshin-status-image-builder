@@ -54,6 +54,7 @@ class Flat(BaseModel):
 
 class Weapon(BaseModel):
     level: int
+    affixMap: Optional[dict] = {"0":0}
 
 
 class Equip(BaseModel):

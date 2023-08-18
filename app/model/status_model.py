@@ -88,6 +88,7 @@ class Weapon(BaseModel):
     sub_name: Optional[str] = None
     sub_value: Optional[Decimal] = None
     level: int
+    rarity: int
     rank: int
     util: Optional[util_model.Weapon] = None
 

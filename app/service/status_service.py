@@ -103,7 +103,8 @@ def get_weapon(equip: enka_model.Equip):
         sub_name = flat.weaponStats[1].appendPropId
         sub_value = flat.weaponStats[1].statValue
     level = equip.weapon.level
-    rank = flat.rankLevel
+    rarity = flat.rankLevel
+    rank = int([v for k, v in equip.weapon.affixMap.items()][0])+1
     return status_model.Weapon(
         icon_name=icon_name,
         main_name=main_name,
@@ -111,6 +112,7 @@ def get_weapon(equip: enka_model.Equip):
         sub_name=sub_name,
         sub_value=sub_value,
         level=level,
+        rarity=rarity,
         rank=rank
     )
 

@@ -114,7 +114,7 @@ def __gen_weapon_reality(weapon: status_model.Weapon):
     Returns:
         Image.Image: 武器レアリティ画像
     """
-    img = Image.open(ASSETS.artifacter.reality[weapon.rank]).convert("RGBA")
+    img = Image.open(ASSETS.artifacter.reality[weapon.rarity]).convert("RGBA")
     img = img.resize(
         (int(img.width*0.97), int(img.height*0.97))
     )
