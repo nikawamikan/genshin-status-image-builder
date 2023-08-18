@@ -232,7 +232,7 @@ def __gen_constellation_list_img(character: status_model.Character):
         Image.Image: リスト状の星座画像
     """
     constellation_paste = Image.new("RGBA", BASE_SIZE, (255, 255, 255, 0))
-    constellation_base, constellation_lock = CONSTELLATIONBACKS[character.util.element]
+    constellation_lock, constellation_base = CONSTELLATIONBACKS[character.util.element]
     clock_mask = constellation_lock.copy()
     with ThreadPoolExecutor(thread_name_prefix="constellations") as executor:
         constellation_objects = [

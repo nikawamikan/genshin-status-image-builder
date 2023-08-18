@@ -151,7 +151,7 @@ def get_character_status(uid: int, create_date: str, avatar_info: enka_model.Ava
     if check_traveler(id):
         id = f"{id}-{avatar_info.skillDepotId}"
     star = CHARACTER_DATA_DICT[id].quality
-    constellations = len(CHARACTER_DATA_DICT[id].consts)
+    constellations = len(avatar_info.talentIdList)
     level = int(avatar_info.propMap["4001"].val)
     base_hp = int(avatar_info.fightPropMap["1"])
     added_hp = avatar_info.fightPropMap["2000"] - base_hp
