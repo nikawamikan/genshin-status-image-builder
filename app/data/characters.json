@@ -7051,6 +7051,93 @@
             }
         }
     },
+    "10000007-703": {
+        "element": "Water",
+        "consts": [
+            {
+                "name": "UI_Talent_S_PlayerWater_01.png",
+                "path": "image/character/PlayerGirl/consts/UI_Talent_S_PlayerWater_01.png"
+            },
+            {
+                "name": "UI_Talent_S_PlayerWater_02.png",
+                "path": "image/character/PlayerGirl/consts/UI_Talent_S_PlayerWater_02.png"
+            },
+            {
+                "name": "UI_Talent_U_PlayerWater_01.png",
+                "path": "image/character/PlayerGirl/consts/UI_Talent_U_PlayerWater_01.png"
+            },
+            {
+                "name": "UI_Talent_S_PlayerWater_03.png",
+                "path": "image/character/PlayerGirl/consts/UI_Talent_S_PlayerWater_03.png"
+            },
+            {
+                "name": "UI_Talent_U_PlayerWater_02.png",
+                "path": "image/character/PlayerGirl/consts/UI_Talent_U_PlayerWater_02.png"
+            },
+            {
+                "name": "UI_Talent_S_PlayerWater_04.png",
+                "path": "image/character/PlayerGirl/consts/UI_Talent_S_PlayerWater_04.png"
+            }
+        ],
+        "skills": [
+            {
+                "name": "通常攻撃",
+                "icon": {
+                    "name": "Skill_A_01.png",
+                    "path": "image/character/PlayerGirl/skill/Skill_A_01.png"
+                },
+                "id": "100552",
+                "proud_id": "631"
+            },
+            {
+                "name": "元素スキル",
+                "icon": {
+                    "name": "Skill_S_PlayerWater_01.png",
+                    "path": "image/character/PlayerGirl/skill/Skill_S_PlayerWater_01.png"
+                },
+                "id": "10087",
+                "proud_id": "632"
+            },
+            {
+                "name": "元素爆発",
+                "icon": {
+                    "name": "Skill_E_PlayerWater_01.png",
+                    "path": "image/character/PlayerGirl/skill/Skill_E_PlayerWater_01.png"
+                },
+                "id": "10088",
+                "proud_id": "639"
+            }
+        ],
+        "name": "旅人",
+        "english_name": "PlayerGirl",
+        "proud_map": {
+            "10087": "632",
+            "10088": "639",
+            "100552": "631"
+        },
+        "quality": 5,
+        "costumes": {
+            "default": {
+                "side_icon": {
+                    "name": "UI_AvatarIcon_Side_PlayerGirl.png",
+                    "path": "image/character/PlayerGirl/avatar/default/UI_AvatarIcon_Side_PlayerGirl.png"
+                },
+                "avatar_icon": {
+                    "name": "UI_AvatarIcon_PlayerGirl.png",
+                    "path": "image/character/PlayerGirl/avatar/default/UI_AvatarIcon_PlayerGirl.png"
+                },
+                "gacha_icon": {
+                    "name": "UI_Gacha_AvatarImg_PlayerGirl.png",
+                    "path": "image/character/PlayerGirl/avatar/default/UI_Gacha_AvatarImg_PlayerGirl.png"
+                },
+                "position": {
+                    "x": -210,
+                    "y": 32,
+                    "scale": 95
+                }
+            }
+        }
+    },
     "10000007-704": {
         "element": "Wind",
         "consts": [
