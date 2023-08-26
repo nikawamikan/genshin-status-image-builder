@@ -479,9 +479,9 @@ def __create_full_character_status(character: status_model.Character):
     for i, skill in enumerate(character.skills):
         base.draw_text(
             position=(63, 397 + (i * 105)),
-            text=f"Lv.{skill.level}",
+            text=f"Lv.{str(skill.level + skill.add_level)}",
             font_size=17,
-            font_color=Colors.GENSHIN_LIGHT_BLUE if skill.level >= 10 else Colors.WHITE,
+            font_color=Colors.GENSHIN_LIGHT_BLUE if skill.add_level > 0 else None,
             anchor=Anchors.MIDDLE_TOP
         )
 
