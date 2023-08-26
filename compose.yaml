@@ -3,6 +3,7 @@ version: "3.9"
 services:
   api:
     build: .
+    hostname: genshin.api
     volumes:
       - ./app:/usr/src/app
     command: "sh start_script.sh"
@@ -13,6 +14,7 @@ services:
       - default
     ports:
       - 80:80
+    restart: always
     depends_on:
       - redis
 
@@ -26,6 +28,7 @@ services:
         reservations:
           cpus: "0.25"
           memory: 20M
+    restart: always
     networks:
       - default
 
